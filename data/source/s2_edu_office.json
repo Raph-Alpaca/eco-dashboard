@@ -1,0 +1,7520 @@
+{
+ "schemaVersion": 1,
+ "survey": "status_survey",
+ "pop": "inst_edu_office",
+ "sourceDoc": "2025년 환경교육 실태조사 기술통계보고서 (기후에너지환경부·한국환경보전원, 2025.12)",
+ "tables": [
+  {
+   "qid": "EDU_ORD_YN",
+   "label": "환경교육 관련 조례 제정 여부",
+   "short": "조례 제정 여부",
+   "section": "조례/계획",
+   "indicator": "law",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-1",
+     "pdf": 213
+    },
+    {
+     "ref": "그림 4-1",
+     "pdf": 213
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "17개 시도교육청 모두 '있음'(100.0). 없음 N/%는 '-'로 인쇄.",
+    "시도교육청 17개 전수(응답기관 수 17). 보고서 본문 쪽수 = PDF 쪽수 - 16(퍴4-1 본문 197쪽 = PDF 213쪽)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      0,
+      17
+     ],
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_ORD_N",
+   "label": "환경교육 관련 조례 개수",
+   "short": "조례 개수",
+   "section": "조례/계획",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-2",
+     "pdf": 214
+    },
+    {
+     "ref": "표 4-2",
+     "pdf": 215
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-2 '조례 개수' 열. 조례명·제정연도·개정연도 목록은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 47,
+     "mean": 2.76
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 4
+    }
+   ]
+  },
+  {
+   "qid": "EDU_PLAN_YN",
+   "label": "환경교육 관련 계획 수립 여부",
+   "short": "계획 수립 여부",
+   "section": "조례/계획",
+   "indicator": "plan",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-3",
+     "pdf": 216
+    },
+    {
+     "ref": "그림 4-2",
+     "pdf": 216
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "17개 시도교육청 모두 '있음'(100.0)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      0,
+      17
+     ],
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_PLAN_TERM",
+   "label": "환경교육 관련 계획의 계획 기간(단년/다년)",
+   "short": "계획 기간",
+   "section": "조례/계획",
+   "type": "single",
+   "categories": [
+    "단년",
+    "다년"
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-4",
+     "pdf": 217
+    }
+   ],
+   "notes": [
+    "표4-4 '계획 기간(단년/다년)' 열에서 교육청별로 판정(단년 15: 2024 단년 / 다년 2: 서울 2020~2024, 광주 2024~2026). 전체 행 pct·counts는 표에 인쇄되지 않은 집계값(15/17=88.2, 2/17=11.8).",
+    "계획 명칭·수립 연도·근거 조례는 전사하지 않음(모두 2024 수립, 서울만 2020)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      15,
+      2
+     ],
+     "pct": [
+      88.2,
+      11.8
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_SUBPLAN_N",
+   "label": "기본계획에 따른 환경교육 관련(세부 또는 실행) 계획 개수",
+   "short": "세부·실행계획 개수",
+   "section": "조례/계획",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-5",
+     "pdf": 218
+    },
+    {
+     "ref": "표 4-5",
+     "pdf": 219
+    },
+    {
+     "ref": "표 4-5",
+     "pdf": 220
+    },
+    {
+     "ref": "표 4-5",
+     "pdf": 221
+    },
+    {
+     "ref": "표 4-5",
+     "pdf": 222
+    },
+    {
+     "ref": "표 4-5",
+     "pdf": 223
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-5 '환경교육 계획 개수' 열(전체 85). 계획 명칭 등 목록은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 85,
+     "mean": 5.0
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 40
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 16
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 10
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 2
+    }
+   ]
+  },
+  {
+   "qid": "EDU_DEPT_YN",
+   "label": "환경교육 업무 담당 부서 및 인력 여부",
+   "short": "담당 부서·인력 여부",
+   "section": "조직/인력",
+   "indicator": "staff",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-6",
+     "pdf": 224
+    },
+    {
+     "ref": "그림 4-3",
+     "pdf": 224
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "없음 1개 교육청 = 세종특별자치시교육청."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      1,
+      16
+     ],
+     "pct": [
+      5.9,
+      94.1
+     ],
+     "positive": 94.1
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_DEPT_N",
+   "label": "환경교육 담당 운영 부서 수",
+   "short": "담당 부서 수",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_DEPT_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-7",
+     "pdf": 225
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "부서가 있는 16개 교육청 모두 부서 1개."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 16,
+     "total": 16,
+     "mean": 1.0
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_STAFF_TOTAL",
+   "label": "환경교육 담당 인력 총인원",
+   "short": "담당 인력 총인원",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_DEPT_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-7",
+     "pdf": 225
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-7. male/female=남/여 인원, mean=계. 셀의 '-'(0명)는 null로 기록(합계 계산 시 0). 세종은 담당 부서 없음(표에서 전부 '-')이므로 행 생략.",
+    "본문: 총 47명(남성 15명, 여성 32명)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 16,
+     "total": 47,
+     "mean": 2.94,
+     "male": 15,
+     "female": 32
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 7,
+     "male": null,
+     "female": 7
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1,
+     "male": 1,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 5,
+     "male": null,
+     "female": 5
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 3,
+     "male": 1,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 3,
+     "male": 1,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 2,
+     "male": null,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 4,
+     "male": 2,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 2,
+     "male": null,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 5,
+     "male": 3,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 2,
+     "male": 2,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 4,
+     "male": 3,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 3,
+     "male": null,
+     "female": 3
+    }
+   ]
+  },
+  {
+   "qid": "EDU_STAFF_FT",
+   "label": "환경교육 담당 전담 인원",
+   "short": "전담 인원",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_DEPT_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-7",
+     "pdf": 225
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-7. male/female=남/여 인원, mean=계. 셀의 '-'(0명)는 null로 기록(합계 계산 시 0). 세종은 담당 부서 없음(표에서 전부 '-')이므로 행 생략."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 16,
+     "total": 34,
+     "mean": 2.13,
+     "male": 11,
+     "female": 23
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 6,
+     "male": null,
+     "female": 6
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 5,
+     "male": null,
+     "female": 5
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 5,
+     "male": 3,
+     "female": 2
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1,
+     "male": 1,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 3,
+     "male": 2,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_STAFF_PT",
+   "label": "환경교육 담당 겸임 인원",
+   "short": "겸임 인원",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_DEPT_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-7",
+     "pdf": 225
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-7. male/female=남/여 인원, mean=계. 셀의 '-'(0명)는 null로 기록(합계 계산 시 0). 세종은 담당 부서 없음(표에서 전부 '-')이므로 행 생략."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 16,
+     "total": 13,
+     "mean": 0.81,
+     "male": 4,
+     "female": 9
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1,
+     "male": 1,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": null,
+     "male": null,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1,
+     "male": 1,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1,
+     "male": 1,
+     "female": null
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 2,
+     "male": null,
+     "female": 2
+    }
+   ]
+  },
+  {
+   "qid": "EDU_CERT_YN",
+   "label": "환경교육 교원 자격 소지자 여부",
+   "short": "교원자격 소지자 여부",
+   "section": "조직/인력",
+   "indicator": "educator",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-8",
+     "pdf": 226
+    },
+    {
+     "ref": "그림 4-4",
+     "pdf": 226
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "있음 3개 교육청 = 울산, 충북, 전남."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      14,
+      3
+     ],
+     "pct": [
+      82.4,
+      17.6
+     ],
+     "positive": 17.6
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_CERT_N",
+   "label": "환경교육 교원 자격증 소지 인력 현황(계)",
+   "short": "교원자격 소지 인원",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_CERT_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-8",
+     "pdf": 226
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "male/female=남/여. 전체 계 4(남 1, 여 3)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 3,
+     "total": 4,
+     "mean": 1.33,
+     "male": 1,
+     "female": 3
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2,
+     "male": 1,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 1,
+     "male": null,
+     "female": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_AFFIL_YN",
+   "label": "환경교육 수행 산하기관 여부",
+   "short": "산하기관 여부",
+   "section": "조직/인력",
+   "indicator": "affiliate",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-9",
+     "pdf": 227
+    },
+    {
+     "ref": "그림 4-5",
+     "pdf": 227
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "없음 6개 교육청 = 광주, 대전, 세종, 경기, 경북, 제주."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      6,
+      11
+     ],
+     "pct": [
+      35.3,
+      64.7
+     ],
+     "positive": 64.7
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_AFFIL_N",
+   "label": "환경교육 수행 산하기관 수(계)",
+   "short": "산하기관 수",
+   "section": "조직/인력",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_AFFIL_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-9",
+     "pdf": 227
+    },
+    {
+     "ref": "표 4-10",
+     "pdf": 228
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-9 '환경교육 수행 산하기관 현황 계'. 표4-10 기관명 목록은 전사하지 않음(기관 수 22 일치)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 11,
+     "total": 22,
+     "mean": 2.0
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_AFFIL_TYPE",
+   "label": "환경교육 수행 산하기관 운영 방식",
+   "short": "산하기관 운영 방식",
+   "section": "조직/인력",
+   "type": "events",
+   "categories": [
+    "직접 운영",
+    "위탁 운영",
+    "그 외 기관"
+   ],
+   "base": {
+    "qid": "EDU_AFFIL_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-9",
+     "pdf": 227
+    },
+    {
+     "ref": "표 4-10",
+     "pdf": 228
+    }
+   ],
+   "notes": [
+    "events=총 건수, mean=기관당 건수, counts=범주별 건수, pct=건 기준 범주 %(counts에서 계산).",
+    "모든 산하기관(22개)이 직접 운영. 위탁 운영·그 외 기관은 '-'."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 11,
+     "events": 22,
+     "mean": 2.0,
+     "counts": [
+      22,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "events": 5,
+     "mean": 5,
+     "counts": [
+      5,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "events": 5,
+     "mean": 5,
+     "counts": [
+      5,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_PROGRAM_N",
+   "label": "자체 환경교육 사업 수",
+   "short": "자체 사업 수",
+   "section": "사업/예산",
+   "indicator": "program",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-11",
+     "pdf": 229
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 230
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 231
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 232
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "표4-11 '자체 환경교육 사업 수' 열. 사업명·담당 부서 목록은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 157,
+     "mean": 9.24
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 11
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 16
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 16
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 10
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 18
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 8
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 13
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 9
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 8
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 12
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 6
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 11
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 2
+    }
+   ]
+  },
+  {
+   "qid": "EDU_BUDGET_TOTAL",
+   "label": "교육청 전체 예산",
+   "short": "교육청 전체 예산",
+   "section": "사업/예산",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-11",
+     "pdf": 229
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 230
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 231
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 232
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "단위 백만 원. 표4-11 '교육청 전체 예산' 열(전체 94,127,683)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 94127683,
+     "mean": 5536922.53
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 11160500
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 5426800
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 4239879
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 5107100
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 2875200
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 2794500
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2231928
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 1189329
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 22578300
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 3970900
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 3618577
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 4947700
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 4502200
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 4917000
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 5892070
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 7096900
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 1578800
+    }
+   ]
+  },
+  {
+   "qid": "EDU_BUDGET_EE",
+   "label": "기관 환경교육 총예산",
+   "short": "환경교육 총예산",
+   "section": "사업/예산",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-11",
+     "pdf": 229
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 230
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 231
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 232
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "단위 백만 원. 표4-11 '기관 환경교육 총예산' 열(전체 39,692; 본문 '약 397억')."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 39692,
+     "mean": 2334.82
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 829
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1597
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 4170
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 10870
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 1135
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1153
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 836
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 124
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 124
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 452
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1207
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2828
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1348
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 3379
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 2074
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 6116
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 1450
+    }
+   ]
+  },
+  {
+   "qid": "EDU_PROGRAM_BUDGET",
+   "label": "자체 환경교육 사업 예산 합계(사업 정보 '사업 예산' 열 합)",
+   "short": "사업 예산 합계",
+   "section": "사업/예산",
+   "type": "numeric",
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-11",
+     "pdf": 229
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 230
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 231
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 232
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "단위 백만 원. 전체 36,965는 표4-11 전체 행에 인쇄된 값. 교육청별 값은 보고서에 인쇄되지 않았고 해당 교육청의 사업별 '사업 예산'(157건)을 합산한 파생값(합계 36,965 일치).",
+    "'기관 환경교육 총예산'(EDU_BUDGET_EE)과는 다른 열이며 교육청별로 차이가 있음(예: 경기 총예산 124 vs 사업예산 합 398)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "total": 36965,
+     "mean": 2174.41
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 823
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1594
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1723
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 10870
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 1130
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 1116
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 831
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 122
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 398
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 415
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 719
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2828
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1348
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 3376
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 2104
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 6118
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 1450
+    }
+   ]
+  },
+  {
+   "qid": "EDU_PROGRAM_TYPE",
+   "label": "자체 환경교육 사업 유형",
+   "short": "사업 유형",
+   "section": "사업/예산",
+   "type": "events",
+   "categories": [
+    "프로그램 운영",
+    "교육과정 지원",
+    "연수",
+    "기타"
+   ],
+   "baseKind": "사업 건",
+   "source": [
+    {
+     "ref": "표 4-11",
+     "pdf": 229
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 230
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 231
+    },
+    {
+     "ref": "표 4-11",
+     "pdf": 232
+    }
+   ],
+   "notes": [
+    "events=총 건수, mean=기관당 건수, counts=범주별 건수, pct=건 기준 범주 %(counts에서 계산).",
+    "보고서에 유형별 집계표 없음. 표4-11 사업 목록 157건의 '사업 유형' 열을 집계한 파생값(프로그램 운영 27, 교육과정 지원 102, 연수 12, 기타 16 = 157). 0은 해당 유형 사업 없음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "events": 157,
+     "mean": 9.24,
+     "counts": [
+      27,
+      102,
+      12,
+      16
+     ],
+     "pct": [
+      17.2,
+      65.0,
+      7.6,
+      10.2
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "events": 11,
+     "mean": 11,
+     "counts": [
+      4,
+      6,
+      1,
+      0
+     ],
+     "pct": [
+      36.4,
+      54.5,
+      9.1,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "events": 16,
+     "mean": 16,
+     "counts": [
+      0,
+      16,
+      0,
+      0
+     ],
+     "pct": [
+      0.0,
+      100.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "events": 16,
+     "mean": 16,
+     "counts": [
+      4,
+      6,
+      1,
+      5
+     ],
+     "pct": [
+      25.0,
+      37.5,
+      6.3,
+      31.3
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "events": 10,
+     "mean": 10,
+     "counts": [
+      1,
+      9,
+      0,
+      0
+     ],
+     "pct": [
+      10.0,
+      90.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "events": 18,
+     "mean": 18,
+     "counts": [
+      0,
+      18,
+      0,
+      0
+     ],
+     "pct": [
+      0.0,
+      100.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "events": 8,
+     "mean": 8,
+     "counts": [
+      3,
+      4,
+      1,
+      0
+     ],
+     "pct": [
+      37.5,
+      50.0,
+      12.5,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "events": 13,
+     "mean": 13,
+     "counts": [
+      3,
+      6,
+      1,
+      3
+     ],
+     "pct": [
+      23.1,
+      46.2,
+      7.7,
+      23.1
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "events": 5,
+     "mean": 5,
+     "counts": [
+      2,
+      1,
+      1,
+      1
+     ],
+     "pct": [
+      40.0,
+      20.0,
+      20.0,
+      20.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      0,
+      3,
+      1,
+      0
+     ],
+     "pct": [
+      0.0,
+      75.0,
+      25.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      2,
+      2,
+      0,
+      0
+     ],
+     "pct": [
+      50.0,
+      50.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "events": 9,
+     "mean": 9,
+     "counts": [
+      0,
+      7,
+      1,
+      1
+     ],
+     "pct": [
+      0.0,
+      77.8,
+      11.1,
+      11.1
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "events": 8,
+     "mean": 8,
+     "counts": [
+      3,
+      5,
+      0,
+      0
+     ],
+     "pct": [
+      37.5,
+      62.5,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      0,
+      1,
+      1,
+      2
+     ],
+     "pct": [
+      0.0,
+      25.0,
+      25.0,
+      50.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "events": 12,
+     "mean": 12,
+     "counts": [
+      2,
+      9,
+      1,
+      0
+     ],
+     "pct": [
+      16.7,
+      75.0,
+      8.3,
+      0.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "events": 6,
+     "mean": 6,
+     "counts": [
+      2,
+      2,
+      1,
+      1
+     ],
+     "pct": [
+      33.3,
+      33.3,
+      16.7,
+      16.7
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "events": 11,
+     "mean": 11,
+     "counts": [
+      0,
+      6,
+      2,
+      3
+     ],
+     "pct": [
+      0.0,
+      54.5,
+      18.2,
+      27.3
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "pct": [
+      50.0,
+      50.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_MATERIAL_YN",
+   "label": "자체 개발 교보재 여부",
+   "short": "교보재 보유 여부",
+   "section": "교보재",
+   "indicator": "material",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-12",
+     "pdf": 233
+    },
+    {
+     "ref": "그림 4-6",
+     "pdf": 233
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "없음 2개 교육청 = 인천, 세종."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      2,
+      15
+     ],
+     "pct": [
+      11.8,
+      88.2
+     ],
+     "positive": 88.2
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_MATERIAL_N",
+   "label": "자체 개발 교보재 수(계)",
+   "short": "교보재 수",
+   "section": "교보재",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_MATERIAL_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-12",
+     "pdf": 233
+    },
+    {
+     "ref": "표 4-13",
+     "pdf": 234
+    },
+    {
+     "ref": "표 4-13",
+     "pdf": 235
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "전체 53개(교재 50, 교구 3). 교보재명 목록(표4-13)은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 15,
+     "total": 53,
+     "mean": 3.53
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 10
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 11
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 5
+    }
+   ]
+  },
+  {
+   "qid": "EDU_MATERIAL_KIND",
+   "label": "자체 개발 교보재 구분(교재/교구)",
+   "short": "교보재 구분",
+   "section": "교보재",
+   "type": "events",
+   "categories": [
+    "교재",
+    "교구"
+   ],
+   "base": {
+    "qid": "EDU_MATERIAL_YN",
+    "eq": 1
+   },
+   "baseKind": "교보재 건",
+   "source": [
+    {
+     "ref": "표 4-12",
+     "pdf": 233
+    },
+    {
+     "ref": "표 4-13",
+     "pdf": 234
+    }
+   ],
+   "notes": [
+    "events=총 건수, mean=기관당 건수, counts=범주별 건수, pct=건 기준 범주 %(counts에서 계산).",
+    "교구 3개는 모두 제주."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 15,
+     "events": 53,
+     "mean": 3.53,
+     "counts": [
+      50,
+      3
+     ],
+     "pct": [
+      94.3,
+      5.7
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "events": 10,
+     "mean": 10,
+     "counts": [
+      10,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      4,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "events": 11,
+     "mean": 11,
+     "counts": [
+      11,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      4,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "events": 3,
+     "mean": 3,
+     "counts": [
+      3,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "events": 3,
+     "mean": 3,
+     "counts": [
+      3,
+      null
+     ],
+     "pct": [
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "events": 5,
+     "mean": 5,
+     "counts": [
+      2,
+      3
+     ],
+     "pct": [
+      40.0,
+      60.0
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_MATERIAL_TARGET",
+   "label": "자체 개발 교보재 대상(중복응답)",
+   "short": "교보재 대상",
+   "section": "교보재",
+   "type": "multi",
+   "categories": [
+    "유아(만6세 이하)",
+    "초등(만7~12세)",
+    "청소년(중등 만13~15세)",
+    "청소년(고등 만16~18세)",
+    "청년(만19~34세)",
+    "중장년(만35~64세)",
+    "노년(만65세 이상)"
+   ],
+   "base": {
+    "qid": "EDU_MATERIAL_YN",
+    "eq": 1
+   },
+   "baseKind": "교보재 건",
+   "source": [
+    {
+     "ref": "표 4-14",
+     "pdf": 236
+    },
+    {
+     "ref": "그림 4-7",
+     "pdf": 236
+    }
+   ],
+   "notes": [
+    "중복응답. pct=해당 교육청 교보재/연수 건수 대비 %, counts=건수. '-'는 null. 교보재/연수가 없는 교육청(표에서 전부 '-')은 행 생략.",
+    "Base: 전체 교보재 수(n=53). 노년은 전체 '-'."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 53,
+     "counts": [
+      4,
+      28,
+      20,
+      10,
+      2,
+      3,
+      null
+     ],
+     "pct": [
+      7.5,
+      52.8,
+      37.7,
+      18.9,
+      3.8,
+      5.7,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 10,
+     "counts": [
+      null,
+      6,
+      4,
+      3,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      60.0,
+      40.0,
+      30.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 4,
+     "counts": [
+      null,
+      1,
+      3,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      25.0,
+      75.0,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 11,
+     "counts": [
+      1,
+      5,
+      3,
+      3,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      9.1,
+      45.5,
+      27.3,
+      27.3,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 4,
+     "counts": [
+      null,
+      3,
+      1,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      75.0,
+      25.0,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 3,
+     "counts": [
+      null,
+      1,
+      1,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      33.3,
+      33.3,
+      33.3,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 2,
+     "counts": [
+      null,
+      null,
+      null,
+      null,
+      2,
+      2,
+      null
+     ],
+     "pct": [
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 2,
+     "counts": [
+      1,
+      1,
+      1,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      50.0,
+      50.0,
+      50.0,
+      50.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "counts": [
+      null,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 2,
+     "counts": [
+      1,
+      2,
+      1,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      50.0,
+      100.0,
+      50.0,
+      50.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "counts": [
+      null,
+      1,
+      1,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      100.0,
+      100.0,
+      100.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 2,
+     "counts": [
+      null,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 2,
+     "counts": [
+      1,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      50.0,
+      null,
+      50.0,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "counts": [
+      null,
+      1,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 3,
+     "counts": [
+      null,
+      2,
+      1,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      66.7,
+      33.3,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 5,
+     "counts": [
+      null,
+      3,
+      2,
+      null,
+      null,
+      1,
+      null
+     ],
+     "pct": [
+      null,
+      60.0,
+      40.0,
+      null,
+      null,
+      20.0,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_MATERIAL_TOPIC",
+   "label": "자체 개발 교보재 주제(중복응답)",
+   "short": "교보재 주제",
+   "section": "교보재",
+   "type": "multi",
+   "categories": [
+    "기후변화 및 탄소중립",
+    "대기",
+    "에너지",
+    "소음",
+    "폐기물 및 자원순환",
+    "환경보건",
+    "물",
+    "토양",
+    "생태계",
+    "지속가능발전",
+    "생명윤리",
+    "기타"
+   ],
+   "base": {
+    "qid": "EDU_MATERIAL_YN",
+    "eq": 1
+   },
+   "baseKind": "교보재 건",
+   "source": [
+    {
+     "ref": "표 4-15",
+     "pdf": 237
+    },
+    {
+     "ref": "그림 4-8",
+     "pdf": 237
+    }
+   ],
+   "notes": [
+    "중복응답. pct=해당 교육청 교보재/연수 건수 대비 %, counts=건수. '-'는 null. 교보재/연수가 없는 교육청(표에서 전부 '-')은 행 생략.",
+    "Base: 전체 교보재 수(n=53), 3개까지 중복응답. 보고서의 소제목 '4) 자체 개발 교보재 대상'과 [그림4-8] 제목 '자체 개발 교보재 대상'은 '주제'의 오기(표4-15 제목·본문은 주제)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 53,
+     "counts": [
+      49,
+      3,
+      20,
+      null,
+      8,
+      17,
+      4,
+      1,
+      10,
+      18,
+      null,
+      8
+     ],
+     "pct": [
+      92.5,
+      5.7,
+      37.7,
+      null,
+      15.1,
+      32.1,
+      7.5,
+      1.9,
+      18.9,
+      34.0,
+      null,
+      15.1
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 10,
+     "counts": [
+      10,
+      null,
+      9,
+      null,
+      null,
+      8,
+      null,
+      null,
+      3,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      90.0,
+      null,
+      null,
+      80.0,
+      null,
+      null,
+      30.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 4,
+     "counts": [
+      3,
+      null,
+      4,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4,
+      null,
+      null
+     ],
+     "pct": [
+      75.0,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 11,
+     "counts": [
+      11,
+      null,
+      null,
+      null,
+      null,
+      4,
+      2,
+      null,
+      null,
+      null,
+      null,
+      5
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      36.4,
+      18.2,
+      null,
+      null,
+      null,
+      null,
+      45.5
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 4,
+     "counts": [
+      4,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 3,
+     "counts": [
+      3,
+      1,
+      1,
+      null,
+      1,
+      2,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      33.3,
+      33.3,
+      null,
+      33.3,
+      66.7,
+      null,
+      null,
+      null,
+      33.3,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 2,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      null,
+      1,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      50.0,
+      null,
+      null,
+      null,
+      50.0,
+      null,
+      null,
+      null,
+      50.0,
+      50.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 2,
+     "counts": [
+      2,
+      null,
+      2,
+      null,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      100.0,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 2,
+     "counts": [
+      2,
+      null,
+      null,
+      null,
+      null,
+      2,
+      null,
+      null,
+      null,
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 2,
+     "counts": [
+      2,
+      2,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      100.0,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 2,
+     "counts": [
+      2,
+      null,
+      null,
+      null,
+      1,
+      null,
+      1,
+      1,
+      null,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      50.0,
+      null,
+      50.0,
+      50.0,
+      null,
+      50.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "counts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 3,
+     "counts": [
+      3,
+      null,
+      1,
+      null,
+      2,
+      null,
+      1,
+      null,
+      1,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      33.3,
+      null,
+      66.7,
+      null,
+      33.3,
+      null,
+      33.3,
+      33.3,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 5,
+     "counts": [
+      4,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      null,
+      3,
+      2,
+      null,
+      3
+     ],
+     "pct": [
+      80.0,
+      null,
+      null,
+      null,
+      20.0,
+      null,
+      null,
+      null,
+      60.0,
+      40.0,
+      null,
+      60.0
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_FACILITY_YN",
+   "label": "환경교육 진행 시설 보유 여부",
+   "short": "시설 보유 여부",
+   "section": "시설",
+   "indicator": "facility",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "보유하고 있지 않음",
+    "보유하고 있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-16",
+     "pdf": 238
+    },
+    {
+     "ref": "그림 4-9",
+     "pdf": 238
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "보유 8개 교육청 = 부산, 대구, 울산, 강원, 충북, 충남, 경북, 경남."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      9,
+      8
+     ],
+     "pct": [
+      52.9,
+      47.1
+     ],
+     "positive": 47.1
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_FACILITY_N",
+   "label": "환경교육 시설 수(계)",
+   "short": "환경교육 시설 수",
+   "section": "시설",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_FACILITY_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-16",
+     "pdf": 238
+    },
+    {
+     "ref": "표 4-17",
+     "pdf": 239
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "전체 13개(직접 운영 9, 위탁 운영 4, 수탁 운영 -). 시설명 목록(표4-17)은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 8,
+     "total": 13,
+     "mean": 1.63
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_FACILITY_TYPE",
+   "label": "환경교육 시설 운영 방식",
+   "short": "시설 운영 방식",
+   "section": "시설",
+   "type": "events",
+   "categories": [
+    "직접 운영",
+    "위탁 운영",
+    "수탁 운영"
+   ],
+   "base": {
+    "qid": "EDU_FACILITY_YN",
+    "eq": 1
+   },
+   "baseKind": "시설 건",
+   "source": [
+    {
+     "ref": "표 4-16",
+     "pdf": 238
+    },
+    {
+     "ref": "표 4-17",
+     "pdf": 239
+    }
+   ],
+   "notes": [
+    "events=총 건수, mean=기관당 건수, counts=범주별 건수, pct=건 기준 범주 %(counts에서 계산).",
+    "위탁 운영 4개는 모두 경북(국립낙동강생물자원관 등 외부기관 위탁)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 8,
+     "events": 13,
+     "mean": 1.63,
+     "counts": [
+      9,
+      4,
+      null
+     ],
+     "pct": [
+      69.2,
+      30.8,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      null,
+      4,
+      null
+     ],
+     "pct": [
+      null,
+      100.0,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_YN",
+   "label": "소속 직원 대상 자체 환경 주제 연수 실시 여부",
+   "short": "직원 자체연수 실시",
+   "section": "연수",
+   "indicator": "training",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "실시하지 않았음",
+    "실시하였음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-18",
+     "pdf": 240
+    },
+    {
+     "ref": "그림 4-10",
+     "pdf": 240
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "실시하지 않음 5개 교육청 = 부산, 인천, 대전, 전남, 경북."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      5,
+      12
+     ],
+     "pct": [
+      29.4,
+      70.6
+     ],
+     "positive": 70.6
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_N",
+   "label": "소속 직원 대상 자체 환경 주제 연수 실시 개수(계)",
+   "short": "직원 자체연수 개수",
+   "section": "연수",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_TRAINING_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-18",
+     "pdf": 240
+    },
+    {
+     "ref": "표 4-19",
+     "pdf": 241
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "전체 27개(집합교육 26, 원격교육 -, 혼합교육 1). 연수명 목록(표4-19)은 전사하지 않음."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 12,
+     "total": 27,
+     "mean": 2.25
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "mean": 6
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "mean": 2
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_METHOD",
+   "label": "소속 직원 대상 자체 환경 주제 연수 방법",
+   "short": "연수 방법",
+   "section": "연수",
+   "type": "events",
+   "categories": [
+    "집합교육",
+    "원격교육",
+    "혼합교육"
+   ],
+   "base": {
+    "qid": "EDU_TRAINING_YN",
+    "eq": 1
+   },
+   "baseKind": "연수 건",
+   "source": [
+    {
+     "ref": "표 4-18",
+     "pdf": 240
+    },
+    {
+     "ref": "표 4-19",
+     "pdf": 241
+    }
+   ],
+   "notes": [
+    "events=총 건수, mean=기관당 건수, counts=범주별 건수, pct=건 기준 범주 %(counts에서 계산).",
+    "표4-18은 경기 집합 1·강원 혼합 1로, 표4-19(연수 정보)는 경기 '환경교육 리더양성 직무연수' 혼합 1·강원 '기후환경교육 운영방안 연수' 집합 1로 인쇄되어 두 표가 서로 어긋남(전체 집합 26·혼합 1은 동일). 여기서는 표4-18 값을 전사."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 12,
+     "events": 27,
+     "mean": 2.25,
+     "counts": [
+      26,
+      null,
+      1
+     ],
+     "pct": [
+      96.3,
+      null,
+      3.7
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "events": 6,
+     "mean": 6,
+     "counts": [
+      6,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "events": 3,
+     "mean": 3,
+     "counts": [
+      3,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      null,
+      null,
+      1
+     ],
+     "pct": [
+      null,
+      null,
+      100.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      4,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "events": 1,
+     "mean": 1,
+     "counts": [
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "events": 4,
+     "mean": 4,
+     "counts": [
+      4,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "events": 2,
+     "mean": 2,
+     "counts": [
+      2,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_TOPIC",
+   "label": "소속 직원 대상 실시 자체 환경 주제 연수 주제(중복응답)",
+   "short": "연수 주제",
+   "section": "연수",
+   "type": "multi",
+   "categories": [
+    "기후변화 및 탄소중립",
+    "대기",
+    "에너지",
+    "소음",
+    "폐기물 및 자원순환",
+    "환경보건",
+    "물",
+    "토양",
+    "생태계",
+    "지속가능발전",
+    "생명윤리",
+    "기타"
+   ],
+   "base": {
+    "qid": "EDU_TRAINING_YN",
+    "eq": 1
+   },
+   "baseKind": "연수 건",
+   "source": [
+    {
+     "ref": "표 4-20",
+     "pdf": 242
+    },
+    {
+     "ref": "그림 4-11",
+     "pdf": 242
+    }
+   ],
+   "notes": [
+    "중복응답. pct=해당 교육청 교보재/연수 건수 대비 %, counts=건수. '-'는 null. 교보재/연수가 없는 교육청(표에서 전부 '-')은 행 생략.",
+    "Base: 전체 연수 개수(n=27), 3개까지 중복응답. 대기·소음은 전체 '-'."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 27,
+     "counts": [
+      22,
+      null,
+      3,
+      null,
+      5,
+      4,
+      2,
+      1,
+      13,
+      9,
+      2,
+      3
+     ],
+     "pct": [
+      81.5,
+      null,
+      11.1,
+      null,
+      18.5,
+      14.8,
+      7.4,
+      3.7,
+      48.1,
+      33.3,
+      7.4,
+      11.1
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "counts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 2,
+     "counts": [
+      2,
+      null,
+      null,
+      null,
+      null,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 6,
+     "counts": [
+      6,
+      null,
+      null,
+      null,
+      1,
+      null,
+      2,
+      null,
+      4,
+      null,
+      null,
+      3
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      16.7,
+      null,
+      33.3,
+      null,
+      66.7,
+      null,
+      null,
+      50.0
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 3,
+     "counts": [
+      1,
+      null,
+      1,
+      null,
+      3,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      33.3,
+      null,
+      33.3,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "counts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      1,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      100.0,
+      null,
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 4,
+     "counts": [
+      4,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null,
+      2,
+      3,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      25.0,
+      null,
+      null,
+      50.0,
+      75.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 4,
+     "counts": [
+      4,
+      null,
+      1,
+      null,
+      null,
+      null,
+      null,
+      1,
+      3,
+      3,
+      null,
+      null
+     ],
+     "pct": [
+      100.0,
+      null,
+      25.0,
+      null,
+      null,
+      null,
+      null,
+      25.0,
+      75.0,
+      75.0,
+      null,
+      null
+     ]
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 2,
+     "counts": [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      2,
+      1,
+      2,
+      null
+     ],
+     "pct": [
+      50.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      100.0,
+      50.0,
+      100.0,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_TEACHER_YN",
+   "label": "관할 구역 내 학교 교직원 대상 환경 주제 연수 실시 여부",
+   "short": "교직원 연수 실시",
+   "section": "연수",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "실시하지 않았음",
+    "실시하였음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-21",
+     "pdf": 243
+    },
+    {
+     "ref": "그림 4-12",
+     "pdf": 243
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "실시하지 않음 2개 교육청 = 인천, 세종.",
+    "보고서의 [그림4-12]·[표4-21] 제목은 '소속 직원 대상 자체 환경 주제 연수 실시 여부(및 추진 개수)'로 인쇄되어 있으나 소제목·본문은 '관할 구역 내 학교 교직원 대상'임(제목 오기로 판단)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      2,
+      15
+     ],
+     "pct": [
+      11.8,
+      88.2
+     ],
+     "positive": 88.2
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_TRAINING_PARENT_YN",
+   "label": "관할 구역 내 학교 학부모 대상 환경 주제 연수 실시 여부",
+   "short": "학부모 연수 실시",
+   "section": "연수",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "실시하지 않았음",
+    "실시하였음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-22",
+     "pdf": 244
+    },
+    {
+     "ref": "그림 4-13",
+     "pdf": 244
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "실시하지 않음 7개 교육청 = 대구, 광주, 대전, 세종, 경기, 전북, 제주.",
+    "본문은 '10개 교육청(58.5%)'이나 표·그림은 58.8(=10/17)이며 58.8을 채택. [그림4-13] 제목도 '소속 직원 대상 자체 환경 주제 연수 실시 여부'로 오기."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      7,
+      10
+     ],
+     "pct": [
+      41.2,
+      58.8
+     ],
+     "positive": 58.8
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_COUNCIL_YN",
+   "label": "공식적 회의체 구성 여부",
+   "short": "회의체 구성 여부",
+   "section": "거버넌스",
+   "indicator": "council",
+   "type": "binary",
+   "scale": "yn",
+   "categories": [
+    "없음",
+    "있음"
+   ],
+   "positive": [
+    1
+   ],
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-23",
+     "pdf": 245
+    },
+    {
+     "ref": "그림 4-14",
+     "pdf": 245
+    }
+   ],
+   "notes": [
+    "보고서의 '-'(해당 교육청 없음)는 예/아니오 표에서는 0 / 0.0으로 기록.",
+    "없음 4개 교육청 = 광주, 대전, 강원, 제주."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 17,
+     "counts": [
+      4,
+      13
+     ],
+     "pct": [
+      23.5,
+      76.5
+     ],
+     "positive": 76.5
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "29",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "30",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "42",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "pct": [
+      0.0,
+      100.0
+     ],
+     "positive": 100.0
+    },
+    {
+     "by": "sido",
+     "key": "50",
+     "n": 1,
+     "pct": [
+      100.0,
+      0.0
+     ],
+     "positive": 0.0
+    }
+   ]
+  },
+  {
+   "qid": "EDU_COUNCIL_N",
+   "label": "구성한 회의체 수",
+   "short": "회의체 수",
+   "section": "거버넌스",
+   "type": "numeric",
+   "base": {
+    "qid": "EDU_COUNCIL_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-23",
+     "pdf": 245
+    },
+    {
+     "ref": "표 4-24",
+     "pdf": 246
+    }
+   ],
+   "notes": [
+    "전체 행 mean은 total/n 계산값(보고서에는 total만 인쇄). 교육청 행 mean은 해당 교육청의 값(n=1).",
+    "위원회 명칭·구성 근거(표4-24)는 전사하지 않음(회의체 17개 일치)."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 13,
+     "total": 17,
+     "mean": 1.31
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 3
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 1
+    }
+   ]
+  },
+  {
+   "qid": "EDU_COUNCIL_MEETINGS",
+   "label": "공식적 회의체 2024년 회의 수",
+   "short": "2024년 회의 수",
+   "section": "거버넌스",
+   "type": "numeric",
+   "unit": "회",
+   "base": {
+    "qid": "EDU_COUNCIL_YN",
+    "eq": 1
+   },
+   "baseKind": "기관",
+   "source": [
+    {
+     "ref": "표 4-24",
+     "pdf": 246
+    }
+   ],
+   "notes": [
+    "전체 행 total 28은 표4-24 전체 행에 인쇄된 값, mean은 28/13 계산값. 교육청별 값은 해당 교육청 회의체(위원회)별 '2024년 회의 수'를 합한 값(부산 2+1+2=5, 울산 1+1=2, 충북 2+2=4; 나머지는 회의체 1개).",
+    "주의: 교육청별 값의 합은 27로 인쇄된 전체 28과 1 차이(보고서 불일치, 미보정). 회의체(17개)당 평균은 28/17=1.65."
+   ],
+   "rows": [
+    {
+     "by": "all",
+     "key": "all",
+     "n": 13,
+     "total": 28,
+     "mean": 2.15
+    },
+    {
+     "by": "sido",
+     "key": "11",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "26",
+     "n": 1,
+     "mean": 5
+    },
+    {
+     "by": "sido",
+     "key": "27",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "28",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "31",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "36",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "41",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "43",
+     "n": 1,
+     "mean": 4
+    },
+    {
+     "by": "sido",
+     "key": "44",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "45",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "46",
+     "n": 1,
+     "mean": 2
+    },
+    {
+     "by": "sido",
+     "key": "47",
+     "n": 1,
+     "mean": 1
+    },
+    {
+     "by": "sido",
+     "key": "48",
+     "n": 1,
+     "mean": 2
+    }
+   ]
+  }
+ ]
+}

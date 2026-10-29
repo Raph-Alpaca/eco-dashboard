@@ -1,0 +1,397 @@
+{
+ "schemaVersion": 1,
+ "survey": "school_survey",
+ "pop": "teacher",
+ "sourceDoc": "2025년 학교환경교육 현황조사 결과보고서 (교육부·한국환경보전원, 2025.12)",
+ "notes": "교원 n=5,808(초 2,162/중 1,764/고 1,882). 교원 구분2: 교장(감) 245, 일반교원(부장교사 포함) 5,315, 환경교육 담당교사 248 (표 1-9, PDF 35). by=role 키: principal=교장(감), general=일반교원, eeteacher=환경교육 담당교사. 그림 2-2-13 아래의 두 소표(학교급별 '평균', '단체 및 기관 활동에 참여하고 싶은 이유 1순위')는 다른 보고서의 잔재로 판단하여 전사하지 않음.",
+ "tables": [
+  {"qid":"T01","label":"기후 위기 및 환경문제 심각성 인식","short":"심각성 인식","section":"관심도",
+   "type":"likert5","scale":"severity5","positive":[3,4],"baseKind":"응답자",
+   "source":[{"ref":"그림 2-2-3","pdf":60},{"ref":"표 2-3-1","pdf":80}],
+   "notes":"pct 순서 [전혀 심각하지 않다, 심각하지 않다, 보통, 다소 심각하다, 매우 심각하다]. 그림 2-2-3의 두 작은 콜아웃은 그림 2-3-1(PDF 80)의 교원 막대와 대조해 '심각하지 않다' 0.6, '전혀' 0.3으로 확정. 평균 4.49와 일치.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[0.3,0.6,4.3,39.0,55.8],"mean":4.49,"sd":0.64,"positive":94.8},
+    {"by":"level","key":"E","n":2162,"mean":4.59,"sd":0.60,"positive":96.3},
+    {"by":"level","key":"M","n":1764,"mean":4.47,"sd":0.64,"positive":94.5},
+    {"by":"level","key":"H","n":1882,"mean":4.41,"sd":0.66,"positive":93.3},
+    {"by":"role","key":"principal","n":245,"positive":99.6},
+    {"by":"role","key":"general","n":5315,"positive":94.5},
+    {"by":"role","key":"eeteacher","n":248,"positive":95.6}
+   ]},
+
+  {"qid":"T02","label":"환경문제에 대한 인식","short":"환경문제 인식","section":"관심도",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자",
+   "items":[
+    {"id":"1","label":"환경문제는 다른 것들에 비해 우선순위가 높은 관심 주제임","reverse":false},
+    {"id":"2","label":"우리 삶과 태도의 변화가 없어도 새로운 기술 발전이 환경 문제를 해결해 줄 것임","reverse":true},
+    {"id":"3","label":"최근 기후 변화는 먼 미래의 일이라 내 삶에 큰 영향은 없음","reverse":true},
+    {"id":"4","label":"나의 일상적 행동과 생활 방식도 기후 변화의 원인이 됨","reverse":false},
+    {"id":"5","label":"인류가 지금의 기후 위기 및 환경문제를 해결하기에는 이미 시간이 너무 늦었음","reverse":true}
+   ],
+   "source":[{"ref":"그림 2-2-4","pdf":61},{"ref":"표 2-3-2~6","pdf":82}],
+   "notes":"역척도 문항(2,3,5)은 역변환 후 평균. 전체 평균은 표 2-3-2~6 교원 행(소수 2자리) 사용 — 그림 2-2-4는 1자리 반올림(4.00/3.80/4.40/4.30/3.10)이며 문항5는 표 3.12 vs 그림 3.10으로 반올림 차이 있음. 학교급 평균은 그림과 표가 일치(sd는 표). 교원 구분 평균은 그림 2-2-4.",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":5808,"mean":4.04,"sd":0.79},{"by":"level","key":"E","n":2162,"mean":4.17,"sd":0.76},{"by":"level","key":"M","n":1764,"mean":4.00,"sd":0.77},{"by":"level","key":"H","n":1882,"mean":3.92,"sd":0.82},{"by":"role","key":"principal","n":245,"mean":4.44},{"by":"role","key":"general","n":5315,"mean":4.01},{"by":"role","key":"eeteacher","n":248,"mean":4.10}],
+    "2":[{"by":"all","key":"all","n":5808,"mean":3.76,"sd":1.14},{"by":"level","key":"E","n":2162,"mean":3.83,"sd":1.15},{"by":"level","key":"M","n":1764,"mean":3.76,"sd":1.15},{"by":"level","key":"H","n":1882,"mean":3.69,"sd":1.12},{"by":"role","key":"principal","n":245,"mean":3.93},{"by":"role","key":"general","n":5315,"mean":3.76},{"by":"role","key":"eeteacher","n":248,"mean":3.79}],
+    "3":[{"by":"all","key":"all","n":5808,"mean":4.40,"sd":0.86},{"by":"level","key":"E","n":2162,"mean":4.45,"sd":0.89},{"by":"level","key":"M","n":1764,"mean":4.39,"sd":0.84},{"by":"level","key":"H","n":1882,"mean":4.36,"sd":0.84},{"by":"role","key":"principal","n":245,"mean":4.62},{"by":"role","key":"general","n":5315,"mean":4.39},{"by":"role","key":"eeteacher","n":248,"mean":4.45}],
+    "4":[{"by":"all","key":"all","n":5808,"mean":4.25,"sd":0.81},{"by":"level","key":"E","n":2162,"mean":4.35,"sd":0.80},{"by":"level","key":"M","n":1764,"mean":4.23,"sd":0.79},{"by":"level","key":"H","n":1882,"mean":4.16,"sd":0.83},{"by":"role","key":"principal","n":245,"mean":4.40},{"by":"role","key":"general","n":5315,"mean":4.24},{"by":"role","key":"eeteacher","n":248,"mean":4.38}],
+    "5":[{"by":"all","key":"all","n":5808,"mean":3.12,"sd":1.05},{"by":"level","key":"E","n":2162,"mean":3.07,"sd":1.07},{"by":"level","key":"M","n":1764,"mean":3.14,"sd":1.03},{"by":"level","key":"H","n":1882,"mean":3.16,"sd":1.05},{"by":"role","key":"principal","n":245,"mean":3.08},{"by":"role","key":"general","n":5315,"mean":3.11},{"by":"role","key":"eeteacher","n":248,"mean":3.34}]
+   }},
+
+  {"qid":"T03","label":"환경교육의 개념 인식","short":"환경교육 개념 인식","section":"관심도",
+   "type":"single","baseKind":"응답자",
+   "categories":["지속가능한 미래를 위해 경제적, 사회적, 환경적 측면 등을 모두 고려한 교육","기후 위기 및 환경문제 해결 방안을 찾고 실천하는 교육","환경에 친화적인 삶과 생활 방식을 위해 직접 체험해 보는 교육","우리 주변 환경, 생태계에 대해 잘 이해하는 교육","환경을 통해 바람직한 세계시민으로 성장하는 교육"],
+   "source":[{"ref":"그림 2-2-5","pdf":62},{"ref":"표 2-3-20","pdf":91}],
+   "notes":"보기 순서는 그림 2-2-5(교원 결과) 순. 표 2-3-20은 보기 순서가 다르며(주변환경·체험·기후위기·지속가능·세계시민) 수치는 일치.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[47.5,30.9,10.6,7.5,3.5]},
+    {"by":"level","key":"E","n":2162,"pct":[48.5,31.8,9.4,6.3,3.9]},
+    {"by":"level","key":"M","n":1764,"pct":[45.0,33.0,11.1,7.4,3.5]},
+    {"by":"level","key":"H","n":1882,"pct":[48.6,28.0,11.4,8.9,3.2]},
+    {"by":"role","key":"principal","n":245,"pct":[52.2,32.2,6.1,6.1,3.3]},
+    {"by":"role","key":"general","n":5315,"pct":[47.6,30.7,10.6,7.6,3.5]},
+    {"by":"role","key":"eeteacher","n":248,"pct":[39.9,34.3,14.1,6.0,5.6]}
+   ]},
+
+  {"qid":"T04","label":"환경문제 해결을 위해 가장 시급한 과제","short":"시급한 환경 과제","section":"관심도",
+   "type":"rank","baseKind":"응답자",
+   "categories":["기후 변화와 기상 이변","생물 다양성 손실","대기 오염","자연 생태계 파괴","폐기물 처리","수질 오염","자원 및 에너지 부족","환경 불평등","기타"],
+   "source":[{"ref":"그림 2-2-6","pdf":63},{"ref":"표 2-3-17","pdf":89},{"ref":"표 2-3-18","pdf":89}],
+   "notes":"최대 2개 우선순위 선택. 보기 순서는 학생 파일과 동일하게 재배열(그림 2-2-6은 응답률 내림차순, 표 2-3-17/18은 생물다양성부터). 전체·학교급 r1은 그림과 표가 일치, 학교급 r12는 표 2-3-18 교원 행.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[43.5,4.2,16.9,7.5,20.3,3.5,2.1,1.8,0.1],"r12":[67.1,8.2,29.1,19.2,46.0,12.3,7.8,10.1,0.1]},
+    {"by":"level","key":"E","n":2162,"r1":[46.0,4.2,13.6,7.8,21.6,3.0,1.7,2.1,0.1],"r12":[71.3,8.2,24.6,20.8,48.6,10.2,6.6,9.6,0.2]},
+    {"by":"level","key":"M","n":1764,"r1":[41.3,4.4,19.3,6.9,20.1,4.1,2.3,1.6,0.0],"r12":[63.2,8.0,32.4,18.9,45.6,13.9,8.6,9.5,0.1]},
+    {"by":"level","key":"H","n":1882,"r1":[42.8,3.9,18.4,7.8,19.1,3.6,2.5,1.8,0.1],"r12":[66.0,8.3,31.3,17.6,43.4,13.3,8.6,11.4,0.2]},
+    {"by":"role","key":"principal","n":245,"r1":[43.3,2.9,11.8,6.1,24.9,6.1,1.6,3.3,0.0]},
+    {"by":"role","key":"general","n":5315,"r1":[43.3,4.3,17.3,7.7,20.0,3.5,2.2,1.8,0.1]},
+    {"by":"role","key":"eeteacher","n":248,"r1":[49.6,2.8,13.7,6.0,23.4,1.2,1.6,1.6,0.0]}
+   ]},
+
+  {"qid":"T05","label":"환경 관련 용어 인지도","short":"용어 인지도","section":"관심도",
+   "type":"item_cat","scale":"aware3","positive":[2],"baseKind":"응답자",
+   "items":[
+    {"id":"biodiv","label":"생물 다양성/종다양성"},
+    {"id":"invasive","label":"생태계 교란 생물"},
+    {"id":"neutral","label":"탄소중립"},
+    {"id":"renewable","label":"재생에너지"},
+    {"id":"footprint","label":"탄소발자국"},
+    {"id":"zerowaste","label":"제로웨이스트"},
+    {"id":"circular","label":"순환경제"},
+    {"id":"sdgs","label":"지속가능발전목표(SDGs)"},
+    {"id":"upcycle","label":"업사이클링"},
+    {"id":"esg","label":"ESG"}
+   ],
+   "source":[{"ref":"그림 2-2-7","pdf":64},{"ref":"표 2-3-7~16","pdf":84}],
+   "notes":"pct 순서 [들어본 적 없다, 들어봤지만 뜻은 모른다, 들어봤고 그 뜻도 안다]. 전체·학교급 pct는 표 2-3-7~16 교원 행(그림 2-2-7의 '안다' 비율과 일치). 교원 구분은 그림 2-2-7의 '안다' 비율(positive)만 공표. 그림 2-2-7 첫 막대(76.1/18.7/5.2)는 10개 용어 평균.",
+   "itemRows":{
+    "biodiv":[{"by":"all","key":"all","n":5808,"pct":[1.4,13.8,84.8],"positive":84.8},{"by":"level","key":"E","n":2162,"pct":[1.0,9.3,89.7],"positive":89.7},{"by":"level","key":"M","n":1764,"pct":[1.6,18.1,80.3],"positive":80.3},{"by":"level","key":"H","n":1882,"pct":[1.8,14.9,83.3],"positive":83.3},{"by":"role","key":"principal","n":245,"positive":90.2},{"by":"role","key":"general","n":5315,"positive":84.4},{"by":"role","key":"eeteacher","n":248,"positive":87.5}],
+    "invasive":[{"by":"all","key":"all","n":5808,"pct":[0.4,5.6,94.0],"positive":94.0},{"by":"level","key":"E","n":2162,"pct":[0.4,3.6,96.1],"positive":96.1},{"by":"level","key":"M","n":1764,"pct":[0.5,7.1,92.4],"positive":92.4},{"by":"level","key":"H","n":1882,"pct":[0.4,6.5,93.0],"positive":93.0},{"by":"role","key":"principal","n":245,"positive":94.3},{"by":"role","key":"general","n":5315,"positive":93.9},{"by":"role","key":"eeteacher","n":248,"positive":95.2}],
+    "neutral":[{"by":"all","key":"all","n":5808,"pct":[0.2,9.7,90.0],"positive":90.0},{"by":"level","key":"E","n":2162,"pct":[0.2,7.6,92.2],"positive":92.2},{"by":"level","key":"M","n":1764,"pct":[0.2,11.2,88.6],"positive":88.6},{"by":"level","key":"H","n":1882,"pct":[0.3,10.8,88.9],"positive":88.9},{"by":"role","key":"principal","n":245,"positive":95.5},{"by":"role","key":"general","n":5315,"positive":89.6},{"by":"role","key":"eeteacher","n":248,"positive":94.4}],
+    "renewable":[{"by":"all","key":"all","n":5808,"pct":[0.3,3.9,95.8],"positive":95.8},{"by":"level","key":"E","n":2162,"pct":[0.1,3.2,96.6],"positive":96.6},{"by":"level","key":"M","n":1764,"pct":[0.5,4.9,94.6],"positive":94.6},{"by":"level","key":"H","n":1882,"pct":[0.4,3.6,96.0],"positive":96.0},{"by":"role","key":"principal","n":245,"positive":99.2},{"by":"role","key":"general","n":5315,"positive":95.6},{"by":"role","key":"eeteacher","n":248,"positive":96.8}],
+    "footprint":[{"by":"all","key":"all","n":5808,"pct":[5.3,20.3,74.3],"positive":74.3},{"by":"level","key":"E","n":2162,"pct":[1.8,11.8,86.4],"positive":86.4},{"by":"level","key":"M","n":1764,"pct":[7.1,25.2,67.7],"positive":67.7},{"by":"level","key":"H","n":1882,"pct":[7.8,25.6,66.6],"positive":66.6},{"by":"role","key":"principal","n":245,"positive":75.1},{"by":"role","key":"general","n":5315,"positive":73.9},{"by":"role","key":"eeteacher","n":248,"positive":82.3}],
+    "zerowaste":[{"by":"all","key":"all","n":5808,"pct":[8.7,18.6,72.7],"positive":72.7},{"by":"level","key":"E","n":2162,"pct":[6.1,15.7,78.2],"positive":78.2},{"by":"level","key":"M","n":1764,"pct":[9.8,19.7,70.5],"positive":70.5},{"by":"level","key":"H","n":1882,"pct":[10.7,20.9,68.4],"positive":68.4},{"by":"role","key":"principal","n":245,"positive":55.1},{"by":"role","key":"general","n":5315,"positive":73.2},{"by":"role","key":"eeteacher","n":248,"positive":78.2}],
+    "circular":[{"by":"all","key":"all","n":5808,"pct":[8.1,35.7,56.2],"positive":56.2},{"by":"level","key":"E","n":2162,"pct":[7.4,34.6,58.1],"positive":58.1},{"by":"level","key":"M","n":1764,"pct":[8.8,37.2,54.0],"positive":54.0},{"by":"level","key":"H","n":1882,"pct":[8.2,35.5,56.2],"positive":56.2},{"by":"role","key":"principal","n":245,"positive":67.8},{"by":"role","key":"general","n":5315,"positive":55.3},{"by":"role","key":"eeteacher","n":248,"positive":64.9}],
+    "sdgs":[{"by":"all","key":"all","n":5808,"pct":[5.9,28.3,65.7],"positive":65.7},{"by":"level","key":"E","n":2162,"pct":[5.0,27.7,67.3],"positive":67.3},{"by":"level","key":"M","n":1764,"pct":[6.6,30.9,62.5],"positive":62.5},{"by":"level","key":"H","n":1882,"pct":[6.4,26.6,67.0],"positive":67.0},{"by":"role","key":"principal","n":245,"positive":68.6},{"by":"role","key":"general","n":5315,"positive":65.7},{"by":"role","key":"eeteacher","n":248,"positive":63.3}],
+    "upcycle":[{"by":"all","key":"all","n":5808,"pct":[3.2,13.8,83.0],"positive":83.0},{"by":"level","key":"E","n":2162,"pct":[2.4,11.4,86.2],"positive":86.2},{"by":"level","key":"M","n":1764,"pct":[3.2,14.3,82.5],"positive":82.5},{"by":"level","key":"H","n":1882,"pct":[4.0,16.2,79.9],"positive":79.9},{"by":"role","key":"principal","n":245,"positive":71.4},{"by":"role","key":"general","n":5315,"positive":83.4},{"by":"role","key":"eeteacher","n":248,"positive":85.5}],
+    "esg":[{"by":"all","key":"all","n":5808,"pct":[18.8,36.8,44.4],"positive":44.4},{"by":"level","key":"E","n":2162,"pct":[21.8,38.7,39.5],"positive":39.5},{"by":"level","key":"M","n":1764,"pct":[21.0,41.7,37.3],"positive":37.3},{"by":"level","key":"H","n":1882,"pct":[13.3,30.1,56.6],"positive":56.6},{"by":"role","key":"principal","n":245,"positive":51.8},{"by":"role","key":"general","n":5315,"positive":44.0},{"by":"role","key":"eeteacher","n":248,"positive":44.4}]
+   }},
+
+  {"qid":"T06","label":"환경교육 교수학습 역량","short":"교수학습 역량","section":"교수학습 경험",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자",
+   "items":[
+    {"id":"1","label":"환경교육 관련 수업에 적용 가능한 교수학습방법 인지","reverse":false},
+    {"id":"2","label":"수업 활용 가능한 환경 관련 교수학습 자료 제작","reverse":false},
+    {"id":"3","label":"환경교육 내용을 수업에 적합하게 재구성 가능","reverse":false},
+    {"id":"4","label":"환경문제를 다루는 수업에서 학생들의 흥미 유발 가능","reverse":false},
+    {"id":"5","label":"환경문제 핵심 내용/쟁점을 학생들에게 이해시킬 수 있음","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-8","pdf":65}],
+   "notes":"5개 항목 전체 평균 3.71점(그림 표기). 교원 전용 문항으로 학생/교원 비교표 없음(sd 미공표).",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":5808,"mean":3.61},{"by":"level","key":"E","n":2162,"mean":3.85},{"by":"level","key":"M","n":1764,"mean":3.52},{"by":"level","key":"H","n":1882,"mean":3.42},{"by":"role","key":"principal","n":245,"mean":3.88},{"by":"role","key":"general","n":5315,"mean":3.58},{"by":"role","key":"eeteacher","n":248,"mean":3.89}],
+    "2":[{"by":"all","key":"all","n":5808,"mean":3.54},{"by":"level","key":"E","n":2162,"mean":3.70},{"by":"level","key":"M","n":1764,"mean":3.46},{"by":"level","key":"H","n":1882,"mean":3.41},{"by":"role","key":"principal","n":245,"mean":3.64},{"by":"role","key":"general","n":5315,"mean":3.52},{"by":"role","key":"eeteacher","n":248,"mean":3.69}],
+    "3":[{"by":"all","key":"all","n":5808,"mean":3.73},{"by":"level","key":"E","n":2162,"mean":3.98},{"by":"level","key":"M","n":1764,"mean":3.63},{"by":"level","key":"H","n":1882,"mean":3.52},{"by":"role","key":"principal","n":245,"mean":3.82},{"by":"role","key":"general","n":5315,"mean":3.71},{"by":"role","key":"eeteacher","n":248,"mean":3.96}],
+    "4":[{"by":"all","key":"all","n":5808,"mean":3.80},{"by":"level","key":"E","n":2162,"mean":4.10},{"by":"level","key":"M","n":1764,"mean":3.66},{"by":"level","key":"H","n":1882,"mean":3.59},{"by":"role","key":"principal","n":245,"mean":4.00},{"by":"role","key":"general","n":5315,"mean":3.78},{"by":"role","key":"eeteacher","n":248,"mean":4.00}],
+    "5":[{"by":"all","key":"all","n":5808,"mean":3.90},{"by":"level","key":"E","n":2162,"mean":4.14},{"by":"level","key":"M","n":1764,"mean":3.76},{"by":"level","key":"H","n":1882,"mean":3.75},{"by":"role","key":"principal","n":245,"mean":4.12},{"by":"role","key":"general","n":5315,"mean":3.88},{"by":"role","key":"eeteacher","n":248,"mean":4.07}]
+   }},
+
+  {"qid":"T07","label":"환경교육 운영","short":"환경교육 운영","section":"교수학습 경험",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자",
+   "items":[
+    {"id":"1","label":"환경과 인간 상호 영향 교육","reverse":false},
+    {"id":"2","label":"전 지구적 환경문제 심각성 교육","reverse":false},
+    {"id":"3","label":"환경문제 해결 관련 지식 및 내용 교육","reverse":false},
+    {"id":"4","label":"환경문제 관련 다양한 사례 교육","reverse":false},
+    {"id":"5","label":"환경문제에 관한 관심과 흥미 형성","reverse":false},
+    {"id":"6","label":"환경문제 해결을 위한 책임/역할 관련 의식 제고","reverse":false},
+    {"id":"7","label":"환경 관련 정보 활용 방법 교육","reverse":false},
+    {"id":"8","label":"환경문제 관련 의사소통 능력 향상 교육","reverse":false},
+    {"id":"9","label":"교육 내용 일상생활 적용 유도","reverse":false},
+    {"id":"10","label":"지역사회 환경문제 참여 기회 제공","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-9","pdf":66},{"ref":"표 2-3-35~44","pdf":98}],
+   "notes":"문B7(2024년 3월~현재 기준). 10개 항목 전체 평균 3.91점. 전체·학교급 평균은 그림과 표 2-3-35~44 교원 행이 일치, sd는 표. 교원 구분 평균은 그림 2-2-9.",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":5808,"mean":4.04,"sd":0.79},{"by":"level","key":"E","n":2162,"mean":4.31,"sd":0.69},{"by":"level","key":"M","n":1764,"mean":3.98,"sd":0.75},{"by":"level","key":"H","n":1882,"mean":3.78,"sd":0.84},{"by":"role","key":"principal","n":245,"mean":4.13},{"by":"role","key":"general","n":5315,"mean":4.02},{"by":"role","key":"eeteacher","n":248,"mean":4.22}],
+    "2":[{"by":"all","key":"all","n":5808,"mean":3.99,"sd":0.82},{"by":"level","key":"E","n":2162,"mean":4.21,"sd":0.75},{"by":"level","key":"M","n":1764,"mean":3.91,"sd":0.81},{"by":"level","key":"H","n":1882,"mean":3.80,"sd":0.85},{"by":"role","key":"principal","n":245,"mean":4.07},{"by":"role","key":"general","n":5315,"mean":3.97},{"by":"role","key":"eeteacher","n":248,"mean":4.17}],
+    "3":[{"by":"all","key":"all","n":5808,"mean":4.03,"sd":0.80},{"by":"level","key":"E","n":2162,"mean":4.29,"sd":0.71},{"by":"level","key":"M","n":1764,"mean":3.95,"sd":0.78},{"by":"level","key":"H","n":1882,"mean":3.80,"sd":0.84},{"by":"role","key":"principal","n":245,"mean":4.21},{"by":"role","key":"general","n":5315,"mean":4.02},{"by":"role","key":"eeteacher","n":248,"mean":4.16}],
+    "4":[{"by":"all","key":"all","n":5808,"mean":3.96,"sd":0.84},{"by":"level","key":"E","n":2162,"mean":4.21,"sd":0.75},{"by":"level","key":"M","n":1764,"mean":3.89,"sd":0.82},{"by":"level","key":"H","n":1882,"mean":3.73,"sd":0.87},{"by":"role","key":"principal","n":245,"mean":4.10},{"by":"role","key":"general","n":5315,"mean":3.94},{"by":"role","key":"eeteacher","n":248,"mean":4.13}],
+    "5":[{"by":"all","key":"all","n":5808,"mean":3.96,"sd":0.86},{"by":"level","key":"E","n":2162,"mean":4.27,"sd":0.73},{"by":"level","key":"M","n":1764,"mean":3.88,"sd":0.83},{"by":"level","key":"H","n":1882,"mean":3.69,"sd":0.91},{"by":"role","key":"principal","n":245,"mean":4.17},{"by":"role","key":"general","n":5315,"mean":3.95},{"by":"role","key":"eeteacher","n":248,"mean":4.10}],
+    "6":[{"by":"all","key":"all","n":5808,"mean":3.96,"sd":0.84},{"by":"level","key":"E","n":2162,"mean":4.20,"sd":0.77},{"by":"level","key":"M","n":1764,"mean":3.90,"sd":0.82},{"by":"level","key":"H","n":1882,"mean":3.73,"sd":0.88},{"by":"role","key":"principal","n":245,"mean":4.10},{"by":"role","key":"general","n":5315,"mean":3.94},{"by":"role","key":"eeteacher","n":248,"mean":4.09}],
+    "7":[{"by":"all","key":"all","n":5808,"mean":3.79,"sd":0.87},{"by":"level","key":"E","n":2162,"mean":4.00,"sd":0.84},{"by":"level","key":"M","n":1764,"mean":3.74,"sd":0.83},{"by":"level","key":"H","n":1882,"mean":3.59,"sd":0.88},{"by":"role","key":"principal","n":245,"mean":4.05},{"by":"role","key":"general","n":5315,"mean":3.78},{"by":"role","key":"eeteacher","n":248,"mean":3.71}],
+    "8":[{"by":"all","key":"all","n":5808,"mean":3.79,"sd":0.87},{"by":"level","key":"E","n":2162,"mean":4.00,"sd":0.83},{"by":"level","key":"M","n":1764,"mean":3.74,"sd":0.83},{"by":"level","key":"H","n":1882,"mean":3.61,"sd":0.90},{"by":"role","key":"principal","n":245,"mean":4.00},{"by":"role","key":"general","n":5315,"mean":3.78},{"by":"role","key":"eeteacher","n":248,"mean":3.78}],
+    "9":[{"by":"all","key":"all","n":5808,"mean":3.96,"sd":0.84},{"by":"level","key":"E","n":2162,"mean":4.21,"sd":0.76},{"by":"level","key":"M","n":1764,"mean":3.91,"sd":0.82},{"by":"level","key":"H","n":1882,"mean":3.72,"sd":0.86},{"by":"role","key":"principal","n":245,"mean":4.05},{"by":"role","key":"general","n":5315,"mean":3.95},{"by":"role","key":"eeteacher","n":248,"mean":4.09}],
+    "10":[{"by":"all","key":"all","n":5808,"mean":3.66,"sd":0.95},{"by":"level","key":"E","n":2162,"mean":3.83,"sd":0.91},{"by":"level","key":"M","n":1764,"mean":3.64,"sd":0.91},{"by":"level","key":"H","n":1882,"mean":3.49,"sd":0.98},{"by":"role","key":"principal","n":245,"mean":3.88},{"by":"role","key":"general","n":5315,"mean":3.66},{"by":"role","key":"eeteacher","n":248,"mean":3.60}]
+   }},
+
+  {"qid":"T08","label":"환경문제 관련 관심도","short":"환경문제 관심도","section":"교수학습 경험",
+   "type":"likert5","scale":"interest5","positive":[3,4],"baseKind":"응답자",
+   "source":[{"ref":"그림 2-2-10","pdf":67},{"ref":"표 2-3-19","pdf":90}],
+   "notes":"문B8(환경문제 관련 기사나 자료를 관심 있게 찾아보는지). pct 순서 [전혀 그렇지 않다, 그렇지 않다, 보통이다, 그렇다, 매우 그렇다]; 그림 2-3-5(PDF 90) 교원 막대(0.6/4.6)와 일치. 평균 3.84와 정합.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[0.6,4.6,25.9,48.1,20.8],"mean":3.84,"sd":0.82,"positive":68.9},
+    {"by":"level","key":"E","n":2162,"mean":3.97,"sd":0.79,"positive":75.4},
+    {"by":"level","key":"M","n":1764,"mean":3.78,"sd":0.82,"positive":66.4},
+    {"by":"level","key":"H","n":1882,"mean":3.74,"sd":0.84,"positive":63.6},
+    {"by":"role","key":"principal","n":245,"positive":84.1},
+    {"by":"role","key":"general","n":5315,"positive":68.2},
+    {"by":"role","key":"eeteacher","n":248,"positive":68.5}
+   ]},
+
+  {"qid":"T09","label":"환경교육 자료 습득 경로","short":"자료 습득 경로","section":"교수학습 경험",
+   "type":"rank","baseKind":"응답자",
+   "categories":["미디어, 포털사이트, SNS 등","교원 연수","학습공동체 또는 교원 모임","정부 기관의 공문, 홈페이지 등","유관기관의 홍보물 등","주변 지인","관련 활동 없음"],
+   "source":[{"ref":"그림 2-2-11","pdf":68}],
+   "notes":"1+2순위 합 198.0은 '관련 활동 없음'(2.0%) 응답자가 2순위를 선택하지 않아 생기는 정상 차이.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[60.8,11.9,9.2,7.7,6.6,1.7,2.0],"r12":[79.8,25.3,19.4,27.0,30.3,14.2,2.0]},
+    {"by":"level","key":"E","n":2162,"r1":[54.6,12.0,17.8,6.3,6.1,2.1,1.1]},
+    {"by":"level","key":"M","n":1764,"r1":[63.3,12.3,4.9,9.0,6.8,1.4,2.4]},
+    {"by":"level","key":"H","n":1882,"r1":[65.6,11.6,3.5,8.2,7.0,1.4,2.8]},
+    {"by":"role","key":"principal","n":245,"r1":[61.2,23.3,3.7,6.1,4.9,0.4,0.4]},
+    {"by":"role","key":"general","n":5315,"r1":[61.0,11.4,9.5,7.6,6.6,1.7,2.1]},
+    {"by":"role","key":"eeteacher","n":248,"r1":[56.9,12.5,7.7,11.7,8.5,1.6,1.2]}
+   ]},
+
+  {"qid":"T10","label":"학교환경교육에 가장 지원이 필요한 교수 학습자료","short":"지원 필요 교수학습자료","section":"교수학습 경험",
+   "type":"rank","baseKind":"응답자",
+   "categories":["온라인 환경교육 콘텐츠","교육과정 연계의 교수 학습법 관련 자료","환경교육 교육과정 편성, 운영 가이드라인","환경교육 교과서","환경교육 관련 도서","환경교육 교수 학습 방법 관련 교사 지도서","환경교육 우수 운영 학교의 사례집"],
+   "source":[{"ref":"그림 2-2-12","pdf":69}],
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[42.9,15.9,13.0,9.6,7.5,7.4,3.7],"r12":[65.2,43.5,24.3,15.0,20.6,17.8,13.5]},
+    {"by":"level","key":"E","n":2162,"r1":[50.9,13.5,9.7,9.8,9.6,4.8,1.9]},
+    {"by":"level","key":"M","n":1764,"r1":[38.2,18.1,14.9,10.4,4.7,9.1,4.7]},
+    {"by":"level","key":"H","n":1882,"r1":[38.3,16.6,15.0,8.6,7.9,8.7,4.8]},
+    {"by":"role","key":"principal","n":245,"r1":[40.8,26.5,15.9,4.9,3.3,6.5,2.0]},
+    {"by":"role","key":"general","n":5315,"r1":[43.2,15.4,12.6,9.8,7.8,7.4,3.7]},
+    {"by":"role","key":"eeteacher","n":248,"r1":[39.9,15.3,18.5,10.1,5.2,6.9,4.0]}
+   ]},
+
+  {"qid":"T11","label":"환경교육 관련 교원 연수 및 교원역량 프로그램 참여 횟수","short":"연수 참여 횟수","section":"교수학습 경험",
+   "type":"single","positive":[1,2,3,4],"baseKind":"응답자",
+   "categories":["받은 적 없음","1회","2회","3회","4회 이상"],
+   "source":[{"ref":"그림 2-2-13","pdf":70}],
+   "notes":"문10. positive=참여 경험 있음(1회 이상) %. 교원 구분별로는 '받은 적 없음' 비율만 공표(교장(감) 18.0%, 부장/일반교원 49.3%, 담당교사 42.3%)되어 분포(pct) 대신 positive=100-없음(82.0/50.7/57.7)으로 기재; 그림의 n=44/2,622/105는 해당 구분에서 '없음'이라고 답한 인원수(각 구분 n 245/5,315/248의 18.0/49.3/42.3%와 일치). 전체 positive 52.3은 100-47.7(보기 합 52.2는 반올림 차이)이며 참여 교원 3,037명(T11B·T12의 base)과 정합.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[47.7,30.1,13.8,4.0,4.3],"positive":52.3},
+    {"by":"role","key":"principal","n":245,"positive":82.0},
+    {"by":"role","key":"general","n":5315,"positive":50.7},
+    {"by":"role","key":"eeteacher","n":248,"positive":57.7}
+   ]},
+
+  {"qid":"T11B","label":"참여한 환경교육 연수 혹은 프로그램의 운영기관","short":"연수 운영기관","section":"교수학습 경험",
+   "type":"multi","baseKind":"응답자","base":{"qid":"T11","in":[1,2,3,4]},
+   "categories":["시도교육청","소속 학교","사설 연수기관","정부 기관","전문기관","학교 밖 교원 연구회나 교과 연구회 등"],
+   "source":[{"ref":"그림 2-2-13","pdf":70}],
+   "notes":"문11. Base: 환경교육 관련 연수/프로그램 참여 교원(n=3,037). 복수응답.",
+   "rows":[
+    {"by":"all","key":"all","n":3037,"pct":[45.3,27.6,27.4,13.1,11.2,10.5]}
+   ]},
+
+  {"qid":"T12","label":"참여한 환경교육 연수/프로그램 효과성","short":"연수 효과성","section":"교수학습 경험",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자","base":{"qid":"T11","in":[1,2,3,4]},
+   "items":[
+    {"id":"1","label":"전반적 지식과 이해 증진","reverse":false},
+    {"id":"2","label":"환경 및 환경문제 관심/흥미 증대","reverse":false},
+    {"id":"3","label":"연수 내용 수업/학교 계획 반영","reverse":false},
+    {"id":"4","label":"환경교육 최근 동향 파악 및 다양한 정보수집 도움","reverse":false},
+    {"id":"5","label":"동료 교사 교류 및 협력 도움","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-14","pdf":71}],
+   "notes":"Base: 환경교육 관련 연수/프로그램 참여 교원(n=3,037). 5개 항목 평균 3.92점. 학교급·교원 구분별 n은 미공표.",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":3037,"mean":4.06},{"by":"level","key":"E","mean":4.17},{"by":"level","key":"M","mean":4.02},{"by":"level","key":"H","mean":3.94},{"by":"role","key":"principal","mean":4.28},{"by":"role","key":"general","mean":4.04},{"by":"role","key":"eeteacher","mean":4.12}],
+    "2":[{"by":"all","key":"all","n":3037,"mean":4.09},{"by":"level","key":"E","mean":4.19},{"by":"level","key":"M","mean":4.08},{"by":"level","key":"H","mean":3.95},{"by":"role","key":"principal","mean":4.34},{"by":"role","key":"general","mean":4.07},{"by":"role","key":"eeteacher","mean":4.08}],
+    "3":[{"by":"all","key":"all","n":3037,"mean":3.79},{"by":"level","key":"E","mean":3.98},{"by":"level","key":"M","mean":3.73},{"by":"level","key":"H","mean":3.59},{"by":"role","key":"principal","mean":3.91},{"by":"role","key":"general","mean":3.77},{"by":"role","key":"eeteacher","mean":3.87}],
+    "4":[{"by":"all","key":"all","n":3037,"mean":3.97},{"by":"level","key":"E","mean":4.08},{"by":"level","key":"M","mean":3.95},{"by":"level","key":"H","mean":3.82},{"by":"role","key":"principal","mean":4.19},{"by":"role","key":"general","mean":3.95},{"by":"role","key":"eeteacher","mean":4.06}],
+    "5":[{"by":"all","key":"all","n":3037,"mean":3.71},{"by":"level","key":"E","mean":3.87},{"by":"level","key":"M","mean":3.67},{"by":"level","key":"H","mean":3.54},{"by":"role","key":"principal","mean":3.88},{"by":"role","key":"general","mean":3.70},{"by":"role","key":"eeteacher","mean":3.66}]
+   }},
+
+  {"qid":"T13","label":"가장 효과적인 환경교육 운영 방식","short":"효과적 운영 방식","section":"교수학습 경험",
+   "type":"rank","baseKind":"응답자",
+   "categories":["다양한 수업과 연계하여 운영","교과 간 협업을 통한 주제 중심의 통합수업","창의적 체험 활동과 연계 운영","환경 관련 기관과 시설을 통한 체험 활동","환경교과 개설 및 내실 있는 운영","환경친화적 생활 습관 습득","환경교육 관련 행사","지역사회나 민간 단체와 연계한 프로그램 운영","환경 관련 방과후학교 프로그램 운영"],
+   "source":[{"ref":"그림 2-2-15","pdf":72}],
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[19.1,15.8,14.6,14.3,13.1,12.2,5.6,4.0,1.2],"r12":[31.8,27.8,28.2,29.7,17.8,30.1,17.4,13.3,3.9]},
+    {"by":"level","key":"E","n":2162,"r1":[22.2,20.3,10.4,14.9,10.5,13.3,3.1,4.4,0.9]},
+    {"by":"level","key":"M","n":1764,"r1":[19.6,12.9,16.3,13.8,14.1,10.7,7.7,3.8,1.2]},
+    {"by":"level","key":"H","n":1882,"r1":[15.2,13.2,17.8,14.1,15.2,12.4,6.6,3.9,1.4]},
+    {"by":"role","key":"principal","n":245,"r1":[17.1,25.3,6.9,15.5,12.7,15.5,2.9,3.3,0.8]},
+    {"by":"role","key":"general","n":5315,"r1":[19.3,15.2,15.0,14.3,13.0,12.3,5.7,4.0,1.2]},
+    {"by":"role","key":"eeteacher","n":248,"r1":[16.9,17.7,13.7,14.1,17.3,7.7,6.0,6.0,0.4]}
+   ]},
+
+  {"qid":"T14","label":"환경교육 수업방법 활용 경험","short":"수업방법 활용 경험","section":"교수학습 경험",
+   "type":"item_binary","baseKind":"응답자",
+   "items":[
+    {"id":"lecture","label":"강의"},
+    {"id":"debate","label":"토론"},
+    {"id":"project","label":"프로젝트"},
+    {"id":"experiment","label":"실험/실습"},
+    {"id":"school_exp","label":"학교 내 환경 관련 체험 활동"},
+    {"id":"outside_exp","label":"학교 외 시설, 장소의 방문 체험"},
+    {"id":"online","label":"온라인 교육"}
+   ],
+   "source":[{"ref":"그림 2-2-16","pdf":73},{"ref":"표 2-3-21~27","pdf":92}],
+   "notes":"문B13-1. positive=경험 있음 %. 전체·학교급은 그림 2-2-16과 표 2-3-21~27 교원 행이 일치(표에서 school_exp=체험, outside_exp=지역사회 탐방 및 체험).",
+   "itemRows":{
+    "lecture":[{"by":"all","key":"all","n":5808,"positive":73.1},{"by":"level","key":"E","n":2162,"positive":90.9},{"by":"level","key":"M","n":1764,"positive":66.3},{"by":"level","key":"H","n":1882,"positive":59.1},{"by":"role","key":"principal","n":245,"positive":73.5},{"by":"role","key":"general","n":5315,"positive":72.6},{"by":"role","key":"eeteacher","n":248,"positive":83.9}],
+    "debate":[{"by":"all","key":"all","n":5808,"positive":59.2},{"by":"level","key":"E","n":2162,"positive":68.6},{"by":"level","key":"M","n":1764,"positive":50.9},{"by":"level","key":"H","n":1882,"positive":56.1},{"by":"role","key":"principal","n":245,"positive":63.7},{"by":"role","key":"general","n":5315,"positive":58.5},{"by":"role","key":"eeteacher","n":248,"positive":69.0}],
+    "project":[{"by":"all","key":"all","n":5808,"positive":55.2},{"by":"level","key":"E","n":2162,"positive":62.7},{"by":"level","key":"M","n":1764,"positive":46.8},{"by":"level","key":"H","n":1882,"positive":54.6},{"by":"role","key":"principal","n":245,"positive":63.3},{"by":"role","key":"general","n":5315,"positive":54.4},{"by":"role","key":"eeteacher","n":248,"positive":65.3}],
+    "experiment":[{"by":"all","key":"all","n":5808,"positive":40.5},{"by":"level","key":"E","n":2162,"positive":57.9},{"by":"level","key":"M","n":1764,"positive":28.9},{"by":"level","key":"H","n":1882,"positive":31.6},{"by":"role","key":"principal","n":245,"positive":53.9},{"by":"role","key":"general","n":5315,"positive":39.5},{"by":"role","key":"eeteacher","n":248,"positive":49.2}],
+    "school_exp":[{"by":"all","key":"all","n":5808,"positive":59.3},{"by":"level","key":"E","n":2162,"positive":83.3},{"by":"level","key":"M","n":1764,"positive":47.5},{"by":"level","key":"H","n":1882,"positive":42.7},{"by":"role","key":"principal","n":245,"positive":82.4},{"by":"role","key":"general","n":5315,"positive":57.5},{"by":"role","key":"eeteacher","n":248,"positive":74.2}],
+    "outside_exp":[{"by":"all","key":"all","n":5808,"positive":45.8},{"by":"level","key":"E","n":2162,"positive":59.1},{"by":"level","key":"M","n":1764,"positive":40.1},{"by":"level","key":"H","n":1882,"positive":35.9},{"by":"role","key":"principal","n":245,"positive":73.1},{"by":"role","key":"general","n":5315,"positive":44.3},{"by":"role","key":"eeteacher","n":248,"positive":51.6}],
+    "online":[{"by":"all","key":"all","n":5808,"positive":65.4},{"by":"level","key":"E","n":2162,"positive":77.6},{"by":"level","key":"M","n":1764,"positive":59.6},{"by":"level","key":"H","n":1882,"positive":56.7},{"by":"role","key":"principal","n":245,"positive":68.2},{"by":"role","key":"general","n":5315,"positive":64.9},{"by":"role","key":"eeteacher","n":248,"positive":73.4}]
+   }},
+
+  {"qid":"T14E","label":"환경교육 수업방식별 활용 효과성","short":"수업방식별 효과성","section":"교수학습 경험",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자","base":{"qid":"T14","sameItem":true,"eq":1},
+   "items":[
+    {"id":"lecture","label":"강의","reverse":false},
+    {"id":"debate","label":"토론","reverse":false},
+    {"id":"project","label":"프로젝트","reverse":false},
+    {"id":"experiment","label":"실험/실습","reverse":false},
+    {"id":"school_exp","label":"학교 내 환경 관련 체험 활동","reverse":false},
+    {"id":"outside_exp","label":"학교 외 시설, 장소의 방문 체험","reverse":false},
+    {"id":"online","label":"온라인 교육","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-17","pdf":74},{"ref":"표 2-3-28~34","pdf":95}],
+   "notes":"문B13-2. Base: 각 수업을 경험해 본 교원(그림 표기 n=5,442는 하나 이상 경험한 교원 수). 항목별 n·sd는 표 2-3-28~34 교원 행. 보정: 표 2-3-32(실험/실습) 초등 교원 n이 '2,863'으로 인쇄되어 있으나 전체 2,355 = 초+중(509)+고(594)에서 초 = 1,252이며 T14 초등 경험률 57.9%×2,162 = 1,252와 일치하므로 1,252로 기재. 학교급 평균은 그림과 표가 일치, 교원 구분 평균은 그림 2-2-17.",
+   "itemRows":{
+    "lecture":[{"by":"all","key":"all","n":4247,"mean":3.60,"sd":0.70},{"by":"level","key":"E","n":1966,"mean":3.73,"sd":0.67},{"by":"level","key":"M","n":1169,"mean":3.50,"sd":0.68},{"by":"level","key":"H","n":1112,"mean":3.46,"sd":0.72},{"by":"role","key":"principal","mean":3.38},{"by":"role","key":"general","mean":3.60},{"by":"role","key":"eeteacher","mean":3.69}],
+    "debate":[{"by":"all","key":"all","n":3438,"mean":4.08,"sd":0.64},{"by":"level","key":"E","n":1484,"mean":4.12,"sd":0.60},{"by":"level","key":"M","n":898,"mean":4.04,"sd":0.67},{"by":"level","key":"H","n":1056,"mean":4.05,"sd":0.67},{"by":"role","key":"principal","mean":4.15},{"by":"role","key":"general","mean":4.07},{"by":"role","key":"eeteacher","mean":4.15}],
+    "project":[{"by":"all","key":"all","n":3208,"mean":4.34,"sd":0.65},{"by":"level","key":"E","n":1355,"mean":4.44,"sd":0.63},{"by":"level","key":"M","n":825,"mean":4.28,"sd":0.66},{"by":"level","key":"H","n":1028,"mean":4.27,"sd":0.67},{"by":"role","key":"principal","mean":4.52},{"by":"role","key":"general","mean":4.33},{"by":"role","key":"eeteacher","mean":4.38}],
+    "experiment":[{"by":"all","key":"all","n":2355,"mean":4.32,"sd":0.68},{"by":"level","key":"E","n":1252,"mean":4.37,"sd":0.68},{"by":"level","key":"M","n":509,"mean":4.25,"sd":0.67},{"by":"level","key":"H","n":594,"mean":4.28,"sd":0.68},{"by":"role","key":"principal","mean":4.52},{"by":"role","key":"general","mean":4.30},{"by":"role","key":"eeteacher","mean":4.37}],
+    "school_exp":[{"by":"all","key":"all","n":3442,"mean":4.27,"sd":0.72},{"by":"level","key":"E","n":1800,"mean":4.32,"sd":0.73},{"by":"level","key":"M","n":838,"mean":4.21,"sd":0.70},{"by":"level","key":"H","n":804,"mean":4.20,"sd":0.72},{"by":"role","key":"principal","mean":4.41},{"by":"role","key":"general","mean":4.24},{"by":"role","key":"eeteacher","mean":4.47}],
+    "outside_exp":[{"by":"all","key":"all","n":2660,"mean":4.25,"sd":0.71},{"by":"level","key":"E","n":1277,"mean":4.34,"sd":0.70},{"by":"level","key":"M","n":708,"mean":4.20,"sd":0.68},{"by":"level","key":"H","n":675,"mean":4.14,"sd":0.73},{"by":"role","key":"principal","mean":4.45},{"by":"role","key":"general","mean":4.23},{"by":"role","key":"eeteacher","mean":4.40}],
+    "online":[{"by":"all","key":"all","n":3796,"mean":3.78,"sd":0.74},{"by":"level","key":"E","n":1678,"mean":3.93,"sd":0.68},{"by":"level","key":"M","n":1051,"mean":3.72,"sd":0.73},{"by":"level","key":"H","n":1067,"mean":3.59,"sd":0.79},{"by":"role","key":"principal","mean":3.81},{"by":"role","key":"general","mean":3.77},{"by":"role","key":"eeteacher","mean":3.92}]
+   }},
+
+  {"qid":"T15","label":"학교환경교육에 대한 만족도","short":"학교환경교육 만족도","section":"성과와 개선",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자",
+   "items":[
+    {"id":"1","label":"전반적 만족도","reverse":false},
+    {"id":"2","label":"학교환경교육의 원활한 운영","reverse":false},
+    {"id":"3","label":"학교환경교육의 학습자 경험, 변화 측면 효과성","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-18","pdf":75},{"ref":"표 2-3-45~47","pdf":102}],
+   "notes":"문B14(2024년 3월~현재 기준). 3개 항목 평균 3.72점. 항목3은 표 2-3-47에서 '학교환경교육을 통해 새롭게 배우거나 성장하는 경험 습득'으로 표기. sd는 표 2-3-45~47 교원 행.",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":5808,"mean":3.74,"sd":0.82},{"by":"level","key":"E","n":2162,"mean":4.02,"sd":0.75},{"by":"level","key":"M","n":1764,"mean":3.70,"sd":0.80},{"by":"level","key":"H","n":1882,"mean":3.47,"sd":0.83},{"by":"role","key":"principal","n":245,"mean":3.84},{"by":"role","key":"general","n":5315,"mean":3.74},{"by":"role","key":"eeteacher","n":248,"mean":3.81}],
+    "2":[{"by":"all","key":"all","n":5808,"mean":3.72,"sd":0.87},{"by":"level","key":"E","n":2162,"mean":4.02,"sd":0.79},{"by":"level","key":"M","n":1764,"mean":3.67,"sd":0.85},{"by":"level","key":"H","n":1882,"mean":3.43,"sd":0.87},{"by":"role","key":"principal","n":245,"mean":3.84},{"by":"role","key":"general","n":5315,"mean":3.71},{"by":"role","key":"eeteacher","n":248,"mean":3.75}],
+    "3":[{"by":"all","key":"all","n":5808,"mean":3.71,"sd":0.86},{"by":"level","key":"E","n":2162,"mean":4.00,"sd":0.78},{"by":"level","key":"M","n":1764,"mean":3.66,"sd":0.83},{"by":"level","key":"H","n":1882,"mean":3.42,"sd":0.86},{"by":"role","key":"principal","n":245,"mean":3.82},{"by":"role","key":"general","n":5315,"mean":3.70},{"by":"role","key":"eeteacher","n":248,"mean":3.80}]
+   }},
+
+  {"qid":"T16","label":"학교환경교육의 현재 실행 수준에 영향을 준 요인","short":"실행 수준 영향 요인","section":"성과와 개선",
+   "type":"multi","baseKind":"응답자",
+   "categories":["교육청","교사","학교 내 구성원","학생","환경교육 담당 교사","관리자","기타"],
+   "source":[{"ref":"그림 2-2-19","pdf":76}],
+   "notes":"복수응답.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[43.5,42.9,42.8,42.5,38.8,26.3,1.2]},
+    {"by":"level","key":"E","n":2162,"pct":[47.3,46.1,44.7,41.7,39.5,27.4,1.3]},
+    {"by":"level","key":"M","n":1764,"pct":[42.7,40.4,41.0,40.5,41.6,24.7,0.7]},
+    {"by":"level","key":"H","n":1882,"pct":[39.7,41.7,42.3,45.3,35.5,26.5,1.5]},
+    {"by":"role","key":"principal","n":245,"pct":[55.5,35.1,59.2,46.5,56.3,43.7,0.4]},
+    {"by":"role","key":"general","n":5315,"pct":[42.8,43.2,42.1,42.1,37.9,25.3,1.3]},
+    {"by":"role","key":"eeteacher","n":248,"pct":[45.2,44.0,41.5,46.8,42.3,29.8,0.8]}
+   ]},
+
+  {"qid":"T17","label":"학교환경교육을 통해 나타난 전반적 변화","short":"전반적 변화","section":"성과와 개선",
+   "type":"item_likert5","scale":"likert5","baseKind":"응답자",
+   "items":[
+    {"id":"1","label":"학생들의 환경문제에 대한 관심 유발","reverse":false},
+    {"id":"2","label":"환경문제에 대해 여러 가지 의견을 서로 나누는 분위기 조성","reverse":false},
+    {"id":"3","label":"환경 관련 스스로 결정하고 실천하는 문화 형성","reverse":false},
+    {"id":"4","label":"교사들의 환경교육 참여 확대","reverse":false},
+    {"id":"5","label":"학교관리자의 환경교육 참여 확대","reverse":false},
+    {"id":"6","label":"교직원의 환경교육 운영 협조","reverse":false},
+    {"id":"7","label":"환경보호 실천을 위한 학교 전반의 협력 강화","reverse":false}
+   ],
+   "source":[{"ref":"그림 2-2-20","pdf":77},{"ref":"표 2-3-48~51","pdf":104}],
+   "notes":"문B15(2024년 3월~현재 기준). 7개 항목 평균 3.77점. sd는 학생/교원 공통 문항(1,2,3,7)만 표 2-3-48~51 교원 행에서 확보(표 2-3-51은 항목7에 대응, 학생 문항명 '학생/선생님 모두 환경보호 실천을 위해 서로 협력'). 항목 4~6은 교원 전용으로 sd 미공표.",
+   "itemRows":{
+    "1":[{"by":"all","key":"all","n":5808,"mean":3.78,"sd":0.75},{"by":"level","key":"E","n":2162,"mean":4.02,"sd":0.68},{"by":"level","key":"M","n":1764,"mean":3.71,"sd":0.73},{"by":"level","key":"H","n":1882,"mean":3.59,"sd":0.77},{"by":"role","key":"principal","n":245,"mean":3.91},{"by":"role","key":"general","n":5315,"mean":3.78},{"by":"role","key":"eeteacher","n":248,"mean":3.86}],
+    "2":[{"by":"all","key":"all","n":5808,"mean":3.68,"sd":0.82},{"by":"level","key":"E","n":2162,"mean":3.87,"sd":0.79},{"by":"level","key":"M","n":1764,"mean":3.60,"sd":0.79},{"by":"level","key":"H","n":1882,"mean":3.54,"sd":0.83},{"by":"role","key":"principal","n":245,"mean":3.79},{"by":"role","key":"general","n":5315,"mean":3.68},{"by":"role","key":"eeteacher","n":248,"mean":3.65}],
+    "3":[{"by":"all","key":"all","n":5808,"mean":3.67,"sd":0.80},{"by":"level","key":"E","n":2162,"mean":3.88,"sd":0.76},{"by":"level","key":"M","n":1764,"mean":3.60,"sd":0.78},{"by":"level","key":"H","n":1882,"mean":3.49,"sd":0.82},{"by":"role","key":"principal","n":245,"mean":3.81},{"by":"role","key":"general","n":5315,"mean":3.66},{"by":"role","key":"eeteacher","n":248,"mean":3.75}],
+    "4":[{"by":"all","key":"all","n":5808,"mean":3.72},{"by":"level","key":"E","n":2162,"mean":3.99},{"by":"level","key":"M","n":1764,"mean":3.66},{"by":"level","key":"H","n":1882,"mean":3.47},{"by":"role","key":"principal","n":245,"mean":3.83},{"by":"role","key":"general","n":5315,"mean":3.71},{"by":"role","key":"eeteacher","n":248,"mean":3.78}],
+    "5":[{"by":"all","key":"all","n":5808,"mean":3.79},{"by":"level","key":"E","n":2162,"mean":4.04},{"by":"level","key":"M","n":1764,"mean":3.78},{"by":"level","key":"H","n":1882,"mean":3.52},{"by":"role","key":"principal","n":245,"mean":4.08},{"by":"role","key":"general","n":5315,"mean":3.77},{"by":"role","key":"eeteacher","n":248,"mean":3.94}],
+    "6":[{"by":"all","key":"all","n":5808,"mean":3.93},{"by":"level","key":"E","n":2162,"mean":4.16},{"by":"level","key":"M","n":1764,"mean":3.91},{"by":"level","key":"H","n":1882,"mean":3.69},{"by":"role","key":"principal","n":245,"mean":4.13},{"by":"role","key":"general","n":5315,"mean":3.91},{"by":"role","key":"eeteacher","n":248,"mean":4.10}],
+    "7":[{"by":"all","key":"all","n":5808,"mean":3.84,"sd":0.81},{"by":"level","key":"E","n":2162,"mean":4.08,"sd":0.75},{"by":"level","key":"M","n":1764,"mean":3.79,"sd":0.79},{"by":"level","key":"H","n":1882,"mean":3.61,"sd":0.81},{"by":"role","key":"principal","n":245,"mean":4.02},{"by":"role","key":"general","n":5315,"mean":3.82},{"by":"role","key":"eeteacher","n":248,"mean":4.01}]
+   }},
+
+  {"qid":"T18","label":"향후 환경교육 확대에 대한 동의도","short":"환경교육 확대 동의","section":"성과와 개선",
+   "type":"likert5","scale":"agree5","positive":[3,4],"baseKind":"응답자",
+   "source":[{"ref":"그림 2-2-21","pdf":78},{"ref":"표 2-3-52","pdf":106}],
+   "notes":"문B16. pct 순서 [전혀 동의하지 않음, 별로 동의하지 않음, 보통, 어느 정도 동의함, 매우 동의함]. 그림 2-2-21(문16)에 '동의함 74.2%'로 인쇄되어 있으나 이는 학생 수치이며, 교원 동의율은 52.3+33.8=86.1%(그림 2-3-12·본문 PDF 106에서 확인). 평균 4.16과 정합.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"pct":[0.6,2.2,11.1,52.3,33.8],"mean":4.16,"sd":0.75,"positive":86.1},
+    {"by":"level","key":"E","n":2162,"mean":4.22,"sd":0.76},
+    {"by":"level","key":"M","n":1764,"mean":4.15,"sd":0.71},
+    {"by":"level","key":"H","n":1882,"mean":4.11,"sd":0.78}
+   ]},
+
+  {"qid":"T19","label":"범교과 학습 주제 중 현재 학교에서 강화해야 할 교육","short":"강화해야 할 교육","section":"성과와 개선",
+   "type":"rank","baseKind":"응답자",
+   "categories":["안전·건강교육","인성교육","진로교육","민주시민교육","인권교육","다문화교육","통일교육","독도교육","경제·금융교육","환경·지속가능발전교육"],
+   "source":[{"ref":"그림 2-2-21","pdf":78},{"ref":"표 2-3-53","pdf":108},{"ref":"표 2-3-54","pdf":108}],
+   "notes":"문B16-1, 3순위까지 선택. 보기 순서는 표 2-3-53/54(설문 보기 순). 그림 2-2-21(문16-1)은 응답률 내림차순으로 배열되어 있으며 수치는 표와 일치.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[10.0,47.2,4.0,7.7,2.1,1.3,0.4,0.4,4.7,22.1],"r123":[34.8,78.0,24.8,35.1,12.6,9.7,3.0,2.8,25.4,73.8]},
+    {"by":"level","key":"E","n":2162,"r1":[11.2,49.2,3.1,6.9,1.7,0.9,0.3,0.3,3.9,22.4],"r123":[36.6,79.4,22.2,35.8,10.9,8.9,2.4,2.6,23.0,78.2]},
+    {"by":"level","key":"M","n":1764,"r1":[9.5,48.9,3.6,7.4,2.4,1.6,0.3,0.5,4.6,21.1],"r123":[34.1,77.9,25.2,34.0,14.1,10.4,3.6,3.1,25.7,71.7]},
+    {"by":"level","key":"H","n":1882,"r1":[9.1,43.4,5.3,8.9,2.4,1.5,0.5,0.4,5.7,22.7],"r123":[33.4,76.6,27.4,35.3,13.2,9.9,3.0,2.6,27.8,70.7]}
+   ]},
+
+  {"qid":"T20","label":"학교환경교육에서 가장 중요하게 다루어져야 할 내용","short":"중요하게 다룰 내용","section":"성과와 개선",
+   "type":"rank","baseKind":"응답자",
+   "categories":["지구 생태환경·환경문제 등에 관한 다양한 지식","환경보전 및 환경문제에 관한 관심, 태도, 책임감 높이기","환경문제를 깊게 이해할 수 있는 창의적, 통합적 사고 능력","환경학습에 필요한 정보의 수집·이용 방법","환경보전 및 환경문제에 관한 문제 해결 방법","환경에 관해 다른 사람들과 소통하고 의견을 나누는 방법","환경문제 해결을 위한 직접적인 행동과 참여"],
+   "source":[{"ref":"그림 2-2-21","pdf":78},{"ref":"표 2-3-55","pdf":110},{"ref":"표 2-3-56","pdf":110}],
+   "notes":"문B17, 최대 2개 선택. 보기 순서·명칭은 표 2-3-55/56. 그림 2-2-21(문17)은 축약 명칭(예: '환경문제 해결을 위한 관심/태도/책임감 향상', '기후 위기 대응에 필요한 친환경적 행동/실천')과 내림차순 배열을 쓰며 수치는 표와 일치.",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[17.7,41.2,7.8,2.3,9.0,2.1,20.0],"r12":[24.8,66.2,16.8,6.0,27.0,7.7,51.4]},
+    {"by":"level","key":"E","n":2162,"r1":[16.5,43.2,6.3,2.1,7.7,2.0,22.2],"r12":[22.8,68.5,14.7,5.0,23.9,6.8,58.2]},
+    {"by":"level","key":"M","n":1764,"r1":[18.7,41.2,7.3,2.5,10.3,2.0,18.1],"r12":[26.6,65.9,16.2,6.7,29.2,7.3,48.1]},
+    {"by":"level","key":"H","n":1882,"r1":[18.2,38.7,10.1,2.5,9.2,2.2,19.1],"r12":[25.4,63.9,19.8,6.5,28.5,9.1,46.8]}
+   ]},
+
+  {"qid":"T21","label":"환경교육 활성화를 위해 학교 차원에서 필요한 여건 혹은 지원 사항","short":"학교 차원 필요 지원","section":"성과와 개선",
+   "type":"rank","baseKind":"응답자",
+   "categories":["학교환경교육 운영 기반 마련","지역 사회의 환경교육 자원 연계 활용","환경 과목 개설 및 내실화된 운영","동료 교사들의 관심과 협력, 학습 공동체 활성화","학교환경교육 관련 목표와 비전 수립","학교환경교육 관련 비교과 교육 과정 확대","학부모의 관심과 지지, 환경교육에 대한 인식 제고","학교관리자의 관심과 지지","교원역량 강화를 위한 연수 및 워크숍 참여 독려"],
+   "source":[{"ref":"그림 2-2-22","pdf":79}],
+   "notes":"문18. 보기 순서는 그림(1순위 내림차순).",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[23.6,18.5,12.7,12.4,11.2,10.7,4.1,4.0,3.0],"r12":[41.0,43.7,21.9,25.3,15.2,22.8,12.4,9.6,8.1]}
+   ]},
+
+  {"qid":"T22","label":"환경교육 활성화를 위해 국가 정책 차원에서 우선적으로 필요한 지원 사항","short":"국가 차원 필요 지원","section":"성과와 개선",
+   "type":"rank","baseKind":"응답자",
+   "categories":["학교환경교육을 위한 예산 지원 확대","지역 사회의 환경교육 자원 연계 지원","학교환경교육을 위한 제도적 기반 마련","학교환경교육 전담 교원의 배치 확대","학교환경교육 교재·학습자료 개발 및 제공","환경교육을 위한 학교 내 전용 시설·체험 공간 확충","온라인 교수 학습 정보 개발 및 활용 안내","교원역량 강화를 위한 연수 기회 확대","관리자 대상 환경교육 리더십 증진 프로그램 확대"],
+   "source":[{"ref":"그림 2-2-22","pdf":79}],
+   "notes":"문19. 보기 순서는 그림(1순위 내림차순).",
+   "rows":[
+    {"by":"all","key":"all","n":5808,"r1":[27.9,18.7,17.4,12.0,8.4,7.1,4.0,3.1,1.4],"r12":[43.5,38.7,22.0,22.2,26.2,20.6,13.2,10.1,3.5]}
+   ]}
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "schemaVersion": 1,
+ "generated": "2026-10-29T23:45:54",
+ "source": "synthetic",
+ "cubes": [
+  {
+   "pop": "student",
+   "survey": "school_survey",
+   "file": "student.json",
+   "nUnits": 13071,
+   "keys": 75
+  },
+  {
+   "pop": "teacher",
+   "survey": "school_survey",
+   "file": "teacher.json",
+   "nUnits": 5808,
+   "keys": 98
+  },
+  {
+   "pop": "inst_central",
+   "survey": "status_survey",
+   "file": "inst_central.json",
+   "nUnits": 6,
+   "keys": 26
+  },
+  {
+   "pop": "inst_metro",
+   "survey": "status_survey",
+   "file": "inst_metro.json",
+   "nUnits": 17,
+   "keys": 38
+  },
+  {
+   "pop": "inst_local",
+   "survey": "status_survey",
+   "file": "inst_local.json",
+   "nUnits": 226,
+   "keys": 37
+  },
+  {
+   "pop": "inst_public",
+   "survey": "status_survey",
+   "file": "inst_public.json",
+   "nUnits": 282,
+   "keys": 25
+  },
+  {
+   "pop": "inst_social",
+   "survey": "status_survey",
+   "file": "inst_social.json",
+   "nUnits": 103,
+   "keys": 28
+  },
+  {
+   "pop": "inst_edu_office",
+   "survey": "status_survey",
+   "file": "inst_edu_office.json",
+   "nUnits": 17,
+   "keys": 37
+  },
+  {
+   "pop": "inst_early",
+   "survey": "status_survey",
+   "file": "inst_early.json",
+   "nUnits": 979,
+   "keys": 26
+  },
+  {
+   "pop": "inst_school",
+   "survey": "status_survey",
+   "file": "inst_school.json",
+   "nUnits": 2937,
+   "keys": 62
+  },
+  {
+   "pop": "inst_univ",
+   "survey": "status_survey",
+   "file": "inst_univ.json",
+   "nUnits": 41,
+   "keys": 30
+  }
+ ]
+}

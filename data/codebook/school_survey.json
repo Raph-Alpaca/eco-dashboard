@@ -1,0 +1,3859 @@
+{
+ "schemaVersion": 1,
+ "survey": "school_survey",
+ "title": "2025년 학교환경교육 현황조사",
+ "shortTitle": "학교환경교육 현황조사",
+ "publisher": "교육부 · 17개 시·도교육청 · 한국환경보전원",
+ "fieldwork": "2025.10.13 ~ 11.14 (온라인 조사)",
+ "sampling": "층화계통표본추출 300교(초 121·중 91·고 88), 모집단 11,815교. 가중치 미적용.",
+ "sourceDoc": "2025년 학교환경교육 현황조사 결과보고서 (발간등록번호 KECI-B55098-202602-10, 2025.12)",
+ "kind": "person",
+ "dims": {
+  "level": {
+   "label": "학교급",
+   "codes": [
+    [
+     "E",
+     "초등학교"
+    ],
+    [
+     "M",
+     "중학교"
+    ],
+    [
+     "H",
+     "고등학교"
+    ]
+   ]
+  },
+  "grade": {
+   "label": "학년",
+   "parent": "level",
+   "codes": [
+    [
+     "E5",
+     "초5",
+     "E"
+    ],
+    [
+     "E6",
+     "초6",
+     "E"
+    ],
+    [
+     "M1",
+     "중1",
+     "M"
+    ],
+    [
+     "M2",
+     "중2",
+     "M"
+    ],
+    [
+     "H1",
+     "고1",
+     "H"
+    ],
+    [
+     "H2",
+     "고2",
+     "H"
+    ]
+   ]
+  },
+  "sido": {
+   "label": "시도",
+   "codes": [
+    [
+     "11",
+     "서울"
+    ],
+    [
+     "26",
+     "부산"
+    ],
+    [
+     "27",
+     "대구"
+    ],
+    [
+     "28",
+     "인천"
+    ],
+    [
+     "29",
+     "광주"
+    ],
+    [
+     "30",
+     "대전"
+    ],
+    [
+     "31",
+     "울산"
+    ],
+    [
+     "36",
+     "세종"
+    ],
+    [
+     "41",
+     "경기"
+    ],
+    [
+     "42",
+     "강원"
+    ],
+    [
+     "43",
+     "충북"
+    ],
+    [
+     "44",
+     "충남"
+    ],
+    [
+     "45",
+     "전북"
+    ],
+    [
+     "46",
+     "전남"
+    ],
+    [
+     "47",
+     "경북"
+    ],
+    [
+     "48",
+     "경남"
+    ],
+    [
+     "50",
+     "제주"
+    ]
+   ]
+  },
+  "urban": {
+   "label": "지역규모",
+   "codes": [
+    [
+     "metro",
+     "특/광역시"
+    ],
+    [
+     "city",
+     "중소도시"
+    ],
+    [
+     "rural",
+     "읍/면"
+    ]
+   ]
+  },
+  "gender": {
+   "label": "성별",
+   "codes": [
+    [
+     "M",
+     "남"
+    ],
+    [
+     "F",
+     "여"
+    ]
+   ]
+  },
+  "role": {
+   "label": "교원 구분",
+   "codes": [
+    [
+     "principal",
+     "교장(감)"
+    ],
+    [
+     "general",
+     "일반교원"
+    ],
+    [
+     "eeteacher",
+     "환경교육 담당교사"
+    ]
+   ]
+  },
+  "coord": {
+   "label": "담당교원 설문",
+   "codes": [
+    [
+     "0",
+     "일반교원 설문"
+    ],
+    [
+     "1",
+     "담당교원 설문"
+    ]
+   ]
+  },
+  "tenure": {
+   "label": "근속년수",
+   "codes": [
+    [
+     "t1",
+     "5년 미만"
+    ],
+    [
+     "t2",
+     "5~10년 미만"
+    ],
+    [
+     "t3",
+     "10~20년 미만"
+    ],
+    [
+     "t4",
+     "20년 이상"
+    ]
+   ]
+  },
+  "region5s": {
+   "label": "권역",
+   "codes": [
+    [
+     "cap",
+     "서울/수도권"
+    ],
+    [
+     "gc",
+     "강원/충청"
+    ],
+    [
+     "dg",
+     "대구/경북"
+    ],
+    [
+     "bug",
+     "부산/울산/경남"
+    ],
+    [
+     "hj",
+     "호남/제주"
+    ]
+   ]
+  }
+ },
+ "groups": {
+  "level": {
+   "from": "grade",
+   "map": {
+    "E5": "E",
+    "E6": "E",
+    "M1": "M",
+    "M2": "M",
+    "H1": "H",
+    "H2": "H"
+   }
+  },
+  "region5s": {
+   "from": "sido",
+   "map": {
+    "11": "cap",
+    "28": "cap",
+    "41": "cap",
+    "42": "gc",
+    "43": "gc",
+    "44": "gc",
+    "30": "gc",
+    "36": "gc",
+    "27": "dg",
+    "47": "dg",
+    "26": "bug",
+    "31": "bug",
+    "48": "bug",
+    "29": "hj",
+    "45": "hj",
+    "46": "hj",
+    "50": "hj"
+   }
+  }
+ },
+ "populations": {
+  "student": {
+   "label": "학생",
+   "n": 13071,
+   "dims": [
+    "grade",
+    "sido",
+    "urban",
+    "gender"
+   ],
+   "derived": [
+    "level",
+    "region5s"
+   ],
+   "weighted": false,
+   "sources": [
+    "s1_students.json"
+   ],
+   "ui": {
+    "filters": [
+     "level",
+     "grade",
+     "sido",
+     "region5s",
+     "urban",
+     "gender"
+    ],
+    "defaultBy": "level",
+    "note": "학교급·지역규모별 값은 보고서 공표값에 맞춤. 학년·시도·성별 간 차이는 임의 생성."
+   }
+  },
+  "teacher": {
+   "label": "교원",
+   "n": 5808,
+   "dims": [
+    "level",
+    "role",
+    "coord",
+    "tenure",
+    "urban",
+    "region5s"
+   ],
+   "derived": [],
+   "weighted": false,
+   "sources": [
+    "s1_teachers.json",
+    "s1_coordinators.json"
+   ],
+   "ui": {
+    "filters": [
+     "level",
+     "role",
+     "tenure",
+     "urban",
+     "region5s"
+    ],
+    "defaultBy": "level",
+    "note": "학교급·교원구분별 값은 보고서 공표값에 맞춤. 근속·지역규모·권역 간 차이는 임의 생성."
+   }
+  }
+ },
+ "scales": {
+  "likert5": [
+   "전혀 그렇지 않다",
+   "그렇지 않다",
+   "보통",
+   "그렇다",
+   "매우 그렇다"
+  ],
+  "severity5": [
+   "전혀 심각하지 않다",
+   "심각하지 않다",
+   "보통",
+   "다소 심각하다",
+   "매우 심각하다"
+  ],
+  "agree5": [
+   "전혀 동의하지 않음",
+   "별로 동의하지 않음",
+   "보통",
+   "어느 정도 동의함",
+   "매우 동의함"
+  ],
+  "interest5": [
+   "전혀 그렇지 않다",
+   "그렇지 않다",
+   "보통",
+   "그렇다",
+   "매우 그렇다"
+  ],
+  "aware3": [
+   "들어본 적 없다",
+   "들어봤지만 뜻은 모른다",
+   "뜻도 안다"
+  ],
+  "yn": [
+   "없음",
+   "있음"
+  ]
+ },
+ "sections": {
+  "student": [
+   "관심도",
+   "학습경험",
+   "성과와 개선"
+  ],
+  "teacher": [
+   "관심도",
+   "교수학습 경험",
+   "성과와 개선",
+   "운영 여건"
+  ]
+ },
+ "pairs": [
+  {
+   "id": "P01",
+   "label": "기후위기 및 환경문제 심각성 인식",
+   "student": "S01",
+   "teacher": "T01"
+  },
+  {
+   "id": "P02",
+   "label": "환경문제에 대한 인식",
+   "student": "S02",
+   "teacher": "T02"
+  },
+  {
+   "id": "P03",
+   "label": "환경 관련 용어 인지도",
+   "student": "S03",
+   "teacher": "T05"
+  },
+  {
+   "id": "P04",
+   "label": "환경문제 해결을 위해 가장 시급한 과제",
+   "student": "S04",
+   "teacher": "T04"
+  },
+  {
+   "id": "P05",
+   "label": "기후위기 및 환경문제 관심도",
+   "student": "S05",
+   "teacher": "T08"
+  },
+  {
+   "id": "P06",
+   "label": "환경교육의 개념 인식",
+   "student": "S06",
+   "teacher": "T03"
+  },
+  {
+   "id": "P07",
+   "label": "환경교육 수업방식 경험(학생) / 활용(교원)",
+   "student": "S07",
+   "teacher": "T14",
+   "itemMap": {
+    "lecture": "lecture",
+    "debate": "debate",
+    "project": "project",
+    "experience": "school_exp",
+    "experiment": "experiment",
+    "community": "outside_exp",
+    "online": "online"
+   }
+  },
+  {
+   "id": "P08",
+   "label": "환경교육 수업방식별 효과성 인식",
+   "student": "S07E",
+   "teacher": "T14E",
+   "itemMap": {
+    "lecture": "lecture",
+    "debate": "debate",
+    "project": "project",
+    "experience": "school_exp",
+    "experiment": "experiment",
+    "community": "outside_exp",
+    "online": "online"
+   }
+  },
+  {
+   "id": "P09",
+   "label": "환경 수업·활동을 통한 경험(학생) / 환경교육 운영(교원)",
+   "student": "S08",
+   "teacher": "T07"
+  },
+  {
+   "id": "P10",
+   "label": "학교환경교육 만족도",
+   "student": "S14",
+   "teacher": "T15"
+  },
+  {
+   "id": "P11",
+   "label": "학교환경교육을 통한 전반적 변화",
+   "student": "S15",
+   "teacher": "T17",
+   "itemMap": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "5": "7"
+   }
+  },
+  {
+   "id": "P12",
+   "label": "향후 환경교육 확대에 대한 동의",
+   "student": "S16",
+   "teacher": "T18"
+  },
+  {
+   "id": "P13",
+   "label": "학교에서 더 많이 이루어져야 할 교육 주제",
+   "student": "S17",
+   "teacher": "T19"
+  },
+  {
+   "id": "P14",
+   "label": "학교환경교육에서 가장 중요하게 다루어야 할 내용",
+   "student": "S18",
+   "teacher": "T20"
+  }
+ ],
+ "frame": {
+  "student": {
+   "nByLevel": {
+    "E": 4868,
+    "M": 4263,
+    "H": 3940
+   },
+   "nBySido": {
+    "11": 1069,
+    "26": 660,
+    "27": 705,
+    "28": 823,
+    "29": 555,
+    "30": 489,
+    "31": 526,
+    "36": 586,
+    "41": 1811,
+    "42": 734,
+    "43": 674,
+    "44": 681,
+    "45": 728,
+    "46": 776,
+    "47": 857,
+    "48": 876,
+    "50": 521
+   },
+   "schoolsBySidoLevel": {
+    "11": [
+     10,
+     7,
+     8
+    ],
+    "26": [
+     6,
+     5,
+     5
+    ],
+    "27": [
+     6,
+     5,
+     4
+    ],
+    "28": [
+     6,
+     5,
+     5
+    ],
+    "29": [
+     5,
+     4,
+     4
+    ],
+    "30": [
+     5,
+     4,
+     4
+    ],
+    "31": [
+     4,
+     4,
+     4
+    ],
+    "36": [
+     4,
+     4,
+     4
+    ],
+    "41": [
+     17,
+     11,
+     10
+    ],
+    "42": [
+     7,
+     5,
+     5
+    ],
+    "43": [
+     6,
+     5,
+     4
+    ],
+    "44": [
+     8,
+     5,
+     5
+    ],
+    "45": [
+     8,
+     5,
+     5
+    ],
+    "46": [
+     8,
+     6,
+     5
+    ],
+    "47": [
+     8,
+     6,
+     6
+    ],
+    "48": [
+     9,
+     6,
+     6
+    ],
+    "50": [
+     4,
+     4,
+     4
+    ]
+   },
+   "classSize": [
+    15.9,
+    21.0,
+    21.7
+   ],
+   "urban": {
+    "metro": 4621,
+    "city": 5650,
+    "rural": 2800
+   },
+   "gender": {
+    "M": 6660,
+    "F": 6411
+   },
+   "ruralShareByProvince": {
+    "41": 0.2,
+    "42": 0.45,
+    "43": 0.38,
+    "44": 0.45,
+    "45": 0.42,
+    "46": 0.55,
+    "47": 0.48,
+    "48": 0.38,
+    "50": 0.3,
+    "36": 0.2
+   },
+   "metroCities": [
+    "11",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31"
+   ]
+  },
+  "teacher": {
+   "nByLevel": {
+    "E": 2162,
+    "M": 1764,
+    "H": 1882
+   },
+   "role": {
+    "principal": 245,
+    "general": 5315,
+    "eeteacher": 248
+   },
+   "coordByLevel": {
+    "E": 125,
+    "M": 93,
+    "H": 88
+   },
+   "coordByRole": {
+    "principal": 5,
+    "general": 53,
+    "eeteacher": 248
+   },
+   "tenure": {
+    "t1": 1092,
+    "t2": 1013,
+    "t3": 1760,
+    "t4": 1943
+   },
+   "urban": {
+    "metro": 2222,
+    "city": 2448,
+    "rural": 1138
+   },
+   "region5s": {
+    "cap": 1602,
+    "gc": 1398,
+    "dg": 669,
+    "bug": 945,
+    "hj": 1194
+   }
+  }
+ },
+ "questions": [
+  {
+   "qid": "S01",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "기후 위기 및 환경문제 심각성 인식",
+   "short": "심각성 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "severity5",
+   "categories": [
+    "전혀 심각하지 않다",
+    "심각하지 않다",
+    "보통",
+    "다소 심각하다",
+    "매우 심각하다"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-2",
+     "pdf": 40
+    },
+    {
+     "ref": "표 2-3-1",
+     "pdf": 80
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "positive=매우 심각하다+다소 심각하다(심각함 %). 전체 분포·소재지역 규모별 긍정률은 그림 2-1-2, 평균·표준편차는 표 2-3-1 학생 행.",
+   "k": 5,
+   "cubeKeys": [
+    "S01"
+   ],
+   "publishedBy": [
+    "level",
+    "urban"
+   ]
+  },
+  {
+   "qid": "S02",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경문제에 대한 인식",
+   "short": "환경문제 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "환경문제는 다른 것들에 비해 우선순위가 높은 관심 주제임",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "우리 삶과 태도의 변화가 없어도 새로운 기술 발전이 환경 문제를 해결해 줄 것임",
+     "reverse": true
+    },
+    {
+     "id": "3",
+     "label": "최근 기후 변화는 먼 미래의 일이라 내 삶에 큰 영향은 없음",
+     "reverse": true
+    },
+    {
+     "id": "4",
+     "label": "나의 일상적 행동과 생활 방식도 기후 변화의 원인이 됨",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "인류가 지금의 기후 위기 및 환경문제를 해결하기에는 이미 시간이 너무 늦었음",
+     "reverse": true
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-3",
+     "pdf": 41
+    },
+    {
+     "ref": "표 2-3-2~4",
+     "pdf": 82
+    },
+    {
+     "ref": "표 2-3-5~6",
+     "pdf": 83
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "부정형(역척도) 문항 2·3·5의 평균은 보고서가 점수를 역으로 변환해 산출한 값(동의하지 않을수록 높은 점수). 평균은 그림 2-1-3과 표 2-3-2~6이 일치하며 표준편차는 표에서 전사.",
+   "k": 5,
+   "cubeKeys": [
+    "S02_1",
+    "S02_2",
+    "S02_3",
+    "S02_4",
+    "S02_5"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S03",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경 관련 용어 인지도",
+   "short": "환경 용어 인지도",
+   "section": "관심도",
+   "indicator": null,
+   "type": "item_cat",
+   "scale": "aware3",
+   "categories": [
+    "들어본 적 없다",
+    "들어봤지만 뜻은 모른다",
+    "들어봤고, 그 뜻도 안다"
+   ],
+   "items": [
+    {
+     "id": "biodiv",
+     "label": "생물 다양성/종다양성"
+    },
+    {
+     "id": "invasive",
+     "label": "생태계 교란 생물"
+    },
+    {
+     "id": "neutral",
+     "label": "탄소중립"
+    },
+    {
+     "id": "renewable",
+     "label": "재생에너지"
+    },
+    {
+     "id": "footprint",
+     "label": "탄소발자국"
+    },
+    {
+     "id": "zerowaste",
+     "label": "제로웨이스트"
+    },
+    {
+     "id": "circular",
+     "label": "순환경제"
+    },
+    {
+     "id": "sdgs",
+     "label": "지속가능발전목표(SDGs)"
+    },
+    {
+     "id": "upcycle",
+     "label": "업사이클링"
+    },
+    {
+     "id": "esg",
+     "label": "ESG"
+    }
+   ],
+   "positive": [
+    2
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-4",
+     "pdf": 42
+    },
+    {
+     "ref": "표 2-3-7",
+     "pdf": 84
+    },
+    {
+     "ref": "표 2-3-8~10",
+     "pdf": 85
+    },
+    {
+     "ref": "표 2-3-11~13",
+     "pdf": 86
+    },
+    {
+     "ref": "표 2-3-14~16",
+     "pdf": 87
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "pct 순서=들어본 적 없다/들어봤지만 뜻은 모른다/들어봤고 그 뜻도 안다. 전체 분포는 그림 2-1-4, 학교급별 분포는 표 2-3-7~16 학생 행(그림 2-1-4 하단 '뜻도 안다' 값과 일치).",
+   "k": 3,
+   "cubeKeys": [
+    "S03_biodiv",
+    "S03_invasive",
+    "S03_neutral",
+    "S03_renewable",
+    "S03_footprint",
+    "S03_zerowaste",
+    "S03_circular",
+    "S03_sdgs",
+    "S03_upcycle",
+    "S03_esg"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S04",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경문제 해결을 위해 가장 시급한 과제",
+   "short": "시급한 환경 과제",
+   "section": "관심도",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "기후 변화와 기상 이변",
+    "생물 다양성 손실",
+    "대기 오염",
+    "자연 생태계 파괴",
+    "폐기물 처리",
+    "수질 오염",
+    "자원 및 에너지 부족",
+    "환경 불평등",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-5",
+     "pdf": 43
+    },
+    {
+     "ref": "표 2-3-17",
+     "pdf": 89
+    },
+    {
+     "ref": "표 2-3-18",
+     "pdf": 89
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문4는 우선순위대로 2개까지 선택(r1, r12). 보기 순서는 그림 2-1-5 기준. 표 2-3-17/18은 열 순서가 다름(생물 다양성 손실, 자연 생태계 파괴, 대기 오염, 수질 오염, 폐기물 처리, 자원 및 에너지 부족, 기후 변화 및 기상 이변, 환경 불평등, 기타)이며 값은 이 보기 순서로 재배열해 전사. 전체·학교급 1순위는 그림과 표가 일치.",
+   "k": 9,
+   "cubeKeys": [
+    "S04_r1",
+    "S04_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S05",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "기후 위기 및 환경문제 관심도",
+   "short": "환경문제 관심도",
+   "section": "관심도",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "interest5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-6",
+     "pdf": 44
+    },
+    {
+     "ref": "표 2-3-19",
+     "pdf": 90
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "그림 2-1-6에 인쇄된 '5점 평균 4.14점'은 그림 2-1-2(심각성 인식)의 값이 그대로 반복된 오기로 판단. 분포(2.4/5.9/33.4/38.7/19.7, 가중평균 ≈3.67)와 일치하는 표 2-3-19의 학생 평균 3.67, 표준편차 0.93을 사용. positive=매우 그렇다+그렇다(알고 싶다 %). 소재지역 규모별 긍정률은 그림 2-1-6 하단 막대.",
+   "k": 5,
+   "cubeKeys": [
+    "S05"
+   ],
+   "publishedBy": [
+    "level",
+    "urban"
+   ]
+  },
+  {
+   "qid": "S06",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경교육의 개념 인식",
+   "short": "환경교육 개념 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "기후 위기 및 환경문제 해결 방안을 찾고 실천하는 교육",
+    "환경에 친화적인 삶과 생활 방식을 위해 직접 체험해 보는 교육",
+    "우리 주변 환경·생태계에 대해 잘 이해하는 교육",
+    "지속가능한 미래를 위해 경제적, 사회적, 환경적 측면 등을 모두 고려한 교육",
+    "환경을 통해 바람직한 세계시민으로 성장하는 교육"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-7",
+     "pdf": 45
+    },
+    {
+     "ref": "표 2-3-20",
+     "pdf": 91
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "보기 순서는 그림 2-1-7 기준, 보기 문구는 표 2-3-20 열 제목(전체 문구) 사용. 표 2-3-20은 열 순서가 다름(우리 주변 환경·생태계, 환경 친화적 삶 체험, 기후 위기 해결 방안, 지속가능한 미래, 세계시민)이며 값은 그림·표가 일치.",
+   "k": 5,
+   "cubeKeys": [
+    "S06"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S07",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경교육 수업방식 경험 여부",
+   "short": "수업방식 경험",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "item_binary",
+   "scale": null,
+   "categories": null,
+   "items": [
+    {
+     "id": "lecture",
+     "label": "강의"
+    },
+    {
+     "id": "debate",
+     "label": "토의/토론"
+    },
+    {
+     "id": "project",
+     "label": "프로젝트 활동"
+    },
+    {
+     "id": "experience",
+     "label": "체험"
+    },
+    {
+     "id": "experiment",
+     "label": "실험/실습"
+    },
+    {
+     "id": "community",
+     "label": "지역사회 탐방 및 체험"
+    },
+    {
+     "id": "online",
+     "label": "온라인 학습"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-8",
+     "pdf": 46
+    },
+    {
+     "ref": "표 2-3-21",
+     "pdf": 92
+    },
+    {
+     "ref": "표 2-3-22~24",
+     "pdf": 93
+    },
+    {
+     "ref": "표 2-3-25~27",
+     "pdf": 94
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "positive=경험 있음(%). 그림 2-1-8과 표 2-3-21~27 학생 행이 일치. 표 2-3-27 제목은 '온라인 교육', 그림·문항은 '온라인 학습'.",
+   "k": 2,
+   "cubeKeys": [
+    "S07_lecture",
+    "S07_debate",
+    "S07_project",
+    "S07_experience",
+    "S07_experiment",
+    "S07_community",
+    "S07_online"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S07E",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경교육 수업방식별 효과성 인식",
+   "short": "수업방식 효과성",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "lecture",
+     "label": "강의"
+    },
+    {
+     "id": "debate",
+     "label": "토의/토론"
+    },
+    {
+     "id": "project",
+     "label": "프로젝트 활동"
+    },
+    {
+     "id": "experience",
+     "label": "체험"
+    },
+    {
+     "id": "experiment",
+     "label": "실험/실습"
+    },
+    {
+     "id": "community",
+     "label": "지역사회 탐방 및 체험"
+    },
+    {
+     "id": "online",
+     "label": "온라인 학습"
+    }
+   ],
+   "positive": null,
+   "base": {
+    "qid": "S07",
+    "sameItem": true,
+    "eq": 1
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-9",
+     "pdf": 47
+    },
+    {
+     "ref": "표 2-3-28",
+     "pdf": 95
+    },
+    {
+     "ref": "표 2-3-29~31",
+     "pdf": 96
+    },
+    {
+     "ref": "표 2-3-32~34",
+     "pdf": 97
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "Base: 각 수업방식 경험 학생(S07 해당 항목=있음). n·평균·표준편차는 표 2-3-28~34 학생 행. 표 2-3-32(실험/실습) 초등학교 학생 사례수가 (2,891)로 인쇄되어 있으나 이는 표 2-3-31(체험)의 값이 반복된 오기로 판단: 학생 전체 6,269 − 중 1,913 − 고 1,493 = 2,863이며 초등 경험률 58.8%×4,868≈2,863과도 일치하므로 2,863으로 보정. 그림 2-1-9의 학교급별 평균은 표와 모두 일치.",
+   "k": 5,
+   "cubeKeys": [
+    "S07E_lecture",
+    "S07E_debate",
+    "S07E_project",
+    "S07E_experience",
+    "S07E_experiment",
+    "S07E_community",
+    "S07E_online"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S08",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경 수업 및 활동을 통한 경험",
+   "short": "수업·활동 경험",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "환경과 인간 상호 영향 인지"
+    },
+    {
+     "id": "2",
+     "label": "전 지구적 환경문제 심각성 인지"
+    },
+    {
+     "id": "3",
+     "label": "환경문제 해결 관련 지식 및 내용 인지"
+    },
+    {
+     "id": "4",
+     "label": "환경문제 관련 다양한 사례 인지"
+    },
+    {
+     "id": "5",
+     "label": "환경문제에 관한 관심과 흥미 형성"
+    },
+    {
+     "id": "6",
+     "label": "환경문제 해결을 위한 책임/역할 관련 의식 제고"
+    },
+    {
+     "id": "7",
+     "label": "환경 관련 정보 활용 방법 교육"
+    },
+    {
+     "id": "8",
+     "label": "환경문제 관련 의사소통 능력 향상"
+    },
+    {
+     "id": "9",
+     "label": "교육 내용 일상생활 적용에 대한 관심"
+    },
+    {
+     "id": "10",
+     "label": "지역사회 환경문제 해결 관심"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-10",
+     "pdf": 48
+    },
+    {
+     "ref": "표 2-3-35",
+     "pdf": 98
+    },
+    {
+     "ref": "표 2-3-36~38",
+     "pdf": 99
+    },
+    {
+     "ref": "표 2-3-39~41",
+     "pdf": 100
+    },
+    {
+     "ref": "표 2-3-42~44",
+     "pdf": 101
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "평균은 그림 2-1-10과 표 2-3-35~44 학생 행이 모두 일치, 표준편차는 표에서 전사.",
+   "k": 5,
+   "cubeKeys": [
+    "S08_1",
+    "S08_2",
+    "S08_3",
+    "S08_4",
+    "S08_5",
+    "S08_6",
+    "S08_7",
+    "S08_8",
+    "S08_9",
+    "S08_10"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S09",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "기후 위기 및 환경문제 관련 정보 습득 경로",
+   "short": "정보 습득 경로",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "환경을 주제로 한 학교 교과 수업",
+    "TV, 신문, 라디오, 인터넷 기사 등 대중매체",
+    "인스타그램, 페이스북 등 SNS 소셜 네트워크",
+    "환경을 주제로 한 학교 창의적 체험 활동",
+    "학교 밖 동아리 및 봉사활동",
+    "지역 사회 환경 관련 기관이나 시설의 프로그램",
+    "가족과 친척, 친구, 이웃 등 주변의 가까운 사람"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-11",
+     "pdf": 49
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "복수응답(보기별 응답률 %). 보기 순서는 그림 2-1-11(전체 응답률 내림차순) 기준.",
+   "k": 7,
+   "cubeKeys": [
+    "S09"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S10",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경 주제 관련 학교 밖의 단체 및 기관 활동 참여 경험 여부",
+   "short": "외부 활동 참여 경험",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "binary",
+   "scale": null,
+   "categories": [
+    "아니오",
+    "예"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-12",
+     "pdf": 50
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "positive=예(참여 경험 있음 %). 학교급별은 경험률만 공표.",
+   "k": 2,
+   "cubeKeys": [
+    "S10"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S11",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경 주제 관련 학교 밖의 단체 및 기관 활동에 참여하고 싶은 이유",
+   "short": "외부 활동 참여 이유",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "환경문제 해결에 직접 참여하고 실천하기 위해",
+    "평소 관심이 많고 잘 알고 싶어서",
+    "인류의 지속가능한 미래 사회를 만들기 위해",
+    "선생님이 내준 과제 수행을 위해",
+    "학교 선생님 또는 친구의 추천으로",
+    "졸업 이후 진로와 관련하여 도움"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-12",
+     "pdf": 50
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문11, 1·2순위 선택. 그림 2-1-12 표기 Base는 학생 전체(n=13,071). 학교급별은 1순위만 공표.",
+   "k": 6,
+   "cubeKeys": [
+    "S11_r1",
+    "S11_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S12",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경 주제 관련 정보 이용 방식",
+   "short": "정보 이용 방식",
+   "section": "학습경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "다양한 방법을 통한 정보 검색"
+    },
+    {
+     "id": "2",
+     "label": "다수의 의견 정리 및 종합"
+    },
+    {
+     "id": "3",
+     "label": "환경 관련 정보 분석"
+    },
+    {
+     "id": "4",
+     "label": "알고 싶은 정보를 다양한 방법을 통해 습득"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-13",
+     "pdf": 51
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "그림 2-1-13만 공표(평균). 표준편차 없음.",
+   "k": 5,
+   "cubeKeys": [
+    "S12_1",
+    "S12_2",
+    "S12_3",
+    "S12_4"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S13",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "환경문제 해결 관련 인식",
+   "short": "문제해결 관련 인식",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "자발적 참여"
+    },
+    {
+     "id": "2",
+     "label": "지역문제 관심"
+    },
+    {
+     "id": "3",
+     "label": "환경에 대한 책임감"
+    },
+    {
+     "id": "4",
+     "label": "주체적 의견 개진"
+    },
+    {
+     "id": "5",
+     "label": "의사소통 능력(환경문제에 대한 다른 의견 수용)"
+    },
+    {
+     "id": "6",
+     "label": "합리적 해결방안 도출"
+    },
+    {
+     "id": "7",
+     "label": "정보 활용 능력"
+    },
+    {
+     "id": "8",
+     "label": "일상 속 실천"
+    },
+    {
+     "id": "9",
+     "label": "주변 인물 참여 제안"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-14",
+     "pdf": 52
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "그림 2-1-14만 공표(평균). 표준편차 없음. 항목명은 그림의 축 라벨(3·5번은 본문 서술의 보충 표현 반영).",
+   "k": 5,
+   "cubeKeys": [
+    "S13_1",
+    "S13_2",
+    "S13_3",
+    "S13_4",
+    "S13_5",
+    "S13_6",
+    "S13_7",
+    "S13_8",
+    "S13_9"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S14",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "학교환경교육에 대한 만족도",
+   "short": "학교환경교육 만족도",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "전반적 만족도"
+    },
+    {
+     "id": "2",
+     "label": "학교환경교육의 원활한 운영"
+    },
+    {
+     "id": "3",
+     "label": "학교환경교육을 통해 새롭게 배우거나 성장하는 경험 습득"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-15",
+     "pdf": 53
+    },
+    {
+     "ref": "표 2-3-45",
+     "pdf": 102
+    },
+    {
+     "ref": "표 2-3-46~47",
+     "pdf": 103
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문14(2024년 3월~현재 기준). 평균은 그림 2-1-15와 표 2-3-45~47 학생 행이 일치, 표준편차는 표에서 전사.",
+   "k": 5,
+   "cubeKeys": [
+    "S14_1",
+    "S14_2",
+    "S14_3"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S15",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "학교환경교육을 통해 나타난 전반적 변화",
+   "short": "학교의 전반적 변화",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "학생의 환경문제에 대한 관심 확대"
+    },
+    {
+     "id": "2",
+     "label": "환경문제에 대한 여러 가지 의견을 서로 나누는 분위기 조성"
+    },
+    {
+     "id": "3",
+     "label": "환경 관련 스스로 결정하고 실천하는 문화 형성"
+    },
+    {
+     "id": "4",
+     "label": "환경교육에 대한 선생님들의 관심 제고와 중요성 강조"
+    },
+    {
+     "id": "5",
+     "label": "학생/선생님 모두 환경보호 실천을 위해 서로 협력"
+    },
+    {
+     "id": "6",
+     "label": "환경교육의 필요성에 대한 부모님 관심 제고"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-16",
+     "pdf": 54
+    },
+    {
+     "ref": "표 2-3-48",
+     "pdf": 104
+    },
+    {
+     "ref": "표 2-3-49~51",
+     "pdf": 105
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문15(2024년 3월~현재 기준). 평균은 그림 2-1-16 기준(표 2-3-48~51과 일치). 표준편차는 교원과 공통 비교된 4개 항목(1·2·3·5)만 표 2-3-48~51에 공표되어 있고, 4·6번 항목은 학생 전용 문항이라 표준편차 없음.",
+   "k": 5,
+   "cubeKeys": [
+    "S15_1",
+    "S15_2",
+    "S15_3",
+    "S15_4",
+    "S15_5",
+    "S15_6"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S16",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "향후 환경교육 확대에 대한 동의",
+   "short": "환경교육 확대 동의",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "agree5",
+   "categories": [
+    "전혀 동의하지 않음",
+    "별로 동의하지 않음",
+    "보통",
+    "어느 정도 동의함",
+    "매우 동의함"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-17",
+     "pdf": 55
+    },
+    {
+     "ref": "표 2-3-52",
+     "pdf": 106
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "positive=매우 동의함+어느 정도 동의함(동의함 %). 전체 분포·학교급별 동의율은 그림 2-1-17, 평균·표준편차는 표 2-3-52 학생 행.",
+   "k": 5,
+   "cubeKeys": [
+    "S16"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S17",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "학교에서 더 많이 이루어져야 할 교육 주제",
+   "short": "더 필요한 교육 주제",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "안전·건강교육",
+    "인성교육",
+    "진로교육",
+    "환경·지속가능발전교육",
+    "경제·금융교육",
+    "인권교육",
+    "통일교육",
+    "독도교육",
+    "민주시민교육",
+    "다문화교육"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-18",
+     "pdf": 56
+    },
+    {
+     "ref": "표 2-3-53",
+     "pdf": 108
+    },
+    {
+     "ref": "표 2-3-54",
+     "pdf": 108
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문16-1, 3순위까지 선택(r1, r123). 보기 순서는 그림 2-1-18 기준. 표 2-3-53/54는 열 순서가 다름(안전·건강, 인성, 진로, 민주시민, 인권, 다문화, 통일, 독도, 경제·금융, 환경·지속가능발전)이며 값은 이 보기 순서로 재배열해 전사. 전체·학교급 1순위는 그림과 표가 일치.",
+   "k": 10,
+   "cubeKeys": [
+    "S17_r1",
+    "S17_r123"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "S18",
+   "pop": "student",
+   "survey": "school_survey",
+   "label": "학교환경교육에서 가장 중요하게 다루어져야 할 내용",
+   "short": "중요하게 다룰 내용",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "지구 생태환경·환경문제 등에 관한 다양한 지식",
+    "환경보전 및 환경문제에 관한 관심, 태도, 책임감 높이기",
+    "환경문제 해결을 위한 직접적인 행동과 참여",
+    "환경문제를 깊게 이해할 수 있는 창의적, 통합적 사고 능력",
+    "환경보전 및 환경문제에 관한 문제 해결 방법",
+    "환경학습에 필요한 정보의 수집·이용 방법",
+    "환경에 관해 다른 사람들과 소통하고 의견을 나누는 방법"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-1-19",
+     "pdf": 57
+    },
+    {
+     "ref": "표 2-3-55",
+     "pdf": 110
+    },
+    {
+     "ref": "표 2-3-56",
+     "pdf": 110
+    }
+   ],
+   "sourceFile": "s1_students.json",
+   "notes": "문17은 2순위까지 선택하는 문항. 그림 2-1-19 범례·제목은 '1+2+3순위'로 인쇄되어 있으나 값 합계가 ≈200이고 표 2-3-56 제목도 '(1+2순위)'이므로 r12로 저장. 보기 순서는 그림 2-1-19 기준, 보기 문구는 표 2-3-55 열 제목(전체 문구) 사용. 표 2-3-55/56은 열 순서가 다름(지식, 관심·태도·책임감, 창의적·통합적 사고, 정보 수집·이용, 문제 해결 방법, 소통, 직접적 행동과 참여)이며 값은 재배열해 전사.",
+   "k": 7,
+   "cubeKeys": [
+    "S18_r1",
+    "S18_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "T01",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "기후 위기 및 환경문제 심각성 인식",
+   "short": "심각성 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "severity5",
+   "categories": [
+    "전혀 심각하지 않다",
+    "심각하지 않다",
+    "보통",
+    "다소 심각하다",
+    "매우 심각하다"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-3",
+     "pdf": 60
+    },
+    {
+     "ref": "표 2-3-1",
+     "pdf": 80
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "pct 순서 [전혀 심각하지 않다, 심각하지 않다, 보통, 다소 심각하다, 매우 심각하다]. 그림 2-2-3의 두 작은 콜아웃은 그림 2-3-1(PDF 80)의 교원 막대와 대조해 '심각하지 않다' 0.6, '전혀' 0.3으로 확정. 평균 4.49와 일치.",
+   "k": 5,
+   "cubeKeys": [
+    "T01"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T02",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경문제에 대한 인식",
+   "short": "환경문제 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "환경문제는 다른 것들에 비해 우선순위가 높은 관심 주제임",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "우리 삶과 태도의 변화가 없어도 새로운 기술 발전이 환경 문제를 해결해 줄 것임",
+     "reverse": true
+    },
+    {
+     "id": "3",
+     "label": "최근 기후 변화는 먼 미래의 일이라 내 삶에 큰 영향은 없음",
+     "reverse": true
+    },
+    {
+     "id": "4",
+     "label": "나의 일상적 행동과 생활 방식도 기후 변화의 원인이 됨",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "인류가 지금의 기후 위기 및 환경문제를 해결하기에는 이미 시간이 너무 늦었음",
+     "reverse": true
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-4",
+     "pdf": 61
+    },
+    {
+     "ref": "표 2-3-2~6",
+     "pdf": 82
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "역척도 문항(2,3,5)은 역변환 후 평균. 전체 평균은 표 2-3-2~6 교원 행(소수 2자리) 사용 — 그림 2-2-4는 1자리 반올림(4.00/3.80/4.40/4.30/3.10)이며 문항5는 표 3.12 vs 그림 3.10으로 반올림 차이 있음. 학교급 평균은 그림과 표가 일치(sd는 표). 교원 구분 평균은 그림 2-2-4.",
+   "k": 5,
+   "cubeKeys": [
+    "T02_1",
+    "T02_2",
+    "T02_3",
+    "T02_4",
+    "T02_5"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T03",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육의 개념 인식",
+   "short": "환경교육 개념 인식",
+   "section": "관심도",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "지속가능한 미래를 위해 경제적, 사회적, 환경적 측면 등을 모두 고려한 교육",
+    "기후 위기 및 환경문제 해결 방안을 찾고 실천하는 교육",
+    "환경에 친화적인 삶과 생활 방식을 위해 직접 체험해 보는 교육",
+    "우리 주변 환경, 생태계에 대해 잘 이해하는 교육",
+    "환경을 통해 바람직한 세계시민으로 성장하는 교육"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-5",
+     "pdf": 62
+    },
+    {
+     "ref": "표 2-3-20",
+     "pdf": 91
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "보기 순서는 그림 2-2-5(교원 결과) 순. 표 2-3-20은 보기 순서가 다르며(주변환경·체험·기후위기·지속가능·세계시민) 수치는 일치.",
+   "k": 5,
+   "cubeKeys": [
+    "T03"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T04",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경문제 해결을 위해 가장 시급한 과제",
+   "short": "시급한 환경 과제",
+   "section": "관심도",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "기후 변화와 기상 이변",
+    "생물 다양성 손실",
+    "대기 오염",
+    "자연 생태계 파괴",
+    "폐기물 처리",
+    "수질 오염",
+    "자원 및 에너지 부족",
+    "환경 불평등",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-6",
+     "pdf": 63
+    },
+    {
+     "ref": "표 2-3-17",
+     "pdf": 89
+    },
+    {
+     "ref": "표 2-3-18",
+     "pdf": 89
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "최대 2개 우선순위 선택. 보기 순서는 학생 파일과 동일하게 재배열(그림 2-2-6은 응답률 내림차순, 표 2-3-17/18은 생물다양성부터). 전체·학교급 r1은 그림과 표가 일치, 학교급 r12는 표 2-3-18 교원 행.",
+   "k": 9,
+   "cubeKeys": [
+    "T04_r1",
+    "T04_r12"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T05",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경 관련 용어 인지도",
+   "short": "용어 인지도",
+   "section": "관심도",
+   "indicator": null,
+   "type": "item_cat",
+   "scale": "aware3",
+   "categories": [
+    "들어본 적 없다",
+    "들어봤지만 뜻은 모른다",
+    "뜻도 안다"
+   ],
+   "items": [
+    {
+     "id": "biodiv",
+     "label": "생물 다양성/종다양성"
+    },
+    {
+     "id": "invasive",
+     "label": "생태계 교란 생물"
+    },
+    {
+     "id": "neutral",
+     "label": "탄소중립"
+    },
+    {
+     "id": "renewable",
+     "label": "재생에너지"
+    },
+    {
+     "id": "footprint",
+     "label": "탄소발자국"
+    },
+    {
+     "id": "zerowaste",
+     "label": "제로웨이스트"
+    },
+    {
+     "id": "circular",
+     "label": "순환경제"
+    },
+    {
+     "id": "sdgs",
+     "label": "지속가능발전목표(SDGs)"
+    },
+    {
+     "id": "upcycle",
+     "label": "업사이클링"
+    },
+    {
+     "id": "esg",
+     "label": "ESG"
+    }
+   ],
+   "positive": [
+    2
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-7",
+     "pdf": 64
+    },
+    {
+     "ref": "표 2-3-7~16",
+     "pdf": 84
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "pct 순서 [들어본 적 없다, 들어봤지만 뜻은 모른다, 들어봤고 그 뜻도 안다]. 전체·학교급 pct는 표 2-3-7~16 교원 행(그림 2-2-7의 '안다' 비율과 일치). 교원 구분은 그림 2-2-7의 '안다' 비율(positive)만 공표. 그림 2-2-7 첫 막대(76.1/18.7/5.2)는 10개 용어 평균.",
+   "k": 3,
+   "cubeKeys": [
+    "T05_biodiv",
+    "T05_invasive",
+    "T05_neutral",
+    "T05_renewable",
+    "T05_footprint",
+    "T05_zerowaste",
+    "T05_circular",
+    "T05_sdgs",
+    "T05_upcycle",
+    "T05_esg"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T06",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 교수학습 역량",
+   "short": "교수학습 역량",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "환경교육 관련 수업에 적용 가능한 교수학습방법 인지",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "수업 활용 가능한 환경 관련 교수학습 자료 제작",
+     "reverse": false
+    },
+    {
+     "id": "3",
+     "label": "환경교육 내용을 수업에 적합하게 재구성 가능",
+     "reverse": false
+    },
+    {
+     "id": "4",
+     "label": "환경문제를 다루는 수업에서 학생들의 흥미 유발 가능",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "환경문제 핵심 내용/쟁점을 학생들에게 이해시킬 수 있음",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-8",
+     "pdf": 65
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "5개 항목 전체 평균 3.71점(그림 표기). 교원 전용 문항으로 학생/교원 비교표 없음(sd 미공표).",
+   "k": 5,
+   "cubeKeys": [
+    "T06_1",
+    "T06_2",
+    "T06_3",
+    "T06_4",
+    "T06_5"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T07",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 운영",
+   "short": "환경교육 운영",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "환경과 인간 상호 영향 교육",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "전 지구적 환경문제 심각성 교육",
+     "reverse": false
+    },
+    {
+     "id": "3",
+     "label": "환경문제 해결 관련 지식 및 내용 교육",
+     "reverse": false
+    },
+    {
+     "id": "4",
+     "label": "환경문제 관련 다양한 사례 교육",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "환경문제에 관한 관심과 흥미 형성",
+     "reverse": false
+    },
+    {
+     "id": "6",
+     "label": "환경문제 해결을 위한 책임/역할 관련 의식 제고",
+     "reverse": false
+    },
+    {
+     "id": "7",
+     "label": "환경 관련 정보 활용 방법 교육",
+     "reverse": false
+    },
+    {
+     "id": "8",
+     "label": "환경문제 관련 의사소통 능력 향상 교육",
+     "reverse": false
+    },
+    {
+     "id": "9",
+     "label": "교육 내용 일상생활 적용 유도",
+     "reverse": false
+    },
+    {
+     "id": "10",
+     "label": "지역사회 환경문제 참여 기회 제공",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-9",
+     "pdf": 66
+    },
+    {
+     "ref": "표 2-3-35~44",
+     "pdf": 98
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B7(2024년 3월~현재 기준). 10개 항목 전체 평균 3.91점. 전체·학교급 평균은 그림과 표 2-3-35~44 교원 행이 일치, sd는 표. 교원 구분 평균은 그림 2-2-9.",
+   "k": 5,
+   "cubeKeys": [
+    "T07_1",
+    "T07_2",
+    "T07_3",
+    "T07_4",
+    "T07_5",
+    "T07_6",
+    "T07_7",
+    "T07_8",
+    "T07_9",
+    "T07_10"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T08",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경문제 관련 관심도",
+   "short": "환경문제 관심도",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "interest5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-10",
+     "pdf": 67
+    },
+    {
+     "ref": "표 2-3-19",
+     "pdf": 90
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B8(환경문제 관련 기사나 자료를 관심 있게 찾아보는지). pct 순서 [전혀 그렇지 않다, 그렇지 않다, 보통이다, 그렇다, 매우 그렇다]; 그림 2-3-5(PDF 90) 교원 막대(0.6/4.6)와 일치. 평균 3.84와 정합.",
+   "k": 5,
+   "cubeKeys": [
+    "T08"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T09",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 자료 습득 경로",
+   "short": "자료 습득 경로",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "미디어, 포털사이트, SNS 등",
+    "교원 연수",
+    "학습공동체 또는 교원 모임",
+    "정부 기관의 공문, 홈페이지 등",
+    "유관기관의 홍보물 등",
+    "주변 지인",
+    "관련 활동 없음"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-11",
+     "pdf": 68
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "1+2순위 합 198.0은 '관련 활동 없음'(2.0%) 응답자가 2순위를 선택하지 않아 생기는 정상 차이.",
+   "k": 7,
+   "cubeKeys": [
+    "T09_r1",
+    "T09_r12"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T10",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육에 가장 지원이 필요한 교수 학습자료",
+   "short": "지원 필요 교수학습자료",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "온라인 환경교육 콘텐츠",
+    "교육과정 연계의 교수 학습법 관련 자료",
+    "환경교육 교육과정 편성, 운영 가이드라인",
+    "환경교육 교과서",
+    "환경교육 관련 도서",
+    "환경교육 교수 학습 방법 관련 교사 지도서",
+    "환경교육 우수 운영 학교의 사례집"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-12",
+     "pdf": 69
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": null,
+   "k": 7,
+   "cubeKeys": [
+    "T10_r1",
+    "T10_r12"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T11",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 관련 교원 연수 및 교원역량 프로그램 참여 횟수",
+   "short": "연수 참여 횟수",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "받은 적 없음",
+    "1회",
+    "2회",
+    "3회",
+    "4회 이상"
+   ],
+   "items": null,
+   "positive": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-13",
+     "pdf": 70
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문10. positive=참여 경험 있음(1회 이상) %. 교원 구분별로는 '받은 적 없음' 비율만 공표(교장(감) 18.0%, 부장/일반교원 49.3%, 담당교사 42.3%)되어 분포(pct) 대신 positive=100-없음(82.0/50.7/57.7)으로 기재; 그림의 n=44/2,622/105는 해당 구분에서 '없음'이라고 답한 인원수(각 구분 n 245/5,315/248의 18.0/49.3/42.3%와 일치). 전체 positive 52.3은 100-47.7(보기 합 52.2는 반올림 차이)이며 참여 교원 3,037명(T11B·T12의 base)과 정합.",
+   "k": 5,
+   "cubeKeys": [
+    "T11"
+   ],
+   "publishedBy": [
+    "role"
+   ]
+  },
+  {
+   "qid": "T11B",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "참여한 환경교육 연수 혹은 프로그램의 운영기관",
+   "short": "연수 운영기관",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "시도교육청",
+    "소속 학교",
+    "사설 연수기관",
+    "정부 기관",
+    "전문기관",
+    "학교 밖 교원 연구회나 교과 연구회 등"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "qid": "T11",
+    "in": [
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-13",
+     "pdf": 70
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문11. Base: 환경교육 관련 연수/프로그램 참여 교원(n=3,037). 복수응답.",
+   "k": 6,
+   "cubeKeys": [
+    "T11B"
+   ],
+   "publishedBy": []
+  },
+  {
+   "qid": "T12",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "참여한 환경교육 연수/프로그램 효과성",
+   "short": "연수 효과성",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "전반적 지식과 이해 증진",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "환경 및 환경문제 관심/흥미 증대",
+     "reverse": false
+    },
+    {
+     "id": "3",
+     "label": "연수 내용 수업/학교 계획 반영",
+     "reverse": false
+    },
+    {
+     "id": "4",
+     "label": "환경교육 최근 동향 파악 및 다양한 정보수집 도움",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "동료 교사 교류 및 협력 도움",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": {
+    "qid": "T11",
+    "in": [
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-14",
+     "pdf": 71
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "Base: 환경교육 관련 연수/프로그램 참여 교원(n=3,037). 5개 항목 평균 3.92점. 학교급·교원 구분별 n은 미공표.",
+   "k": 5,
+   "cubeKeys": [
+    "T12_1",
+    "T12_2",
+    "T12_3",
+    "T12_4",
+    "T12_5"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T13",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "가장 효과적인 환경교육 운영 방식",
+   "short": "효과적 운영 방식",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "다양한 수업과 연계하여 운영",
+    "교과 간 협업을 통한 주제 중심의 통합수업",
+    "창의적 체험 활동과 연계 운영",
+    "환경 관련 기관과 시설을 통한 체험 활동",
+    "환경교과 개설 및 내실 있는 운영",
+    "환경친화적 생활 습관 습득",
+    "환경교육 관련 행사",
+    "지역사회나 민간 단체와 연계한 프로그램 운영",
+    "환경 관련 방과후학교 프로그램 운영"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-15",
+     "pdf": 72
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": null,
+   "k": 9,
+   "cubeKeys": [
+    "T13_r1",
+    "T13_r12"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T14",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 수업방법 활용 경험",
+   "short": "수업방법 활용 경험",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "item_binary",
+   "scale": null,
+   "categories": null,
+   "items": [
+    {
+     "id": "lecture",
+     "label": "강의"
+    },
+    {
+     "id": "debate",
+     "label": "토론"
+    },
+    {
+     "id": "project",
+     "label": "프로젝트"
+    },
+    {
+     "id": "experiment",
+     "label": "실험/실습"
+    },
+    {
+     "id": "school_exp",
+     "label": "학교 내 환경 관련 체험 활동"
+    },
+    {
+     "id": "outside_exp",
+     "label": "학교 외 시설, 장소의 방문 체험"
+    },
+    {
+     "id": "online",
+     "label": "온라인 교육"
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-16",
+     "pdf": 73
+    },
+    {
+     "ref": "표 2-3-21~27",
+     "pdf": 92
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B13-1. positive=경험 있음 %. 전체·학교급은 그림 2-2-16과 표 2-3-21~27 교원 행이 일치(표에서 school_exp=체험, outside_exp=지역사회 탐방 및 체험).",
+   "k": 2,
+   "cubeKeys": [
+    "T14_lecture",
+    "T14_debate",
+    "T14_project",
+    "T14_experiment",
+    "T14_school_exp",
+    "T14_outside_exp",
+    "T14_online"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T14E",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 수업방식별 활용 효과성",
+   "short": "수업방식별 효과성",
+   "section": "교수학습 경험",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "lecture",
+     "label": "강의",
+     "reverse": false
+    },
+    {
+     "id": "debate",
+     "label": "토론",
+     "reverse": false
+    },
+    {
+     "id": "project",
+     "label": "프로젝트",
+     "reverse": false
+    },
+    {
+     "id": "experiment",
+     "label": "실험/실습",
+     "reverse": false
+    },
+    {
+     "id": "school_exp",
+     "label": "학교 내 환경 관련 체험 활동",
+     "reverse": false
+    },
+    {
+     "id": "outside_exp",
+     "label": "학교 외 시설, 장소의 방문 체험",
+     "reverse": false
+    },
+    {
+     "id": "online",
+     "label": "온라인 교육",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": {
+    "qid": "T14",
+    "sameItem": true,
+    "eq": 1
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-17",
+     "pdf": 74
+    },
+    {
+     "ref": "표 2-3-28~34",
+     "pdf": 95
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B13-2. Base: 각 수업을 경험해 본 교원(그림 표기 n=5,442는 하나 이상 경험한 교원 수). 항목별 n·sd는 표 2-3-28~34 교원 행. 보정: 표 2-3-32(실험/실습) 초등 교원 n이 '2,863'으로 인쇄되어 있으나 전체 2,355 = 초+중(509)+고(594)에서 초 = 1,252이며 T14 초등 경험률 57.9%×2,162 = 1,252와 일치하므로 1,252로 기재. 학교급 평균은 그림과 표가 일치, 교원 구분 평균은 그림 2-2-17.",
+   "k": 5,
+   "cubeKeys": [
+    "T14E_lecture",
+    "T14E_debate",
+    "T14E_project",
+    "T14E_experiment",
+    "T14E_school_exp",
+    "T14E_outside_exp",
+    "T14E_online"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T15",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육에 대한 만족도",
+   "short": "학교환경교육 만족도",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "전반적 만족도",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "학교환경교육의 원활한 운영",
+     "reverse": false
+    },
+    {
+     "id": "3",
+     "label": "학교환경교육의 학습자 경험, 변화 측면 효과성",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-18",
+     "pdf": 75
+    },
+    {
+     "ref": "표 2-3-45~47",
+     "pdf": 102
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B14(2024년 3월~현재 기준). 3개 항목 평균 3.72점. 항목3은 표 2-3-47에서 '학교환경교육을 통해 새롭게 배우거나 성장하는 경험 습득'으로 표기. sd는 표 2-3-45~47 교원 행.",
+   "k": 5,
+   "cubeKeys": [
+    "T15_1",
+    "T15_2",
+    "T15_3"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T16",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육의 현재 실행 수준에 영향을 준 요인",
+   "short": "실행 수준 영향 요인",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "교육청",
+    "교사",
+    "학교 내 구성원",
+    "학생",
+    "환경교육 담당 교사",
+    "관리자",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-19",
+     "pdf": 76
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "복수응답.",
+   "k": 7,
+   "cubeKeys": [
+    "T16"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T17",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육을 통해 나타난 전반적 변화",
+   "short": "전반적 변화",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "item_likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 그렇지 않다",
+    "그렇지 않다",
+    "보통",
+    "그렇다",
+    "매우 그렇다"
+   ],
+   "items": [
+    {
+     "id": "1",
+     "label": "학생들의 환경문제에 대한 관심 유발",
+     "reverse": false
+    },
+    {
+     "id": "2",
+     "label": "환경문제에 대해 여러 가지 의견을 서로 나누는 분위기 조성",
+     "reverse": false
+    },
+    {
+     "id": "3",
+     "label": "환경 관련 스스로 결정하고 실천하는 문화 형성",
+     "reverse": false
+    },
+    {
+     "id": "4",
+     "label": "교사들의 환경교육 참여 확대",
+     "reverse": false
+    },
+    {
+     "id": "5",
+     "label": "학교관리자의 환경교육 참여 확대",
+     "reverse": false
+    },
+    {
+     "id": "6",
+     "label": "교직원의 환경교육 운영 협조",
+     "reverse": false
+    },
+    {
+     "id": "7",
+     "label": "환경보호 실천을 위한 학교 전반의 협력 강화",
+     "reverse": false
+    }
+   ],
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-20",
+     "pdf": 77
+    },
+    {
+     "ref": "표 2-3-48~51",
+     "pdf": 104
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B15(2024년 3월~현재 기준). 7개 항목 평균 3.77점. sd는 학생/교원 공통 문항(1,2,3,7)만 표 2-3-48~51 교원 행에서 확보(표 2-3-51은 항목7에 대응, 학생 문항명 '학생/선생님 모두 환경보호 실천을 위해 서로 협력'). 항목 4~6은 교원 전용으로 sd 미공표.",
+   "k": 5,
+   "cubeKeys": [
+    "T17_1",
+    "T17_2",
+    "T17_3",
+    "T17_4",
+    "T17_5",
+    "T17_6",
+    "T17_7"
+   ],
+   "publishedBy": [
+    "level",
+    "role"
+   ]
+  },
+  {
+   "qid": "T18",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "향후 환경교육 확대에 대한 동의도",
+   "short": "환경교육 확대 동의",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "agree5",
+   "categories": [
+    "전혀 동의하지 않음",
+    "별로 동의하지 않음",
+    "보통",
+    "어느 정도 동의함",
+    "매우 동의함"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-21",
+     "pdf": 78
+    },
+    {
+     "ref": "표 2-3-52",
+     "pdf": 106
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B16. pct 순서 [전혀 동의하지 않음, 별로 동의하지 않음, 보통, 어느 정도 동의함, 매우 동의함]. 그림 2-2-21(문16)에 '동의함 74.2%'로 인쇄되어 있으나 이는 학생 수치이며, 교원 동의율은 52.3+33.8=86.1%(그림 2-3-12·본문 PDF 106에서 확인). 평균 4.16과 정합.",
+   "k": 5,
+   "cubeKeys": [
+    "T18"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "T19",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "범교과 학습 주제 중 현재 학교에서 강화해야 할 교육",
+   "short": "강화해야 할 교육",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "안전·건강교육",
+    "인성교육",
+    "진로교육",
+    "민주시민교육",
+    "인권교육",
+    "다문화교육",
+    "통일교육",
+    "독도교육",
+    "경제·금융교육",
+    "환경·지속가능발전교육"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-21",
+     "pdf": 78
+    },
+    {
+     "ref": "표 2-3-53",
+     "pdf": 108
+    },
+    {
+     "ref": "표 2-3-54",
+     "pdf": 108
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B16-1, 3순위까지 선택. 보기 순서는 표 2-3-53/54(설문 보기 순). 그림 2-2-21(문16-1)은 응답률 내림차순으로 배열되어 있으며 수치는 표와 일치.",
+   "k": 10,
+   "cubeKeys": [
+    "T19_r1",
+    "T19_r123"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "T20",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육에서 가장 중요하게 다루어져야 할 내용",
+   "short": "중요하게 다룰 내용",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "지구 생태환경·환경문제 등에 관한 다양한 지식",
+    "환경보전 및 환경문제에 관한 관심, 태도, 책임감 높이기",
+    "환경문제를 깊게 이해할 수 있는 창의적, 통합적 사고 능력",
+    "환경학습에 필요한 정보의 수집·이용 방법",
+    "환경보전 및 환경문제에 관한 문제 해결 방법",
+    "환경에 관해 다른 사람들과 소통하고 의견을 나누는 방법",
+    "환경문제 해결을 위한 직접적인 행동과 참여"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-21",
+     "pdf": 78
+    },
+    {
+     "ref": "표 2-3-55",
+     "pdf": 110
+    },
+    {
+     "ref": "표 2-3-56",
+     "pdf": 110
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문B17, 최대 2개 선택. 보기 순서·명칭은 표 2-3-55/56. 그림 2-2-21(문17)은 축약 명칭(예: '환경문제 해결을 위한 관심/태도/책임감 향상', '기후 위기 대응에 필요한 친환경적 행동/실천')과 내림차순 배열을 쓰며 수치는 표와 일치.",
+   "k": 7,
+   "cubeKeys": [
+    "T20_r1",
+    "T20_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "T21",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 활성화를 위해 학교 차원에서 필요한 여건 혹은 지원 사항",
+   "short": "학교 차원 필요 지원",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "학교환경교육 운영 기반 마련",
+    "지역 사회의 환경교육 자원 연계 활용",
+    "환경 과목 개설 및 내실화된 운영",
+    "동료 교사들의 관심과 협력, 학습 공동체 활성화",
+    "학교환경교육 관련 목표와 비전 수립",
+    "학교환경교육 관련 비교과 교육 과정 확대",
+    "학부모의 관심과 지지, 환경교육에 대한 인식 제고",
+    "학교관리자의 관심과 지지",
+    "교원역량 강화를 위한 연수 및 워크숍 참여 독려"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-22",
+     "pdf": 79
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문18. 보기 순서는 그림(1순위 내림차순).",
+   "k": 9,
+   "cubeKeys": [
+    "T21_r1",
+    "T21_r12"
+   ],
+   "publishedBy": []
+  },
+  {
+   "qid": "T22",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 활성화를 위해 국가 정책 차원에서 우선적으로 필요한 지원 사항",
+   "short": "국가 차원 필요 지원",
+   "section": "성과와 개선",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "학교환경교육을 위한 예산 지원 확대",
+    "지역 사회의 환경교육 자원 연계 지원",
+    "학교환경교육을 위한 제도적 기반 마련",
+    "학교환경교육 전담 교원의 배치 확대",
+    "학교환경교육 교재·학습자료 개발 및 제공",
+    "환경교육을 위한 학교 내 전용 시설·체험 공간 확충",
+    "온라인 교수 학습 정보 개발 및 활용 안내",
+    "교원역량 강화를 위한 연수 기회 확대",
+    "관리자 대상 환경교육 리더십 증진 프로그램 확대"
+   ],
+   "items": null,
+   "positive": null,
+   "base": null,
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 2-2-22",
+     "pdf": 79
+    }
+   ],
+   "sourceFile": "s1_teachers.json",
+   "notes": "문19. 보기 순서는 그림(1순위 내림차순).",
+   "k": 9,
+   "cubeKeys": [
+    "T22_r1",
+    "T22_r12"
+   ],
+   "publishedBy": []
+  },
+  {
+   "qid": "C01_2024",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "2024년 정부 부처 혹은 시도교육청 환경교육 지정 여부",
+   "short": "'24년 환경교육 학교 지정",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "binary",
+   "scale": null,
+   "categories": [
+    "아니오",
+    "예"
+   ],
+   "items": null,
+   "positive": [
+    1
+   ],
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-1",
+     "pdf": 233
+    },
+    {
+     "ref": "그림 5-1-1",
+     "pdf": 233
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A1(2024년 ~ 2025년 현재 기준 지정 여부)의 2024년 부분. 담당교원(n=306; 초 125, 중 93, 고 88) 응답.",
+   "k": 2,
+   "cubeKeys": [
+    "C01_2024"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C01_2025",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "2025년 정부 부처 혹은 시도교육청 환경교육 지정 여부",
+   "short": "'25년 환경교육 학교 지정",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "binary",
+   "scale": null,
+   "categories": [
+    "아니오",
+    "예"
+   ],
+   "items": null,
+   "positive": [
+    1
+   ],
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-2",
+     "pdf": 233
+    },
+    {
+     "ref": "그림 5-1-1",
+     "pdf": 233
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A1의 2025년 부분.",
+   "k": 2,
+   "cubeKeys": [
+    "C01_2025"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C02",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "'25년 학교환경교육 운영 계획 대비 이행 정도",
+   "short": "운영계획 대비 이행 정도",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "전혀 안 되고 있다",
+    "거의 안 되고 있다",
+    "보통이다",
+    "잘 되고 있다",
+    "매우 잘 되고 있다",
+    "해당하는 계획 부재"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 5-1-2",
+     "pdf": 234
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A2. 5점 척도(보기 0~4 = 1~5점)에 '해당하는 계획 부재' 보기가 추가되어 single로 전사. mean은 계획 부재 응답을 제외한 5점 평균, positive는 '잘 되고 있다'+'매우 잘 되고 있다'(보고서 수치 그대로; 전체 71.2는 원자료 기준이며 30.1+41.2=71.3과 반올림 차이). 그림에 라벨이 없는 보기는 0.0으로 처리(학교급별 합계 100 및 사례수 환산 평균 재계산으로 확인: 초 4.25, 중 3.95, 고 3.66 재현).",
+   "k": 6,
+   "cubeKeys": [
+    "C02"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C03",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육 운영 계획 수립/적용 상의 어려움",
+   "short": "운영계획 수립/적용 어려움",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "환경교육 운영 노하우 부족",
+    "교육과정 편성, 운영 상 어려움",
+    "관련 예산 부족",
+    "담당 교원 부족 혹은 교사들의 관심 부족",
+    "학부모 혹은 학생의 관심 부족",
+    "관련 근거 미비",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-3",
+     "pdf": 235
+    },
+    {
+     "ref": "그림 5-1-3",
+     "pdf": 235
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A2-1(주된 이유 1개 선택).",
+   "k": 7,
+   "cubeKeys": [
+    "C03"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C04",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육 운영 계획의 목표 달성을 위한 지표/평가 요소 마련 여부",
+   "short": "목표 달성 지표/평가 요소",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "구체적인 달성 목표치/자체 성과관리 지표",
+    "정례화된 자체평가 및 모니터링 절차"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "qid": "C02",
+    "in": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 5-1-4",
+     "pdf": 236
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A3. Base: 환경교육 운영 계획 부재 학교를 제외한 담당교원(n=298 = 306-8; 초 124, 중 92, 고 82) — C02에서 '해당하는 계획 부재'(보기 5)를 제외한 응답자. 담당교원(coord=1) 전제. 항목별 '마련' 비율만 공표.",
+   "k": 2,
+   "cubeKeys": [
+    "C04"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C05",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "2025년 환경교육 예산 마련 여부",
+   "short": "'25년 환경교육 예산 마련",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "binary",
+   "scale": null,
+   "categories": [
+    "미마련",
+    "마련"
+   ],
+   "items": null,
+   "positive": [
+    1
+   ],
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 5-1-5",
+     "pdf": 237
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A4(2025년 회계연도 기준).",
+   "k": 2,
+   "cubeKeys": [
+    "C05"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C06",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "향후 환경교육을 위한 예산 확보 및 투입이 가장 필요한 부분",
+   "short": "예산 투입 필요 부분",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "환경교육 관련 외부 기관 및 지역 사회 연계프로그램 운영",
+    "교과 교육과정 운영",
+    "환경교육 교육여건 개선",
+    "환경교육 관련 행사 개최",
+    "교내 동아리 및 봉사활동"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-4",
+     "pdf": 238
+    },
+    {
+     "ref": "그림 5-1-6",
+     "pdf": 238
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A5.",
+   "k": 5,
+   "cubeKeys": [
+    "C06"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C07",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 수업방식별 운영 여부",
+   "short": "수업방식별 운영 여부",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "환경 과목 개설,운영",
+    "각 교과에서 환경 관련 단원 수업",
+    "교과 간 협업을 통한 주제 중심의 통합수업",
+    "창의적 체험활동과 연계 운영",
+    "환경 관련 방과후학교 프로그램 운영",
+    "환경 관련 기관 및 시설을 통한 체험활동",
+    "지역사회나 민간단체와 연계한 프로그램 운영",
+    "환경교육 관련 행사",
+    "환경친화적 생활습관 지도",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-5",
+     "pdf": 239
+    },
+    {
+     "ref": "그림 5-1-7",
+     "pdf": 239
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A6(해당 항목별 운영 여부 모두 선택). pct는 항목별 '경험 있음' 비율. 보기 2(통합수업)·보기 6(지역사회 연계) 선택자가 각각 C09·C11/C12의 Base가 됨(n=198, n=136).",
+   "k": 10,
+   "cubeKeys": [
+    "C07"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C08",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 담당교원",
+   "short": "환경교과 담당교원",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "과학교과 교원",
+    "시수가 적은 교원",
+    "사회교과 교원",
+    "환경교과 교원",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-6",
+     "pdf": 240
+    },
+    {
+     "ref": "그림 5-1-8",
+     "pdf": 240
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A7. 초등학교는 해당 없음('-' → null). 전체 n=181은 중(93)+고(88) 담당교원 합계이므로 실제 Base는 중·고 담당교원 전체임(보고서 Base 표기는 '환경교육 과목 개설 학교 담당교원'이며 그림 n=181, 표 n=143으로 서로 불일치하나 비율과 사례수는 n=181과 정확히 일치). 기타 74명(40.9%)의 자유기술 내용(표 5-1-7)은 전사하지 않음.",
+   "k": 5,
+   "cubeKeys": [
+    "C08"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C09",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 범교과 주제통합수업 운영 현황",
+   "short": "범교과 주제통합수업 운영",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "likert5",
+   "scale": "likert5",
+   "categories": [
+    "전혀 이루어지지 않음",
+    "거의 이루어지지 않음",
+    "보통임",
+    "잘 이루어짐",
+    "매우 잘 이루어짐"
+   ],
+   "items": null,
+   "positive": [
+    3,
+    4
+   ],
+   "base": {
+    "qid": "C07",
+    "in": [
+     2
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "그림 5-1-9",
+     "pdf": 242
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A8. Base: 범교과 주제통합수업 운영 학교 담당교원 = C07 보기 2('교과 간 협업을 통한 주제 중심의 통합수업') 선택자(n=198; 초 116, 중 44, 고 38). 담당교원(coord=1) 전제. pct 순서는 전혀 이루어지지 않음→매우 잘 이루어짐. 그림에 라벨이 없는 보기는 0.0(합계·사례수 환산 평균 재계산으로 확인). 중·고는 n<50으로 변동성 큼.",
+   "k": 5,
+   "cubeKeys": [
+    "C09"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C10",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육 범교과 주제통합수업 운영 시 어려움(1순위, 1+2순위)",
+   "short": "주제통합수업 운영 어려움",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "기본 시수 외 환경교육 시수 추가에 대한 부담",
+    "학내 구성원의 환경교육 자체에 대한 이해 및 관심 부족",
+    "융합 수업을 위한 시간 조정의 어려움",
+    "수업 여건 부족",
+    "타 교과에 대한 이해 부족",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "qid": "C09",
+    "in": [
+     0,
+     1,
+     2
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-8",
+     "pdf": 243
+    },
+    {
+     "ref": "그림 5-1-10",
+     "pdf": 243
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A8-1(최대 2개 순위 선택). Base: 범교과 주제통합수업이 어렵다고 응답한 담당교원(n=52; 초 18, 중 16, 고 18) = C09에서 '보통임' 이하 응답자(사례수 환산 47+5=52, 학교급별 18/16/18 일치). 1순위는 표 5-1-8, 1+2순위는 그림 5-1-10(전체만 공표). 기타의 1순위는 표에 '-'(null), 1+2순위 1.9. n<30이라 학교급별 값 변동성 매우 큼.",
+   "k": 6,
+   "cubeKeys": [
+    "C10_r1",
+    "C10_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C11",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "학교환경교육 관련 외부기관/지역사회 연계 내용",
+   "short": "외부기관/지역사회 연계",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "multi",
+   "scale": null,
+   "categories": [
+    "지역사회의 환경교육 관련 자원 활용",
+    "지역사회의 전문강사 초빙",
+    "지역사회 환경문제 해결을 위한 대외적 활동",
+    "지역소재 여타 학교들과의 교류, 협력 추진",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "qid": "C07",
+    "in": [
+     6
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-9",
+     "pdf": 244
+    },
+    {
+     "ref": "그림 5-1-11",
+     "pdf": 244
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A9(해당하는 것 모두 선택). Base: 지역사회/민간단체 연계프로그램 운영 학교 담당교원 = C07 보기 6 선택자(n=136; 초 75, 중 41, 고 20). 담당교원(coord=1) 전제. 고등학교 n=20으로 변동성 큼.",
+   "k": 5,
+   "cubeKeys": [
+    "C11"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C12",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "지역사회 자원 활용 시 장점",
+   "short": "지역사회 자원 활용 장점",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "single",
+   "scale": null,
+   "categories": [
+    "풍부한 교육 프로그램",
+    "강사 등 관계자의 전문성",
+    "다양한 시설 및 공간",
+    "학생의 환경교육 관련 실천 역량 증진",
+    "지자체 예산 지원",
+    "지역 사회 내 소속 학교의 위상 및 인지도 제고"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "qid": "C07",
+    "in": [
+     6
+    ]
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-10",
+     "pdf": 245
+    },
+    {
+     "ref": "그림 5-1-12",
+     "pdf": 245
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A9-1(가장 큰 장점 1개). Base: C11과 동일(n=136; 초 75, 중 41, 고 20). 담당교원(coord=1) 전제. 고등학교 n=20으로 변동성 큼. 문항 A9-2(어려운 부분)는 개방형(표 5-1-11)이라 전사하지 않음.",
+   "k": 6,
+   "cubeKeys": [
+    "C12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  },
+  {
+   "qid": "C13",
+   "pop": "teacher",
+   "survey": "school_survey",
+   "label": "환경교육에서 주로 다루고 있는 주제(1순위, 1+2순위)",
+   "short": "주로 다루는 환경교육 주제",
+   "section": "운영 여건",
+   "indicator": null,
+   "type": "rank",
+   "scale": null,
+   "categories": [
+    "기후 변화, 탄소중립",
+    "폐기물 및 순환경제",
+    "자연 생태계",
+    "자원 및 에너지",
+    "생물 다양성",
+    "대기",
+    "수질 및 수자원",
+    "환경 불평등",
+    "기타"
+   ],
+   "items": null,
+   "positive": null,
+   "base": {
+    "dim": "coord",
+    "eq": "1"
+   },
+   "baseKind": "응답자",
+   "source": [
+    {
+     "ref": "표 5-1-12",
+     "pdf": 247
+    },
+    {
+     "ref": "그림 5-1-13",
+     "pdf": 247
+    }
+   ],
+   "sourceFile": "s1_coordinators.json",
+   "notes": "문항 A10(많이 다루는 순서대로 최대 2개). 1순위는 표 5-1-12, 1+2순위는 그림 5-1-13(전체만 공표). '환경 불평등'은 표 5-1-12에 열이 없고 그림에 1+2순위 0.3만 표기됨 → 1순위는 전체·학교급 모두 0.0으로 처리(표의 1순위 사례수 환산 합이 306/125/93/88과 정확히 일치하여 0명임을 확인).",
+   "k": 9,
+   "cubeKeys": [
+    "C13_r1",
+    "C13_r12"
+   ],
+   "publishedBy": [
+    "level"
+   ]
+  }
+ ],
+ "generatedFrom": [
+  "s1_coordinators.json",
+  "s1_students.json",
+  "s1_teachers.json"
+ ]
+}

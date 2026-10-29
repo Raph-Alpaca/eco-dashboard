@@ -1,0 +1,16 @@
+# 원본 보고서 PDF는 저장소에 올리지 않음
+*.pdf
+
+# 실제(비공개) 데이터는 절대 커밋하지 않음 — 템플릿(헤더만)만 허용
+data/real/*
+!data/real/TEMPLATE_*.csv
+!data/real/README.md
+
+# 생성물·캐시
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+Thumbs.db
+.DS_Store
+*.log

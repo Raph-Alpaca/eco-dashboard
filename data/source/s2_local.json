@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "survey": "status_survey",
+  "pop": "inst_local",
+  "sourceDoc": "2025년 환경교육 실태조사 기술통계보고서 (기후에너지환경부·한국환경보전원, 2025.12)",
+  "tables": [
+    {
+      "qid": "LOC_ORD_YN",
+      "label": "환경교육 관련 조례 제정 여부",
+      "short": "조례 제정 여부",
+      "section": "조례/계획",
+      "indicator": "law",
+      "type": "binary",
+      "categories": ["제정하지 않음", "제정함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-27", "pdf": 101}, {"ref": "표 2-47", "pdf": 101}],
+      "notes": "counts=[없음 N, 있음 N]. 수도권 n=66, 수도권 외 n=160.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [43.4, 56.6], "counts": [98, 128]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [22.7, 77.3], "counts": [15, 51]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [51.9, 48.1], "counts": [83, 77]}
+      ]
+    },
+    {
+      "qid": "LOC_ORD_N",
+      "label": "평균 환경교육 관련 조례 개수(제정 기관 기준, 개)",
+      "short": "평균 조례 개수",
+      "section": "조례/계획",
+      "type": "numeric",
+      "base": {"qid": "LOC_ORD_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-47", "pdf": 101}, {"ref": "표 2-48", "pdf": 102}],
+      "notes": "total 147개는 표 2-48(조례 목록)의 전체 조례 개수. 명칭 목록은 전사하지 않음.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 128, "mean": 1.15, "total": 147},
+        {"by": "metro", "key": "cap", "n": 51, "mean": 1.14},
+        {"by": "metro", "key": "noncap", "n": 77, "mean": 1.16}
+      ]
+    },
+    {
+      "qid": "LOC_PLAN_YN",
+      "label": "환경교육 관련 계획 수립 여부",
+      "short": "계획 수립 여부",
+      "section": "조례/계획",
+      "indicator": "plan",
+      "type": "binary",
+      "categories": ["수립하지 않음", "수립함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-28", "pdf": 107}, {"ref": "표 2-49", "pdf": 107}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [61.5, 38.5], "counts": [139, 87]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [34.8, 65.2], "counts": [23, 43]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [72.5, 27.5], "counts": [116, 44]}
+      ]
+    },
+    {
+      "qid": "LOC_PLAN_N",
+      "label": "평균 환경교육 관련 계획 개수(수립 기관 기준, 개)",
+      "short": "평균 계획 개수",
+      "section": "조례/계획",
+      "type": "numeric",
+      "base": {"qid": "LOC_PLAN_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-49", "pdf": 107}, {"ref": "표 2-50", "pdf": 108}],
+      "notes": "total 134개는 표 2-50(계획 목록)의 전체 계획 개수.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 87, "mean": 1.54, "total": 134},
+        {"by": "metro", "key": "cap", "n": 43, "mean": 1.65},
+        {"by": "metro", "key": "noncap", "n": 44, "mean": 1.43}
+      ]
+    },
+    {
+      "qid": "LOC_DEPT_YN",
+      "label": "환경교육 업무 담당 부서 및 인력 여부",
+      "short": "담당 부서·인력 여부",
+      "section": "조직/인력",
+      "indicator": "staff",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-29", "pdf": 115}, {"ref": "표 2-51", "pdf": 115}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [25.2, 74.8], "counts": [57, 169]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [12.1, 87.9], "counts": [8, 58]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [30.6, 69.4], "counts": [49, 111]}
+      ]
+    },
+    {
+      "qid": "LOC_DEPT_N",
+      "label": "환경교육 담당 운영 부서 수(평균, 보유 기관 기준, 개)",
+      "short": "평균 담당 부서 수",
+      "section": "조직/인력",
+      "type": "numeric",
+      "base": {"qid": "LOC_DEPT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-52", "pdf": 116}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 169, "mean": 1.19},
+        {"by": "metro", "key": "cap", "n": 58, "mean": 1.45},
+        {"by": "metro", "key": "noncap", "n": 111, "mean": 1.05}
+      ]
+    },
+    {
+      "qid": "LOC_STAFF_TOTAL",
+      "label": "환경교육 담당 인력 총인원(명, 보유 기관 기준)",
+      "short": "담당 인력 총인원",
+      "section": "조직/인력",
+      "type": "numeric",
+      "categories": ["남", "여"],
+      "base": {"qid": "LOC_DEPT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-52", "pdf": 116}],
+      "notes": "보고서는 인원 합계만 인쇄(평균 미인쇄). total=계, counts=[남, 여]. 총인원=전담+겸임.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 169, "total": 327, "counts": [106, 221]},
+        {"by": "metro", "key": "cap", "n": 58, "total": 149, "counts": [44, 105]},
+        {"by": "metro", "key": "noncap", "n": 111, "total": 178, "counts": [62, 116]}
+      ]
+    },
+    {
+      "qid": "LOC_STAFF_FULLTIME",
+      "label": "환경교육 담당 전담 인원(명, 보유 기관 기준)",
+      "short": "전담 인원",
+      "section": "조직/인력",
+      "type": "numeric",
+      "categories": ["남", "여"],
+      "base": {"qid": "LOC_DEPT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-52", "pdf": 116}],
+      "notes": "인원 합계만 인쇄. total=계, counts=[남, 여].",
+      "rows": [
+        {"by": "all", "key": "all", "n": 169, "total": 132, "counts": [34, 98]},
+        {"by": "metro", "key": "cap", "n": 58, "total": 64, "counts": [15, 49]},
+        {"by": "metro", "key": "noncap", "n": 111, "total": 68, "counts": [19, 49]}
+      ]
+    },
+    {
+      "qid": "LOC_STAFF_PARTTIME",
+      "label": "환경교육 담당 겸임 인원(명, 보유 기관 기준)",
+      "short": "겸임 인원",
+      "section": "조직/인력",
+      "type": "numeric",
+      "categories": ["남", "여"],
+      "base": {"qid": "LOC_DEPT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-52", "pdf": 116}],
+      "notes": "인원 합계만 인쇄. total=계, counts=[남, 여].",
+      "rows": [
+        {"by": "all", "key": "all", "n": 169, "total": 195, "counts": [72, 123]},
+        {"by": "metro", "key": "cap", "n": 58, "total": 85, "counts": [29, 56]},
+        {"by": "metro", "key": "noncap", "n": 111, "total": 110, "counts": [43, 67]}
+      ]
+    },
+    {
+      "qid": "LOC_AFFIL_YN",
+      "label": "환경교육 수행 산하기관 여부",
+      "short": "산하기관 여부",
+      "section": "조직/인력",
+      "indicator": "affiliate",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-30", "pdf": 117}, {"ref": "표 2-53", "pdf": 117}],
+      "notes": "수도권 외 비율은 보고서 인쇄값 그대로(21.3+78.8=100.1).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [75.7, 24.3], "counts": [171, 55]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [68.2, 31.8], "counts": [45, 21]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [78.8, 21.3], "counts": [126, 34]}
+      ]
+    },
+    {
+      "qid": "LOC_AFFIL_N",
+      "label": "평균 환경교육 수행 산하기관 개수(보유 기관 기준, 개)",
+      "short": "평균 산하기관 수",
+      "section": "조직/인력",
+      "type": "numeric",
+      "base": {"qid": "LOC_AFFIL_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-53", "pdf": 117}, {"ref": "표 2-54", "pdf": 118}],
+      "notes": "total 70개는 표 2-54(산하기관 목록)의 전체 산하기관 개수.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 55, "mean": 1.27, "total": 70},
+        {"by": "metro", "key": "cap", "n": 21, "mean": 1.29},
+        {"by": "metro", "key": "noncap", "n": 34, "mean": 1.26}
+      ]
+    },
+    {
+      "qid": "LOC_AFFIL_OPTYPE",
+      "label": "환경교육 수행 산하기관 운영 방식(산하기관 건 기준)",
+      "short": "산하기관 운영 방식",
+      "section": "조직/인력",
+      "type": "events",
+      "categories": ["직접운영", "위탁운영", "공기업·출연·출자기관"],
+      "base": {"qid": "LOC_AFFIL_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-54", "pdf": 118}, {"ref": "표 2-53", "pdf": 117}],
+      "notes": "표 2-54 전체 행의 운영 방식별 건수만 인쇄(비율 미인쇄) → counts로 전사, pct 생략. 권역별 분해 없음. 적절한 '산하기관 건' baseKind가 없어 기관으로 둠.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 55, "events": 70, "mean": 1.27, "counts": [22, 38, 10]}
+      ]
+    },
+    {
+      "qid": "LOC_CENTER_YN",
+      "label": "지역환경교육센터 지정 여부",
+      "short": "지역환경교육센터 지정",
+      "section": "조직/인력",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-31", "pdf": 121}, {"ref": "표 2-55", "pdf": 121}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [73.5, 26.5], "counts": [166, 60]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [62.1, 37.9], "counts": [41, 25]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [78.1, 21.9], "counts": [125, 35]}
+      ]
+    },
+    {
+      "qid": "LOC_CENTER_N",
+      "label": "평균 지역환경교육센터 개수(지정 기관 기준, 개)",
+      "short": "평균 센터 개수",
+      "section": "조직/인력",
+      "type": "numeric",
+      "base": {"qid": "LOC_CENTER_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-55", "pdf": 121}, {"ref": "표 2-56", "pdf": 122}],
+      "notes": "total 64개는 표 2-56(센터 목록)의 전체 센터 수.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "mean": 1.07, "total": 64},
+        {"by": "metro", "key": "cap", "n": 25, "mean": 1.12},
+        {"by": "metro", "key": "noncap", "n": 35, "mean": 1.03}
+      ]
+    },
+    {
+      "qid": "LOC_CENTER_OPTYPE",
+      "label": "지정 지역환경교육센터 기관 운영 방식(센터 건 기준)",
+      "short": "센터 운영 방식",
+      "section": "조직/인력",
+      "type": "events",
+      "categories": ["직접운영", "위탁운영"],
+      "base": {"qid": "LOC_CENTER_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-56", "pdf": 122}, {"ref": "표 2-55", "pdf": 121}],
+      "notes": "표 2-56 전체 행의 운영 방식별 건수만 인쇄(비율 미인쇄) → counts로 전사, pct 생략. 권역별 분해 없음.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "events": 64, "mean": 1.07, "counts": [22, 42]}
+      ]
+    },
+    {
+      "qid": "LOC_PROGRAM_YN",
+      "label": "자체 환경교육 사업 여부",
+      "short": "자체 사업 여부",
+      "section": "사업/예산",
+      "indicator": "program",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-32", "pdf": 125}, {"ref": "표 2-57", "pdf": 125}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [55.8, 44.2], "counts": [126, 100]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [31.8, 68.2], "counts": [21, 45]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [65.6, 34.4], "counts": [105, 55]}
+      ]
+    },
+    {
+      "qid": "LOC_PROGRAM_N",
+      "label": "평균 자체 환경교육 사업 수(운영 기관 기준, 개)",
+      "short": "평균 사업 수",
+      "section": "사업/예산",
+      "type": "numeric",
+      "base": {"qid": "LOC_PROGRAM_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-57", "pdf": 125}, {"ref": "표 2-58", "pdf": 126}],
+      "notes": "total 398개는 표 2-58(사업 목록)의 전체 사업 수.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 100, "mean": 3.98, "total": 398},
+        {"by": "metro", "key": "cap", "n": 45, "mean": 5.22},
+        {"by": "metro", "key": "noncap", "n": 55, "mean": 2.96}
+      ]
+    },
+    {
+      "qid": "LOC_BUDGET",
+      "label": "자체 환경교육 사업 평균 예산(사업 1건당, 백만 원)",
+      "short": "사업당 평균 예산",
+      "section": "사업/예산",
+      "type": "numeric",
+      "base": {"qid": "LOC_PROGRAM_YN", "eq": 1},
+      "baseKind": "사업 건",
+      "source": [{"ref": "표 2-57", "pdf": 125}, {"ref": "표 2-58", "pdf": 126}],
+      "notes": "표 2-57 '평균 예산' 75.82는 표 2-58 전체 사업 예산 합계 30,175백만 원 ÷ 사업 398건과 일치하므로 사업 1건당 평균으로 해석(기관당 평균 아님). 본문은 '사업 운영 100개 기관 기준 평균 예산 약 7천 6백만 원'으로 서술. 권역별 사업 건수는 미인쇄라 n 생략. total=전체 사업 예산 합계(백만 원).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 398, "mean": 75.82, "total": 30175},
+        {"by": "metro", "key": "cap", "mean": 78.44},
+        {"by": "metro", "key": "noncap", "mean": 72.03}
+      ]
+    },
+    {
+      "qid": "LOC_ACT10_YN",
+      "label": "환경교육법 제10조 학교환경교육의 지원 조항 진행 여부",
+      "short": "법 제10조 학교환경교육 지원",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-33", "pdf": 137}, {"ref": "표 2-59", "pdf": 137}],
+      "notes": "수도권 외 비율은 인쇄값 그대로(26.3+73.8=100.1).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [63.7, 36.3], "counts": [144, 82]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [39.4, 60.6], "counts": [26, 40]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [73.8, 26.3], "counts": [118, 42]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT12_YN",
+      "label": "환경교육법 제12조 교원 등에 대한 지원 조항 진행 여부",
+      "short": "법 제12조 교원 지원",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-34", "pdf": 138}, {"ref": "표 2-60", "pdf": 138}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [89.8, 10.2], "counts": [203, 23]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [72.7, 27.3], "counts": [48, 18]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [96.9, 3.1], "counts": [155, 5]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT13_YN",
+      "label": "환경교육법 제13조 사회환경교육의 활성화 조항 진행 여부",
+      "short": "법 제13조 사회환경교육 활성화",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-35", "pdf": 139}, {"ref": "표 2-61", "pdf": 139}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [75.2, 24.8], "counts": [170, 56]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [59.1, 40.9], "counts": [39, 27]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [81.9, 18.1], "counts": [131, 29]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT14_YN",
+      "label": "환경교육법 제14조 사회환경교육의 실시 조항 진행 여부",
+      "short": "법 제14조 사회환경교육 실시",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-36", "pdf": 140}, {"ref": "표 2-62", "pdf": 140}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [72.6, 27.4], "counts": [164, 62]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [50.0, 50.0], "counts": [33, 33]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [81.9, 18.1], "counts": [131, 29]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT15_YN",
+      "label": "환경교육법 제15조 사회환경교육기관·단체 등의 지정 조항 진행 여부",
+      "short": "법 제15조 기관·단체 지정",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-37", "pdf": 141}, {"ref": "표 2-63", "pdf": 141}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [91.6, 8.4], "counts": [207, 19]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [78.8, 21.2], "counts": [52, 14]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [96.9, 3.1], "counts": [155, 5]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT25_YN",
+      "label": "환경교육법 제25조 지역환경교육센터의 지정 조항 진행 여부",
+      "short": "법 제25조 센터 지정",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-38", "pdf": 142}, {"ref": "표 2-64", "pdf": 142}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [83.6, 16.4], "counts": [189, 37]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [72.7, 27.3], "counts": [48, 18]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [88.1, 11.9], "counts": [141, 19]}
+      ]
+    },
+    {
+      "qid": "LOC_ACT28_YN",
+      "label": "환경교육법 제28조 경비 지원 및 보조 조항 진행 여부",
+      "short": "법 제28조 경비 지원",
+      "section": "사업/예산",
+      "type": "binary",
+      "categories": ["진행하지 않음", "진행함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-39", "pdf": 143}, {"ref": "표 2-65", "pdf": 143}],
+      "notes": "수도권 외 비율은 인쇄값 그대로(16.3+83.8=100.1).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [80.1, 19.9], "counts": [181, 45]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [71.2, 28.8], "counts": [47, 19]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [83.8, 16.3], "counts": [134, 26]}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_YN",
+      "label": "환경교육 진행 시설 보유 여부",
+      "short": "시설 보유 여부",
+      "section": "시설",
+      "indicator": "facility",
+      "type": "binary",
+      "categories": ["보유하고 있지 않음", "보유하고 있음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-40", "pdf": 144}, {"ref": "표 2-66", "pdf": 144}],
+      "notes": "수도권 외 비율은 인쇄값 그대로(21.3+78.8=100.1).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [73.5, 26.5], "counts": [166, 60]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [60.6, 39.4], "counts": [40, 26]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [78.8, 21.3], "counts": [126, 34]}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_N",
+      "label": "평균 환경교육 시설 수(계, 보유 기관 기준, 개)",
+      "short": "평균 시설 수",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "LOC_FACILITY_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-66", "pdf": 144}, {"ref": "표 2-67", "pdf": 145}],
+      "notes": "total 141개는 표 2-67(시설 목록)의 전체 시설 수. 운영 방식별 평균은 LOC_FACILITY_N_DIRECT/CONTRACT/EXTERNAL 참조.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "mean": 2.35, "total": 141},
+        {"by": "metro", "key": "cap", "n": 26, "mean": 3.42},
+        {"by": "metro", "key": "noncap", "n": 34, "mean": 1.53}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_N_DIRECT",
+      "label": "평균 환경교육 시설 수 - 직접운영(보유 기관 기준, 개)",
+      "short": "평균 시설 수(직접운영)",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "LOC_FACILITY_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-66", "pdf": 144}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "mean": 1.45},
+        {"by": "metro", "key": "cap", "n": 26, "mean": 2.42},
+        {"by": "metro", "key": "noncap", "n": 34, "mean": 0.71}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_N_CONTRACT",
+      "label": "평균 환경교육 시설 수 - 위탁운영(보유 기관 기준, 개)",
+      "short": "평균 시설 수(위탁운영)",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "LOC_FACILITY_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-66", "pdf": 144}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "mean": 0.87},
+        {"by": "metro", "key": "cap", "n": 26, "mean": 1.00},
+        {"by": "metro", "key": "noncap", "n": 34, "mean": 0.76}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_N_EXTERNAL",
+      "label": "평균 환경교육 시설 수 - 외청운영(보유 기관 기준, 개)",
+      "short": "평균 시설 수(외청운영)",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "LOC_FACILITY_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-66", "pdf": 144}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "mean": 0.03},
+        {"by": "metro", "key": "cap", "n": 26, "mean": 0.00},
+        {"by": "metro", "key": "noncap", "n": 34, "mean": 0.06}
+      ]
+    },
+    {
+      "qid": "LOC_FACILITY_OPTYPE",
+      "label": "환경교육 진행 시설 운영 방식(시설 건 기준)",
+      "short": "시설 운영 방식",
+      "section": "시설",
+      "type": "events",
+      "categories": ["직접운영", "위탁운영", "외청운영"],
+      "base": {"qid": "LOC_FACILITY_YN", "eq": 1},
+      "baseKind": "시설 건",
+      "source": [{"ref": "표 2-67", "pdf": 145}, {"ref": "표 2-66", "pdf": 144}],
+      "notes": "표 2-67 전체 행의 운영 방식별 건수만 인쇄(비율 미인쇄) → counts로 전사, pct 생략. 권역별 분해 없음.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 60, "events": 141, "mean": 2.35, "counts": [87, 52, 2]}
+      ]
+    },
+    {
+      "qid": "LOC_TRAINING_YN",
+      "label": "소속 직원 대상 자체 환경 주제 연수 실시 여부",
+      "short": "직원 환경 연수 실시",
+      "section": "연수",
+      "indicator": "training",
+      "type": "binary",
+      "categories": ["실시하지 않았음", "실시하였음"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-41", "pdf": 149}, {"ref": "표 2-68", "pdf": 149}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [81.9, 18.1], "counts": [185, 41]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [69.7, 30.3], "counts": [46, 20]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [86.9, 13.1], "counts": [139, 21]}
+      ]
+    },
+    {
+      "qid": "LOC_TRAINING_N",
+      "label": "평균 환경 주제 연수 개수(실시 기관 기준, 개)",
+      "short": "평균 연수 개수",
+      "section": "연수",
+      "type": "numeric",
+      "base": {"qid": "LOC_TRAINING_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-68", "pdf": 149}, {"ref": "표 2-69", "pdf": 150}],
+      "notes": "total=총 환경 주제 연수 개수(표 2-69).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "mean": 1.34, "total": 55},
+        {"by": "metro", "key": "cap", "n": 20, "mean": 1.40, "total": 28},
+        {"by": "metro", "key": "noncap", "n": 21, "mean": 1.29, "total": 27}
+      ]
+    },
+    {
+      "qid": "LOC_TRAINING_METHOD",
+      "label": "소속 직원 대상 실시 자체 환경 주제 연수 방법(연수 건 기준)",
+      "short": "연수 방법",
+      "section": "연수",
+      "type": "events",
+      "categories": ["집합교육", "원격교육", "혼합교육"],
+      "base": {"qid": "LOC_TRAINING_YN", "eq": 1},
+      "baseKind": "연수 건",
+      "source": [{"ref": "표 2-69", "pdf": 150}],
+      "notes": "n=연수 실시 기관 수(표 2-68), events=총 연수 개수, pct·counts는 연수 건 기준. 전체 pct 합 100.1, 수도권 외 100.0은 인쇄값 그대로.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "events": 55, "mean": 1.34, "pct": [76.4, 18.2, 5.5], "counts": [42, 10, 3]},
+        {"by": "metro", "key": "cap", "n": 20, "events": 28, "mean": 1.40, "pct": [75.0, 17.9, 7.1], "counts": [21, 5, 2]},
+        {"by": "metro", "key": "noncap", "n": 21, "events": 27, "mean": 1.29, "pct": [77.8, 18.5, 3.7], "counts": [21, 5, 1]}
+      ]
+    },
+    {
+      "qid": "LOC_TRAINING_TOPIC",
+      "label": "소속 직원 대상 실시 자체 환경 주제 연수 주제(중복응답, 연수 건 기준)",
+      "short": "연수 주제",
+      "section": "연수",
+      "type": "multi",
+      "categories": ["기후변화 및 탄소중립", "대기", "에너지", "소음", "폐기물 및 자원순환", "환경보건", "물", "토양", "생태계", "지속가능발전", "생명윤리", "기타"],
+      "base": {"qid": "LOC_TRAINING_YN", "eq": 1},
+      "baseKind": "연수 건",
+      "source": [{"ref": "그림 2-42", "pdf": 151}, {"ref": "표 2-70", "pdf": 151}],
+      "notes": "3개까지 중복응답 허용. n=총 연수 개수. 표의 '-'는 null, 수도권 '물' 0(0.0)은 0으로 전사.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 55, "pct": [78.2, 9.1, 14.5, null, 23.6, 7.3, 1.8, null, 20.0, 7.3, null, 5.5], "counts": [43, 5, 8, null, 13, 4, 1, null, 11, 4, null, 3]},
+        {"by": "metro", "key": "cap", "n": 28, "pct": [78.6, 10.7, 21.4, null, 21.4, 7.1, 0.0, null, 14.3, 7.1, null, 7.1], "counts": [22, 3, 6, null, 6, 2, 0, null, 4, 2, null, 2]},
+        {"by": "metro", "key": "noncap", "n": 27, "pct": [77.8, 7.4, 7.4, null, 25.9, 7.4, 3.7, null, 25.9, 7.4, null, 3.7], "counts": [21, 2, 2, null, 7, 2, 1, null, 7, 2, null, 1]}
+      ]
+    },
+    {
+      "qid": "LOC_COUNCIL_YN",
+      "label": "환경교육 관련 공식적 회의체 구성 여부",
+      "short": "공식 회의체 구성",
+      "section": "거버넌스",
+      "indicator": "council",
+      "type": "binary",
+      "categories": ["구성하지 않음", "구성함"],
+      "positive": [1],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 2-43", "pdf": 152}, {"ref": "표 2-71", "pdf": 152}],
+      "notes": "수도권 외 비율은 인쇄값 그대로(13.8+86.3=100.1).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 226, "pct": [81.4, 18.6], "counts": [184, 42]},
+        {"by": "metro", "key": "cap", "n": 66, "pct": [69.7, 30.3], "counts": [46, 20]},
+        {"by": "metro", "key": "noncap", "n": 160, "pct": [86.3, 13.8], "counts": [138, 22]}
+      ]
+    },
+    {
+      "qid": "LOC_COUNCIL_N",
+      "label": "평균 회의체 수(구성 기관 기준, 개)",
+      "short": "평균 회의체 수",
+      "section": "거버넌스",
+      "type": "numeric",
+      "base": {"qid": "LOC_COUNCIL_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 2-71", "pdf": 152}, {"ref": "표 2-72", "pdf": 153}],
+      "notes": "total 51개는 표 2-72(회의체 목록)의 전체 회의체 수. 표 2-72 전체 행의 2024년 회의 수 합계는 69회.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 42, "mean": 1.21, "total": 51},
+        {"by": "metro", "key": "cap", "n": 20, "mean": 1.45},
+        {"by": "metro", "key": "noncap", "n": 22, "mean": 1.00}
+      ]
+    }
+  ]
+}

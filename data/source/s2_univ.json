@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "survey": "status_survey",
+  "pop": "inst_univ",
+  "sourceDoc": "2025년 환경교육 실태조사 기술통계보고서 (기후에너지환경부·한국환경보전원, 2025.12)",
+  "tables": [
+    {
+      "qid": "UNI_ESG_YN",
+      "label": "ESG 경영 계획 수립 여부",
+      "short": "ESG 경영계획 수립",
+      "section": "계획",
+      "type": "binary",
+      "categories": ["수립하지 않음", "수립함"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-59", "pdf": 299}, {"ref": "표 4-78", "pdf": 299}],
+      "notes": "표4-78 제목이 '환경교육 관련 조례 제정 여부'로 인쇄되어 있으나 열(수립함/수립하지 않음)·그림4-59·본문 모두 ESG 경영 계획 수립 여부임(제목 오기). 고등교육기관에는 별도의 조례 표 없음. 응답기관 수 = 설문조사에 응답한 학교 수(41/56).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [56.1, 43.9], "positive": 43.9},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [50.0, 50.0], "positive": 50.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [58.1, 41.9], "positive": 41.9},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [85.7, 14.3], "positive": 14.3},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [50.0, 50.0], "positive": 50.0}
+      ]
+    },
+    {
+      "qid": "UNI_ESG_EE_YN",
+      "label": "ESG 경영 계획 내 환경교육 관련 계획 수립 여부",
+      "short": "ESG 내 환경교육 계획",
+      "section": "계획",
+      "indicator": "plan",
+      "type": "binary",
+      "categories": ["수립하지 않음", "수립함"],
+      "base": {"qid": "UNI_ESG_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-60", "pdf": 300}, {"ref": "표 4-79", "pdf": 300}],
+      "notes": "표4-79 제목 'EGS'는 'ESG'의 오기. Base는 ESG 경영 계획을 수립했다고 응답한 18개 학교. 교육대 행의 '수립하지 않음'은 '-'로 인쇄 → null.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 18, "pct": [55.6, 44.4], "positive": 44.4},
+        {"by": "metro", "key": "cap", "n": 5, "pct": [40.0, 60.0], "positive": 60.0},
+        {"by": "metro", "key": "noncap", "n": 13, "pct": [61.5, 38.5], "positive": 38.5},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "pct": [null, 100.0], "positive": 100.0},
+        {"by": "univtype", "key": "other_univ", "n": 17, "pct": [58.8, 41.2], "positive": 41.2}
+      ]
+    },
+    {
+      "qid": "UNI_ESG_EE_N",
+      "label": "ESG 경영 계획 내 환경교육 관련 계획 개수(학교별 평균)",
+      "short": "평균 환경교육 계획 수",
+      "section": "계획",
+      "type": "numeric",
+      "base": {"qid": "UNI_ESG_EE_YN", "eq": 1},
+      "baseKind": "계획 건",
+      "source": [{"ref": "표 4-79", "pdf": 300}],
+      "notes": "표의 '평균 환경교육 계획 개수' 열. n은 환경교육 계획을 수립한 학교 수(표4-79의 '수립함 N'): 평균×n 합산 시 전체 약 101건(1×5.0 + 7×13.7 = 100.9; 101/8 = 12.6)으로 '수립함' 기관 기준 평균임을 검산. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 8, "mean": 12.6},
+        {"by": "metro", "key": "cap", "n": 3, "mean": 12.6},
+        {"by": "metro", "key": "noncap", "n": 5, "mean": 12.6},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "mean": 5.0},
+        {"by": "univtype", "key": "other_univ", "n": 7, "mean": 13.7}
+      ]
+    },
+    {
+      "qid": "UNI_TYPE",
+      "label": "대학 세부 유형",
+      "short": "대학 세부 유형",
+      "section": "조직/인력",
+      "type": "single",
+      "categories": ["대학(4년제/사범대학교 포함)", "산업대학", "교육대학", "전문대학", "방송대학·통신대학·방송통신대학 및 사이버대학", "기술대학", "각종학교"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-61", "pdf": 301}, {"ref": "표 4-80", "pdf": 301}],
+      "notes": "본문은 '43개 일반대학교(82.9%)'라 하나 표4-80·그림4-61은 34개(34/41 = 82.9%)이므로 34를 사용. '-' 보기는 null.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [82.9, null, 17.1, null, null, null, null]},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [100.0, null, null, null, null, null, null]},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [77.4, null, 22.6, null, null, null, null]},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [null, null, 100.0, null, null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [100.0, null, null, null, null, null, null]}
+      ]
+    },
+    {
+      "qid": "UNI_PROMOTER_YN",
+      "label": "대학 내 환경교육 사업추진 기관 보유 여부",
+      "short": "환경교육 사업추진 기관",
+      "section": "조직/인력",
+      "indicator": "affiliate",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-62", "pdf": 302}, {"ref": "표 4-81", "pdf": 302}],
+      "notes": "표4-81 하위집단 행의 '있음 N'에 응답기관 수(10/31/7/34)가 반복 인쇄된 오류. 있음 N = 응답기관 수 − 없음 N으로 재계산(수도권 6, 수도권 외 14, 교육대 2, 교육대 외 18; 합 20 = 전체 있음 N)하면 인쇄된 %(60.0/45.2/28.6/52.9)와 일치하므로 인쇄된 %를 그대로 사용.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [51.2, 48.8], "positive": 48.8},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [40.0, 60.0], "positive": 60.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [54.8, 45.2], "positive": 45.2},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [71.4, 28.6], "positive": 28.6},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [47.1, 52.9], "positive": 52.9}
+      ]
+    },
+    {
+      "qid": "UNI_PROMOTER_N",
+      "label": "대학 내 환경교육 사업추진 기관 수(보유 기관 기준 평균)",
+      "short": "평균 사업추진 기관 수",
+      "section": "조직/인력",
+      "type": "numeric",
+      "base": {"qid": "UNI_PROMOTER_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 4-81", "pdf": 302}, {"ref": "표 4-82", "pdf": 303}],
+      "notes": "n은 보유 기관 수(표4-81 재계산값, 본문 '보유 기관 기준'). 표4-82(기관명 목록, 전사 생략)의 전체 추진기관 수 28개 = 20×1.40; 수도권 6×1.17≈7 + 수도권 외 14×1.50 = 21 → 28 검산 일치. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 20, "mean": 1.40},
+        {"by": "metro", "key": "cap", "n": 6, "mean": 1.17},
+        {"by": "metro", "key": "noncap", "n": 14, "mean": 1.50},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": 1.00},
+        {"by": "univtype", "key": "other_univ", "n": 18, "mean": 1.44}
+      ]
+    },
+    {
+      "qid": "UNI_CLUB_YN",
+      "label": "대학 내 환경동아리 운영 여부",
+      "short": "환경동아리 운영",
+      "section": "조직/인력",
+      "type": "binary",
+      "categories": ["운영하지 않음", "운영함"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-63", "pdf": 304}, {"ref": "표 4-83", "pdf": 304}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [61.0, 39.0], "positive": 39.0},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [50.0, 50.0], "positive": 50.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [64.5, 35.5], "positive": 35.5},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [71.4, 28.6], "positive": 28.6},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [58.8, 41.2], "positive": 41.2}
+      ]
+    },
+    {
+      "qid": "UNI_CLUB_N",
+      "label": "대학 내 환경동아리 수(운영 기관 기준 평균)",
+      "short": "평균 환경동아리 수",
+      "section": "조직/인력",
+      "type": "numeric",
+      "base": {"qid": "UNI_CLUB_YN", "eq": 1},
+      "baseKind": "동아리 건",
+      "source": [{"ref": "표 4-83", "pdf": 304}, {"ref": "표 4-84", "pdf": 305}],
+      "notes": "n은 운영 기관 수(본문 '운영 기관 기준'). 표4-84(동아리명 목록, 전사 생략)의 전체 동아리 수 47개 = 16×2.94 검산 일치. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 16, "mean": 2.94},
+        {"by": "metro", "key": "cap", "n": 5, "mean": 5.20},
+        {"by": "metro", "key": "noncap", "n": 11, "mean": 1.91},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": 1.50},
+        {"by": "univtype", "key": "other_univ", "n": 14, "mean": 3.14}
+      ]
+    },
+    {
+      "qid": "UNI_EXT_YN",
+      "label": "외부 기관 지원 추진 환경교육 사업 여부",
+      "short": "외부지원 환경교육 사업",
+      "section": "사업/예산",
+      "indicator": "program",
+      "type": "binary",
+      "categories": ["없음", "있음"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-64", "pdf": 307}, {"ref": "표 4-85", "pdf": 307}],
+      "notes": "외부기관 = 공공기관, 지자체 등. 표4-85 교육대 외 행의 '있음 %'가 8.2로 인쇄되었으나 13/34 = 38.2%이고 없음 61.8%와 합 100이 되므로 38.2로 보정.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [65.9, 34.1], "positive": 34.1},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [50.0, 50.0], "positive": 50.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [71.0, 29.0], "positive": 29.0},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [85.7, 14.3], "positive": 14.3},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [61.8, 38.2], "positive": 38.2}
+      ]
+    },
+    {
+      "qid": "UNI_EXT_N",
+      "label": "외부 기관 지원 추진 환경교육 사업 수(해당 기관별 평균)",
+      "short": "평균 외부지원 사업 수",
+      "section": "사업/예산",
+      "type": "numeric",
+      "base": {"qid": "UNI_EXT_YN", "eq": 1},
+      "baseKind": "사업 건",
+      "source": [{"ref": "표 4-85", "pdf": 307}, {"ref": "표 4-86", "pdf": 308}],
+      "notes": "n은 사업 있음 기관 수. 표4-86(사업명 목록, 전사 생략)의 전체 사업 수 31개 = 14×2.21; 수도권 11 + 수도권 외 20 (표4-87 총 사업 수와 일치). 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 14, "mean": 2.21},
+        {"by": "metro", "key": "cap", "n": 5, "mean": 2.20},
+        {"by": "metro", "key": "noncap", "n": 9, "mean": 2.22},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "mean": 3.00},
+        {"by": "univtype", "key": "other_univ", "n": 13, "mean": 2.15}
+      ]
+    },
+    {
+      "qid": "UNI_EXT_BUDGET",
+      "label": "외부 기관 지원 추진 환경교육 사업 평균 사업 예산(백만원)",
+      "short": "평균 사업 예산(백만원)",
+      "section": "사업/예산",
+      "type": "numeric",
+      "base": {"qid": "UNI_EXT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 4-85", "pdf": 307}],
+      "notes": "단위: 백만원(본문 '약 1천만 원'). 표의 '평균 사업 예산' 열을 그대로 전사. 기관당 평균인지 사업당 평균인지 표에 명시되지 않음(어느 쪽으로 가중해도 전체 9.73과 일치). 교육대 값은 9.8로 한 자리 인쇄.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 14, "mean": 9.73},
+        {"by": "metro", "key": "cap", "n": 5, "mean": 8.85},
+        {"by": "metro", "key": "noncap", "n": 9, "mean": 10.22},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "mean": 9.8},
+        {"by": "univtype", "key": "other_univ", "n": 13, "mean": 9.72}
+      ]
+    },
+    {
+      "qid": "UNI_EXT_SOURCE",
+      "label": "환경교육 진행 외부 기관 유형",
+      "short": "외부 지원 기관 유형",
+      "section": "사업/예산",
+      "type": "events",
+      "categories": ["중앙행정기관", "지방자치단체", "기타기관", "지역환경교육센터", "교육청", "민간단체", "기업", "기타"],
+      "base": {"qid": "UNI_EXT_YN", "eq": 1},
+      "baseKind": "사업 건",
+      "source": [{"ref": "그림 4-65", "pdf": 309}, {"ref": "표 4-87", "pdf": 309}],
+      "notes": "Base = 외부기관 지원 환경교육 사업 수(31건). n은 사업 있음 기관 수(표4-85), events는 표4-87 '총 환경교육 사업 수', mean은 표4-85 평균 사업 수. 범주 N 합 = 사업 수(사업당 1개 유형). 인쇄 N: 전체 7/16/6/-/1/-/-/1; 수도권 3/7/1; 수도권 외 4/9/5/-/1/-/-/1; 교육대 3; 교육대 외 4/16/6/-/1/-/-/1.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 14, "events": 31, "mean": 2.21, "pct": [22.6, 51.6, 19.4, null, 3.2, null, null, 3.2]},
+        {"by": "metro", "key": "cap", "n": 5, "events": 11, "mean": 2.20, "pct": [27.3, 63.6, 9.1, null, null, null, null, null]},
+        {"by": "metro", "key": "noncap", "n": 9, "events": 20, "mean": 2.22, "pct": [20.0, 45.0, 25.0, null, 5.0, null, null, 5.0]},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "events": 3, "mean": 3.00, "pct": [100.0, null, null, null, null, null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 13, "events": 28, "mean": 2.15, "pct": [14.3, 57.1, 21.4, null, 3.6, null, null, 3.6]}
+      ]
+    },
+    {
+      "qid": "UNI_EXT_TYPE",
+      "label": "환경교육 진행 사업유형",
+      "short": "외부지원 사업 유형",
+      "section": "사업/예산",
+      "type": "events",
+      "multi": true,
+      "categories": ["교육프로그램, 프로젝트 지원", "교보재 지원", "시설 지원", "네트워크 지원", "역량강화사업", "지역특화사업", "국제교류사업", "학교지역사회연계", "예산만 지원 받음", "기타"],
+      "base": {"qid": "UNI_EXT_YN", "eq": 1},
+      "baseKind": "사업 건",
+      "source": [{"ref": "그림 4-66", "pdf": 310}, {"ref": "표 4-88", "pdf": 310}],
+      "notes": "Base = 외부기관 지원 환경교육 사업 수(31건), 중복응답 허용(비율 합 > 100). 인쇄 N: 전체 15/1/2/1/17/-/1/1/2/1; 수도권 4/-/1/1/6/-/1/1/2/-; 수도권 외 11/1/1/-/11/-/-/-/-/1; 교육대 3; 교육대 외 12/1/2/1/17/-/1/1/2/1.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 14, "events": 31, "mean": 2.21, "pct": [48.4, 3.2, 6.5, 3.2, 54.8, null, 3.2, 3.2, 6.5, 3.2]},
+        {"by": "metro", "key": "cap", "n": 5, "events": 11, "mean": 2.20, "pct": [36.4, null, 9.1, 9.1, 54.5, null, 9.1, 9.1, 18.2, null]},
+        {"by": "metro", "key": "noncap", "n": 9, "events": 20, "mean": 2.22, "pct": [55.0, 5.0, 5.0, null, 55.0, null, null, null, null, 5.0]},
+        {"by": "univtype", "key": "edu_univ", "n": 1, "events": 3, "mean": 3.00, "pct": [100.0, null, null, null, null, null, null, null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 13, "events": 28, "mean": 2.15, "pct": [42.9, 3.6, 7.1, 3.6, 60.7, null, 3.6, 3.6, 7.1, 3.6]}
+      ]
+    },
+    {
+      "qid": "UNI_GE_YN",
+      "label": "교양과목 환경과목 개설 여부",
+      "short": "교양 환경과목 개설",
+      "section": "대학 환경교육",
+      "type": "binary",
+      "categories": ["개설하지 않음", "개설함"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-67", "pdf": 311}, {"ref": "표 4-89", "pdf": 311}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [22.0, 78.0], "positive": 78.0},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [20.0, 80.0], "positive": 80.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [22.6, 77.4], "positive": 77.4},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [42.9, 57.1], "positive": 57.1},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [17.6, 82.4], "positive": 82.4}
+      ]
+    },
+    {
+      "qid": "UNI_GE_N",
+      "label": "환경 관련 교양과목 개설 수(개설 기관 기준 평균)",
+      "short": "평균 교양 환경과목 수",
+      "section": "대학 환경교육",
+      "type": "numeric",
+      "base": {"qid": "UNI_GE_YN", "eq": 1},
+      "baseKind": "과목 건",
+      "source": [{"ref": "표 4-89", "pdf": 311}, {"ref": "표 4-90", "pdf": 312}],
+      "notes": "n은 개설 기관 수(본문 '개설 기관 기준'). 표4-90(과목명 목록, PDF 312~317, 전사 생략)의 전체 과목 수 231개 = 32×7.22 검산 일치. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 32, "mean": 7.22},
+        {"by": "metro", "key": "cap", "n": 8, "mean": 9.00},
+        {"by": "metro", "key": "noncap", "n": 24, "mean": 6.63},
+        {"by": "univtype", "key": "edu_univ", "n": 4, "mean": 2.25},
+        {"by": "univtype", "key": "other_univ", "n": 28, "mean": 7.93}
+      ]
+    },
+    {
+      "qid": "UNI_EXTRA_YN",
+      "label": "비교과과정 환경과목 개설 여부",
+      "short": "비교과 환경과목 개설",
+      "section": "대학 환경교육",
+      "type": "binary",
+      "categories": ["개설하지 않음", "개설함"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-68", "pdf": 318}, {"ref": "표 4-91", "pdf": 318}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [56.1, 43.9], "positive": 43.9},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [40.0, 60.0], "positive": 60.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [61.3, 38.7], "positive": 38.7},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [71.4, 28.6], "positive": 28.6},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [52.9, 47.1], "positive": 47.1}
+      ]
+    },
+    {
+      "qid": "UNI_EXTRA_N",
+      "label": "비교과과정 환경교육 프로그램 수(개설 기관 기준 평균)",
+      "short": "평균 비교과 프로그램 수",
+      "section": "대학 환경교육",
+      "type": "numeric",
+      "base": {"qid": "UNI_EXTRA_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 4-91", "pdf": 318}, {"ref": "표 4-92", "pdf": 319}],
+      "notes": "n은 개설 기관 수(본문 '개설 기관 기준'). 표4-92(프로그램명 목록, PDF 319~320, 전사 생략)의 전체 프로그램 수 58개 = 18×3.22 검산 일치. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 18, "mean": 3.22},
+        {"by": "metro", "key": "cap", "n": 6, "mean": 4.33},
+        {"by": "metro", "key": "noncap", "n": 12, "mean": 2.67},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": 1.00},
+        {"by": "univtype", "key": "other_univ", "n": 16, "mean": 3.50}
+      ]
+    },
+    {
+      "qid": "UNI_CERT_YN",
+      "label": "환경 교원자격증 발급 여부",
+      "short": "환경 교원자격증 발급",
+      "section": "대학 환경교육",
+      "indicator": "educator",
+      "type": "binary",
+      "categories": ["발급하지 않음", "발급함"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-69", "pdf": 321}, {"ref": "표 4-93", "pdf": 321}],
+      "notes": "표4-93은 전체·시도 행만 인쇄(각주: 교육대는 발급 불가 → 유형별 행 없음). 전체 n=41에는 교육대 7개교 포함.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [92.7, 7.3], "positive": 7.3},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [90.0, 10.0], "positive": 10.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [93.5, 6.5], "positive": 6.5}
+      ]
+    },
+    {
+      "qid": "UNI_CERT_N",
+      "label": "환경 교원자격증 취득 인원(학위별)",
+      "short": "교원자격증 취득 인원",
+      "section": "대학 환경교육",
+      "type": "events",
+      "categories": ["학사", "석사", "박사"],
+      "base": {"qid": "UNI_CERT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 4-94", "pdf": 321}],
+      "notes": "단위: 명. n = 발급한 것으로 응답한 학교 수, events = 취득 인원 수. 인쇄 N: 전체 인원 18(학사 18, 석사 -, 박사 -); 수도권 1(학사 1); 수도권 외 17(학사 17). 보고서는 인원 수만 인쇄하므로 pct는 인원 수에서 산출(모두 학사 → 100.0). 본문 '수도권 11명'은 표(1명)와 불일치하는 오기(1 + 17 = 18). 유형별 행 없음(교육대 발급 불가).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 3, "events": 18, "pct": [100.0, null, null]},
+        {"by": "metro", "key": "cap", "n": 1, "events": 1, "pct": [100.0, null, null]},
+        {"by": "metro", "key": "noncap", "n": 2, "events": 17, "pct": [100.0, null, null]}
+      ]
+    },
+    {
+      "qid": "UNI_CERT_GENDER",
+      "label": "환경 교원자격증 취득 인원(성별)",
+      "short": "취득 인원 성별",
+      "section": "대학 환경교육",
+      "type": "events",
+      "categories": ["남자", "여자"],
+      "base": {"qid": "UNI_CERT_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "표 4-94", "pdf": 321}],
+      "notes": "단위: 명. 인쇄 N(인원 수 남/여): 전체 9/9, 수도권 0/1, 수도권 외 9/8 (학사 남/여도 동일). pct는 인원 수에서 산출(보고서 미인쇄).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 3, "events": 18, "pct": [50.0, 50.0]},
+        {"by": "metro", "key": "cap", "n": 1, "events": 1, "pct": [0.0, 100.0]},
+        {"by": "metro", "key": "noncap", "n": 2, "events": 17, "pct": [52.9, 47.1]}
+      ]
+    },
+    {
+      "qid": "UNI_FACILITY_YN",
+      "label": "환경교육 진행 시설 보유 여부",
+      "short": "환경교육 시설 보유",
+      "section": "시설",
+      "indicator": "facility",
+      "type": "binary",
+      "categories": ["보유하고 있지 않음", "보유하고 있음"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-70", "pdf": 322}, {"ref": "표 4-95", "pdf": 322}],
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [73.2, 26.8], "positive": 26.8},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [90.0, 10.0], "positive": 10.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [67.7, 32.3], "positive": 32.3},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [71.4, 28.6], "positive": 28.6},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [73.5, 26.5], "positive": 26.5}
+      ]
+    },
+    {
+      "qid": "UNI_FACILITY_N",
+      "label": "환경교육 시설 수(보유 기관 기준 평균, 계)",
+      "short": "평균 환경교육 시설 수",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "UNI_FACILITY_YN", "eq": 1},
+      "baseKind": "시설 건",
+      "source": [{"ref": "표 4-95", "pdf": 322}, {"ref": "표 4-96", "pdf": 323}],
+      "notes": "표4-95 '평균 환경교육 시설 수 – 계' 열. n은 보유 기관 수(본문 '시설 보유기관의 평균'). 표4-96(시설명 목록, 전사 생략) 전체: 시설 21개(직접운영 20, 위탁운영 1, 수탁운영 -) = 11×1.91 검산 일치. 운영방식별 평균은 UNI_FACILITY_N_DIRECT / UNI_FACILITY_N_CONSIGN 참조; 수탁운영 열은 전 행 '-'라 표 생략. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 11, "mean": 1.91},
+        {"by": "metro", "key": "cap", "n": 1, "mean": 3.00},
+        {"by": "metro", "key": "noncap", "n": 10, "mean": 1.80},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": 2.00},
+        {"by": "univtype", "key": "other_univ", "n": 9, "mean": 1.89}
+      ]
+    },
+    {
+      "qid": "UNI_FACILITY_N_DIRECT",
+      "label": "환경교육 시설 수(보유 기관 기준 평균, 직접운영)",
+      "short": "평균 시설 수(직접운영)",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "UNI_FACILITY_YN", "eq": 1},
+      "baseKind": "시설 건",
+      "source": [{"ref": "표 4-95", "pdf": 322}],
+      "notes": "표4-95 '평균 환경교육 시설 수 – 직접' 열. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 11, "mean": 1.82},
+        {"by": "metro", "key": "cap", "n": 1, "mean": 3.00},
+        {"by": "metro", "key": "noncap", "n": 10, "mean": 1.70},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": 2.00},
+        {"by": "univtype", "key": "other_univ", "n": 9, "mean": 1.78}
+      ]
+    },
+    {
+      "qid": "UNI_FACILITY_N_CONSIGN",
+      "label": "환경교육 시설 수(보유 기관 기준 평균, 위탁운영)",
+      "short": "평균 시설 수(위탁운영)",
+      "section": "시설",
+      "type": "numeric",
+      "base": {"qid": "UNI_FACILITY_YN", "eq": 1},
+      "baseKind": "시설 건",
+      "source": [{"ref": "표 4-95", "pdf": 322}],
+      "notes": "표4-95 '평균 환경교육 시설 수 – 위탁' 열. '-'는 null. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 11, "mean": 0.09},
+        {"by": "metro", "key": "cap", "n": 1, "mean": null},
+        {"by": "metro", "key": "noncap", "n": 10, "mean": 0.10},
+        {"by": "univtype", "key": "edu_univ", "n": 2, "mean": null},
+        {"by": "univtype", "key": "other_univ", "n": 9, "mean": 0.11}
+      ]
+    },
+    {
+      "qid": "UNI_TRAINING_YN",
+      "label": "소속 직원 및 학생 대상 자체 환경 주제 연수 실시 여부",
+      "short": "자체 환경 연수 실시",
+      "section": "연수",
+      "indicator": "training",
+      "type": "binary",
+      "categories": ["실시하지 않았음", "실시하였음"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-71", "pdf": 324}, {"ref": "표 4-97", "pdf": 324}],
+      "notes": "교육대 행의 '실시하였음' N·%는 '-'로 인쇄 → null(실시하지 않았음 7, 100.0).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [75.6, 24.4], "positive": 24.4},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [60.0, 40.0], "positive": 40.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [80.6, 19.4], "positive": 19.4},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [100.0, null], "positive": null},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [70.6, 29.4], "positive": 29.4}
+      ]
+    },
+    {
+      "qid": "UNI_TRAINING_N",
+      "label": "자체 환경 주제 연수 개수(실시 기관 기준 평균)",
+      "short": "평균 연수 개수",
+      "section": "연수",
+      "type": "numeric",
+      "base": {"qid": "UNI_TRAINING_YN", "eq": 1},
+      "baseKind": "연수 건",
+      "source": [{"ref": "표 4-97", "pdf": 324}, {"ref": "표 4-98", "pdf": 325}],
+      "notes": "n은 실시 기관 수(본문 '실시 기관별'). 표4-98 총 환경 주제 연수 개수 17 = 10×1.70; 수도권 4×1.00 + 수도권 외 6×2.17 = 17 검산 일치. 교육대는 실시 기관 없음('-') → n·mean null. 단위: 개.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 10, "mean": 1.70},
+        {"by": "metro", "key": "cap", "n": 4, "mean": 1.00},
+        {"by": "metro", "key": "noncap", "n": 6, "mean": 2.17},
+        {"by": "univtype", "key": "edu_univ", "n": null, "mean": null},
+        {"by": "univtype", "key": "other_univ", "n": 10, "mean": 1.70}
+      ]
+    },
+    {
+      "qid": "UNI_TRAINING_METHOD",
+      "label": "자체 환경 주제 연수 방법",
+      "short": "연수 방법",
+      "section": "연수",
+      "type": "events",
+      "categories": ["집합교육", "원격교육", "혼합교육"],
+      "base": {"qid": "UNI_TRAINING_YN", "eq": 1},
+      "baseKind": "연수 건",
+      "source": [{"ref": "표 4-98", "pdf": 325}],
+      "notes": "Base = 소속 직원 및 학생 대상으로 실시한 환경교육 연수 개수(17건). n은 실시 기관 수(표4-97), events는 '총 환경 주제 연수 개수', mean은 표4-97 평균 연수 개수. 인쇄 N: 전체 13/4/-; 수도권 3/1/-; 수도권 외 10/3/-; 교육대 전 열 '-'; 교육대 외 13/4/-.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 10, "events": 17, "mean": 1.70, "pct": [76.5, 23.5, null]},
+        {"by": "metro", "key": "cap", "n": 4, "events": 4, "mean": 1.00, "pct": [75.0, 25.0, null]},
+        {"by": "metro", "key": "noncap", "n": 6, "events": 13, "mean": 2.17, "pct": [76.9, 23.1, null]},
+        {"by": "univtype", "key": "edu_univ", "n": null, "events": null, "mean": null, "pct": [null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 10, "events": 17, "mean": 1.70, "pct": [76.5, 23.5, null]}
+      ]
+    },
+    {
+      "qid": "UNI_TRAINING_TOPIC",
+      "label": "자체 환경 주제 연수 주제",
+      "short": "연수 주제",
+      "section": "연수",
+      "type": "events",
+      "multi": true,
+      "categories": ["기후변화 및 탄소중립", "대기", "에너지", "소음", "폐기물 및 자원순환", "환경보건", "물", "토양", "생태계", "지속가능발전", "생명윤리", "기타"],
+      "base": {"qid": "UNI_TRAINING_YN", "eq": 1},
+      "baseKind": "연수 건",
+      "source": [{"ref": "그림 4-72", "pdf": 326}, {"ref": "표 4-99", "pdf": 326}],
+      "notes": "Base = 전체 연수 개수(17건), 3개 중복응답 허용(비율 합 > 100). 인쇄 N: 전체 11/6/2/-/1/3/-/-/2/7/8/1; 수도권 3/-/1/-/-/3/-/-/-/2/-/-; 수도권 외 8/6/1/-/1/-/-/-/2/5/8/1; 교육대 전 열 '-'; 교육대 외 전체와 동일. 교육대 외 '대기' 셀의 '(-35.3)'은 괄호 앞 대시가 잘못 찍힌 인쇄 오류 → 35.3.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 10, "events": 17, "mean": 1.70, "pct": [64.7, 35.3, 11.8, null, 5.9, 17.6, null, null, 11.8, 41.2, 47.1, 5.9]},
+        {"by": "metro", "key": "cap", "n": 4, "events": 4, "mean": 1.00, "pct": [75.0, null, 25.0, null, null, 75.0, null, null, null, 50.0, null, null]},
+        {"by": "metro", "key": "noncap", "n": 6, "events": 13, "mean": 2.17, "pct": [61.5, 46.2, 7.7, null, 7.7, null, null, null, 15.4, 38.5, 61.5, 7.7]},
+        {"by": "univtype", "key": "edu_univ", "n": null, "events": null, "mean": null, "pct": [null, null, null, null, null, null, null, null, null, null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 10, "events": 17, "mean": 1.70, "pct": [64.7, 35.3, 11.8, null, 5.9, 17.6, null, null, 11.8, 41.2, 47.1, 5.9]}
+      ]
+    },
+    {
+      "qid": "UNI_COOP_YN",
+      "label": "지자체, 외부 기관 연계 및 협력 환경교육 실시 여부",
+      "short": "외부 연계·협력 실시",
+      "section": "거버넌스",
+      "type": "binary",
+      "categories": ["실시하지 않았음", "실시하였음"],
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-73", "pdf": 327}, {"ref": "표 4-100", "pdf": 327}],
+      "notes": "교육대 행의 '실시하였음' N·%는 '-'로 인쇄 → null(실시하지 않았음 7, 100.0).",
+      "rows": [
+        {"by": "all", "key": "all", "n": 41, "pct": [73.2, 26.8], "positive": 26.8},
+        {"by": "metro", "key": "cap", "n": 10, "pct": [60.0, 40.0], "positive": 40.0},
+        {"by": "metro", "key": "noncap", "n": 31, "pct": [77.4, 22.6], "positive": 22.6},
+        {"by": "univtype", "key": "edu_univ", "n": 7, "pct": [100.0, null], "positive": null},
+        {"by": "univtype", "key": "other_univ", "n": 34, "pct": [67.6, 32.4], "positive": 32.4}
+      ]
+    },
+    {
+      "qid": "UNI_COOP_TYPE",
+      "label": "환경교육을 위해 협력한 기관 유형",
+      "short": "협력 기관 유형",
+      "section": "거버넌스",
+      "type": "multi",
+      "categories": ["중앙행정기관", "지방자치단체", "산하기관", "지역환경교육센터", "교육청", "민간단체", "기업", "기타"],
+      "base": {"qid": "UNI_COOP_YN", "eq": 1},
+      "baseKind": "기관",
+      "source": [{"ref": "그림 4-74", "pdf": 328}, {"ref": "표 4-101", "pdf": 328}],
+      "notes": "Base = 환경교육을 위해 협력하였다고 응답한 학교 수(11개; 표 머리글은 '총 환경교육 사업 수'이나 각주에 학교 수로 명시). 중복응답(N 합 16 > 11). 인쇄 N: 전체 1/6/1/4/1/2/1/-; 수도권 -/2/-/2/1/1/1/-; 수도권 외 1/4/1/2/-/1/-/-; 교육대 전 열 '-'; 교육대 외 전체와 동일.",
+      "rows": [
+        {"by": "all", "key": "all", "n": 11, "pct": [9.1, 54.5, 9.1, 36.4, 9.1, 18.2, 9.1, null]},
+        {"by": "metro", "key": "cap", "n": 4, "pct": [null, 50.0, null, 50.0, 25.0, 25.0, 25.0, null]},
+        {"by": "metro", "key": "noncap", "n": 7, "pct": [14.3, 57.1, 14.3, 28.6, null, 14.3, null, null]},
+        {"by": "univtype", "key": "edu_univ", "n": null, "pct": [null, null, null, null, null, null, null, null]},
+        {"by": "univtype", "key": "other_univ", "n": 11, "pct": [9.1, 54.5, 9.1, 36.4, 9.1, 18.2, 9.1, null]}
+      ]
+    }
+  ]
+}
