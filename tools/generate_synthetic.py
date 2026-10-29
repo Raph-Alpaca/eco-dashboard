@@ -222,6 +222,8 @@ class Generator:
 
     # ---- 축 값
     def axis_value(self, unit, axis):
+        if axis == "all":
+            return "all"
         if axis in unit:
             return unit[axis]
         g = self.groups.get(axis)
@@ -482,6 +484,8 @@ class Generator:
             else:
                 p_all = default_shape(k) if ordered else [1 / k] * k
         targets = defaultdict(dict)
+        if p_all is not None and any(r.get("by") not in (None, "all") for r in rows) and any(r.get("by") == "all" and (r.get("pct") or r.get("mean") is not None or r.get("positive") is not None) for r in rows):
+            targets["all"]["all"] = p_all
         for r in rows:
             if r.get("by") in (None, "all"):
                 continue
@@ -546,10 +550,11 @@ class Generator:
         # 비가중: 1차 축(공표 순서상 첫 축) 집단별 합계가 정확히 맞도록 셀 할당량을 정수화
         int_quota = {}
         weighted_any = any(frame[i]["weight"] != 1.0 for i in idx)
+        prim = 1 if (axes and axes[0] == "all" and len(axes) > 1) else 0
         if not weighted_any and axes:
             groups0 = defaultdict(list)
             for c in cell_keys:
-                groups0[c[0]].append(c)
+                groups0[c[prim]].append(c)
             for g, members_c in groups0.items():
                 gsize = sum(len(cells[c]) for c in members_c)
                 tot = [sum(N[c][j] for c in members_c) for j in range(k)]

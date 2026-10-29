@@ -16,6 +16,7 @@ SRC = ROOT / "data" / "source"
 CB = ROOT / "data" / "codebook"
 
 SURVEYS = {"school": "school_survey", "status": "status_survey"}
+EVENT_KINDS = {"사업 건", "계획 건", "연수 건", "시설 건", "교보재 건", "조례 건", "법령 건", "회의체 건", "과목 건", "동아리 건"}
 
 
 def load(p):
@@ -77,6 +78,8 @@ def build(survey_key):
                 seen.add(qid)
                 if tbl["type"] == "numeric" and tbl.get("categories"):
                     tbl = dict(tbl, type="events", fromNumeric=True)
+                if tbl["type"] == "single" and tbl.get("baseKind") in EVENT_KINDS:
+                    tbl = dict(tbl, type="events")   # 건(사업·연수…) 기준 단일응답 = 건별 범주
                 q = {
                     "qid": qid, "pop": pop, "survey": survey,
                     "label": tbl["label"], "short": tbl.get("short") or tbl["label"],

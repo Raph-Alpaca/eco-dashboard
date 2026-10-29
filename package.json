@@ -1,0 +1,12 @@
+{
+  "name": "eco-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "환경교육 조사 결과 대시보드 (프로토타입, 합성 데이터)",
+  "scripts": {
+    "serve": "python -m http.server 8000",
+    "test": "node --test tests/*.test.mjs",
+    "data": "python tools/build_codebook.py && python tools/generate_synthetic.py && python tools/build_cubes.py && python tools/validate.py"
+  }
+}

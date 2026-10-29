@@ -1,0 +1,19 @@
+/* 인쇄(브라우저 PDF 저장) 전용. 보고서 탭의 .sheet 만 A4로 출력한다. */
+@page { size: A4; margin: 16mm 14mm 18mm; }
+@media print {
+  html { font-size: 11pt; }
+  body { background: #fff !important; color: #000; }
+  .masthead, .subbar, .toast, .no-print, dialog { display: none !important; }
+  main { max-width: none; padding: 0; }
+  body.printing-report main > *:not(.report-print-root) { display: none !important; }
+  .report-layout { display: block; }
+  .report-side { display: none !important; }
+  .sheet { border: 0; max-width: none; padding: 0; margin: 0; }
+  .sheet .fig { break-inside: avoid; page-break-inside: avoid; }
+  .sheet .fig .chart { height: 78mm; }
+  .sheet .fig svg { max-width: 100%; }
+  table.data th { position: static; background: #f1f1f1 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table.data td, table.data th { border-bottom: 1px solid #ccc; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+}

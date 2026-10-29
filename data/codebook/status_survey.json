@@ -10064,7 +10064,7 @@
    "short": "계획 기간(단년/다년)",
    "section": "계획",
    "indicator": null,
-   "type": "single",
+   "type": "events",
    "scale": null,
    "categories": [
     "단년",
@@ -10426,7 +10426,7 @@
    "short": "외부 지원 사업 구분",
    "section": "사업/예산",
    "indicator": null,
-   "type": "single",
+   "type": "events",
    "scale": null,
    "categories": [
     "중앙행정기관",
@@ -11996,7 +11996,7 @@
    "short": "연수 방법",
    "section": "연수",
    "indicator": null,
-   "type": "single",
+   "type": "events",
    "scale": null,
    "categories": [
     "집합교육",
