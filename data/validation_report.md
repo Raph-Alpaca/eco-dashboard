@@ -4,7 +4,7 @@
 
 - **student** (학생): 비교 661건, 초과 0건
 - **teacher** (교원): 비교 1447건, 초과 2건
-- **inst_central** (중앙행정기관): 비교 303건, 초과 8건
+- **inst_central** (중앙행정기관): 비교 303건, 초과 2건
 - **inst_metro** (광역지방자치단체): 비교 1384건, 초과 2건
 - **inst_local** (기초지방자치단체): 비교 177건, 초과 20건
 - **inst_public** (공공기관): 비교 302건, 초과 34건
@@ -12,19 +12,13 @@
 - **inst_edu_office** (시도교육청): 비교 1228건, 초과 3건
 - **inst_early** (유아교육기관): 비교 813건, 초과 55건
 - **inst_school** (초·중등교육기관): 비교 1334건, 초과 50건
-- **inst_univ** (고등교육기관): 비교 343건, 초과 27건
+- **inst_univ** (고등교육기관): 비교 343건, 초과 22건
 
-## 허용오차 초과 (272건)
+## 허용오차 초과 (261건)
 - C10_r12 [all=all] cat0: 큐브 65.385 vs 공표 63.500 (차 1.885)
 - C10_r12 [all=all] cat3: 큐브 44.231 vs 공표 46.200 (차 1.969)
 - CEN_FACILITY_TYPE [all=all] mean: 큐브 1.500 vs 공표 3.000 (차 1.500)
 - CEN_TRAINING_METHOD [all=all] mean: 큐브 1.000 vs 공표 3.000 (차 2.000)
-- CEN_TRAINING_TOPIC [all=all] cat0: 큐브 366.667 vs 공표 100.000 (차 266.667)
-- CEN_TRAINING_TOPIC [all=all] cat5: 큐브 283.333 vs 공표 77.300 (차 206.033)
-- CEN_TRAINING_TOPIC [all=all] cat9: 큐브 66.667 vs 공표 18.200 (차 48.467)
-- CEN_TRAINING_TOPIC [unit=kma] cat0: 큐브 500.000 vs 공표 100.000 (차 400.000)
-- CEN_TRAINING_TOPIC [unit=forest] cat0: 큐브 340.000 vs 공표 100.000 (차 240.000)
-- CEN_TRAINING_TOPIC [unit=forest] cat5: 큐브 340.000 vs 공표 100.000 (차 240.000)
 - MET_FACILITY_TYPE [all=all] mean: 큐브 2.588 vs 공표 2.930 (차 0.342)
 - MET_TRAINING_METHOD [all=all] mean: 큐브 1.353 vs 공표 3.290 (차 1.937)
 - LOC_DEPT_N [metro=cap] mean: 큐브 1.500 vs 공표 1.450 (차 0.050)
@@ -260,13 +254,7 @@
 - SCH_TRAINING_SESSIONS_TEACHER [region5=gangwon_jeju] mean: 큐브 1.325 vs 공표 1.380 (차 0.055)
 - SCH_TRAINING_SESSIONS_ADMIN [region5=cap] mean: 큐브 1.269 vs 공표 1.310 (차 0.041)
 - SCH_TRAINING_HOURS_ADMIN [region5=gangwon_jeju] mean: 큐브 2.821 vs 공표 2.920 (차 0.099)
-- UNI_TYPE [metro=cap] cat0: 큐브 80.000 vs 공표 100.000 (차 20.000)
-- UNI_TYPE [metro=noncap] cat0: 큐브 83.871 vs 공표 77.400 (차 6.471)
-- UNI_TYPE [metro=noncap] cat2: 큐브 16.129 vs 공표 22.600 (차 6.471)
-- UNI_PROMOTER_N [metro=cap] mean: 큐브 1.000 vs 공표 1.170 (차 0.170)
-- UNI_PROMOTER_N [metro=noncap] mean: 큐브 1.571 vs 공표 1.500 (차 0.071)
-- UNI_CLUB_N [metro=noncap] mean: 큐브 1.846 vs 공표 1.910 (차 0.064)
-- UNI_EXT_N [univtype=other_univ] mean: 큐브 2.222 vs 공표 2.150 (차 0.072)
+- UNI_CLUB_N [metro=noncap] mean: 큐브 2.000 vs 공표 1.910 (차 0.090)
 - UNI_EXT_SOURCE [all=all] cat0: 큐브 15.789 vs 공표 22.600 (차 6.811)
 - UNI_EXT_SOURCE [all=all] mean: 큐브 1.357 vs 공표 2.210 (차 0.853)
 - UNI_EXT_SOURCE [metro=cap] mean: 큐브 1.400 vs 공표 2.200 (차 0.800)
@@ -275,6 +263,7 @@
 - UNI_EXT_SOURCE [univtype=other_univ] mean: 큐브 1.385 vs 공표 2.150 (차 0.765)
 - UNI_EXT_TYPE [all=all] cat0: 큐브 42.105 vs 공표 48.400 (차 6.295)
 - UNI_EXT_TYPE [all=all] cat2: 큐브 10.526 vs 공표 6.500 (차 4.026)
+- UNI_EXTRA_N [metro=cap] mean: 큐브 4.500 vs 공표 4.330 (차 0.170)
 - UNI_EXTRA_N [metro=noncap] mean: 큐브 2.583 vs 공표 2.670 (차 0.087)
 - UNI_FACILITY_N [metro=noncap] mean: 큐브 1.692 vs 공표 1.800 (차 0.108)
 - UNI_FACILITY_N_DIRECT [all=all] mean: 큐브 1.875 vs 공표 1.820 (차 0.055)

@@ -355,10 +355,11 @@ class Generator:
         if pop == "inst_univ":
             units = []
             # 교육대 7곳(수도권 2·비수도권 5), 그 외 34곳(수도권 8·비수도권 26) — 응답 기관 배치는 임의
-            edu_sidos = ["11", "28", "27", "29", "44", "45", "43"]
+            # 공표: 수도권 10곳은 모두 대학(교육대 0), 비수도권 31곳 = 대학 24 + 교육대 7
+            edu_sidos = ["27", "29", "44", "45", "43", "26", "48"]
             units += [{"univtype": "edu_univ", "sido": s} for s in edu_sidos]
-            other = ["11"] * 5 + ["41"] * 2 + ["28"] + ["26"] * 3 + ["27"] * 2 + ["29"] * 2 + ["30"] * 2 + ["31"] + \
-                    ["42"] * 2 + ["43"] * 2 + ["44"] * 2 + ["45"] * 2 + ["46"] * 2 + ["47"] * 3 + ["48"] * 3 + ["50"]
+            other = ["11"] * 7 + ["41"] * 2 + ["28"] + ["26"] * 2 + ["27"] * 2 + ["29"] + ["30"] * 2 + ["31"] + \
+                    ["42"] * 2 + ["43"] * 2 + ["44"] * 2 + ["45"] * 2 + ["46"] * 2 + ["47"] * 3 + ["48"] * 2 + ["50"]
             units += [{"univtype": "other_univ", "sido": s} for s in other[:34]]
             return units
         if pop == "inst_school":
@@ -1060,7 +1061,7 @@ class Generator:
             else:
                 cols.append(q["qid"])
         # 이벤트 건수 열
-        extra = sorted({c for u in frame for c in u if c.endswith("__events")})
+        extra = sorted({c for u in frame for c in u if c.endswith("__events") or c.endswith("__base")})
         cols += extra
         path = OUT / f"{pop}.csv"
         with path.open("w", newline="", encoding="utf-8-sig") as f:
