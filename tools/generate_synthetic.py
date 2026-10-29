@@ -219,6 +219,7 @@ class Generator:
             for t in doc["tables"]:
                 self.sources[t["qid"]] = t
         self.log = []
+        self.pop_dims = []
 
     # ---- 축 값
     def axis_value(self, unit, axis):
@@ -577,26 +578,66 @@ class Generator:
                     alloc[cu][j] += 1
                 int_quota.update(alloc)
         assign = {}
+        sub_dims = [d for d in self.pop_dims if d not in axes]
         for c in cell_keys:
             members = cells[c]
-            if ordered:
-                members = sorted(members, key=lambda i: scores[i], reverse=True)
-            else:
-                members = members[:]
-                self.rng.shuffle(members)
             weighted = any(frame[i]["weight"] != 1.0 for i in members)
             if not weighted:
                 quotas = int_quota.get(c) or largest_remainder(N[c], len(members))
                 if sum(quotas) != len(members):
                     quotas = largest_remainder(N[c], len(members))
-                pos = 0
-                for j in range(k - 1, -1, -1):  # 높은 범주부터(점수 내림차순)
-                    for _ in range(quotas[j]):
-                        assign[members[pos]] = j
-                        pos += 1
+                # 비공표 축 하위셀에 비례 배분(행=하위셀 크기, 열=범주 할당량 → 둘 다 정확히 맞는 정수 행렬)
+                subs = defaultdict(list)
+                for i in members:
+                    subs[tuple(str(frame[i].get(d)) for d in sub_dims)].append(i)
+                sub_keys = list(subs)
+                if len(sub_keys) > 1 and len(members) > 1:
+                    sizes = [len(subs[sk]) for sk in sub_keys]
+                    seed = [[sz * (q / max(len(members), 1)) for q in quotas] for sz in sizes]
+                    mat = ipf_round_2d(seed, sizes, quotas)
+                else:
+                    mat = [quotas]
+                for sk, row in zip(sub_keys, mat):
+                    mem = subs[sk]
+                    if ordered:
+                        mem = sorted(mem, key=lambda i: scores[i], reverse=True)
+                    else:
+                        mem = mem[:]
+                        self.rng.shuffle(mem)
+                    pos = 0
+                    for j in range(k - 1, -1, -1):  # 높은 범주부터(점수 내림차순)
+                        for _ in range(row[j]):
+                            if pos < len(mem):
+                                assign[mem[pos]] = j
+                                pos += 1
+                    while pos < len(mem):  # 반올림 잔여
+                        assign[mem[pos]] = max(range(k), key=lambda j: row[j]); pos += 1
             else:
+                if ordered:
+                    members = sorted(members, key=lambda i: scores[i], reverse=True)
+                else:
+                    members = members[:]
+                    self.rng.shuffle(members)
+                # 하위셀(비공표 축)별로 정렬한 뒤 순위 분위(rank fraction)로 끼워 넣어 전체 순서를 만든다
+                subs = defaultdict(list)
+                for i in members:
+                    subs[tuple(str(frame[i].get(d)) for d in sub_dims)].append(i)
+                ranked = []
+                for mem in subs.values():
+                    if ordered:
+                        mem = sorted(mem, key=lambda i: scores[i], reverse=True)
+                    else:
+                        mem = mem[:]
+                        self.rng.shuffle(mem)
+                    wsum = sum(frame[i]["weight"] for i in mem) or 1.0
+                    cumw = 0.0
+                    for i in mem:
+                        cumw += frame[i]["weight"]
+                        ranked.append(((cumw - frame[i]["weight"] / 2) / wsum, self.rng.random(), i))
+                ranked.sort()
+                members = [i for _, _, i in ranked]
                 total = sum(frame[i]["weight"] for i in members)
-                cum, j, acc = 0.0, k - 1, 0.0
+                cum, acc = 0.0, 0.0
                 bounds = []
                 for jj in range(k - 1, -1, -1):
                     acc += N[c][jj] * total / max(sum(N[c]), 1e-9)
@@ -621,15 +662,8 @@ class Generator:
         secondary = [d for d in pdef["dims"] if d not in published and d not in ("coord",)]
         key = f"{q['qid']}|{item_key or ''}"
         srng = random.Random(f"{self.seed}|{key}")
+        # 비공표 축(학년·시도·성별 등)에는 어떤 체계적 차이도 넣지 않는다 — 보고서에 없는 값을 만들어내지 않기 위함
         eff = {}
-        for d in secondary:
-            codes = self.codes[d]
-            if d == "grade":
-                eff[d] = {c: 0.06 * (i % 2) for i, c in enumerate(codes)}
-            elif d == "tenure":
-                eff[d] = {c: 0.04 * i for i, c in enumerate(codes)}
-            else:
-                eff[d] = {c: srng.gauss(0, 0.08) for c in codes}
         sign = -1.0 if reverse else 1.0
         sd_eps = math.sqrt(max(1 - lam * lam, 0.1))
         scores = {}
@@ -1042,6 +1076,7 @@ class Generator:
     # ---- 모집단 전체 실행
     def run_pop(self, pop):
         pdef = self.cb["populations"][pop]
+        self.pop_dims = list(pdef["dims"])
         frame = self.build_frame(pop)
         qs = self.ordered_questions(pop)
         for q in qs:

@@ -44,7 +44,7 @@ export async function render({ main, sub, app }) {
           <div><b style="color:var(--ink)">칸(패널) 바꾸기</b><br>각 패널의 ⚙ 버튼으로 문항·비교 축·차트를 바꿉니다. 구성은 브라우저에 저장됩니다.</div>
           <div><b style="color:var(--ink)">간단 분석</b><br>상단 필터로 학교급·학년·지역을 좁히고, '분석' 탭에서 두 축 교차표를 만듭니다.</div>
           <div><b style="color:var(--ink)">보고서 만들기</b><br>패널의 ＋ 버튼으로 담은 뒤 '보고서' 탭에서 메모를 적고 PDF로 저장합니다.</div>
-          <div><b style="color:var(--ink)">실데이터로 교체</b><br>원자료는 화면으로 가지 않습니다. 집계 큐브만 바꾸면 같은 화면이 실데이터로 동작합니다(데이터 안내).</div>
+          <div><b style="color:var(--ink)">실데이터로 교체</b><br>원자료는 화면으로 가지 않습니다. 집계 큐브만 바꾸면 같은 화면이 실데이터로 동작합니다. 이 프로토타입의 수치는 보고서 공표값에 맞춘 합성 데이터입니다(데이터 안내).</div>
         </div>
       </div>
     </div>`;

@@ -17,6 +17,8 @@ export const ORDERED_RAMP = {
 export const SEQ = ["#eef6f4", "#d4e9e4", "#b0d6ce", "#86bfb4", "#5aa497", "#368a7c", "#1f6c60", "#0c4c43"];
 const INK = "#16211f", INK2 = "#4b5956", INK3 = "#7b8784", GRID = "#e4e8e5";
 const FONT = '"Pretendard Variable", Pretendard, -apple-system, "Segoe UI", "Malgun Gothic", system-ui, sans-serif';
+const narrow = () => window.innerWidth < 640;
+const LW = (w) => (narrow() ? Math.round(w * 0.6) : w);
 
 const instances = new Map();
 
@@ -134,7 +136,7 @@ export function optionStack(agg, cfg) {
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: ps => tooltipStack(ps, groups) },
     xAxis: { type: "value", max: 100, ...axisBase, axisLabel: { ...axisBase.axisLabel, formatter: v => `${v}%` } },
     yAxis: { type: "category", data: ylabels, inverse: true, ...axisBase, splitLine: { show: false },
-      axisLabel: { ...axisBase.axisLabel, width: 110, overflow: "truncate" } },
+      axisLabel: { ...axisBase.axisLabel, width: LW(110), overflow: "truncate" } },
     series: series.concat(agg.ordered ? [{
       type: "bar", stack: "total", silent: true, data: groups.map(() => 0), barMaxWidth: 28,
       label: { show: true, position: "right", color: INK2, fontSize: 11, formatter: p => meanLabels[p.dataIndex] },
@@ -180,7 +182,7 @@ export function optionGroupBars(agg, cfg) {
   return baseOption({
     legend: { show: by.length === 2, top: 0, left: 0 },
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: v => fmtMeasure(v, measure) },
-    xAxis: { type: "category", data: xcats, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, interval: 0, width: 90, overflow: "break" } },
+    xAxis: { type: "category", data: xcats, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, interval: 0, width: LW(90), overflow: "break", fontSize: narrow() ? 11 : 12 } },
     yAxis: { ...valueAxis(measure, yMax), min: 0 },
     series,
   });
@@ -200,7 +202,7 @@ export function optionCategoryBars(agg, cfg) {
     grid: { left: 8, right: 36, top: groups.length > 1 ? 36 : 12, bottom: 8, containLabel: true },
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: v => (v == null ? "–" : `${fmt(v, 1)}%`) },
     xAxis: { ...valueAxis("pct", null), min: 0 },
-    yAxis: { type: "category", data: cats, inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: 150, overflow: "truncate", interval: 0 } },
+    yAxis: { type: "category", data: cats, inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: LW(150), overflow: "truncate", interval: 0 } },
     series,
   });
 }
@@ -270,7 +272,7 @@ export function optionBattery(aggs, cfg, measure) {
     grid: { left: 8, right: 40, top: multi ? 36 : 12, bottom: 8, containLabel: true },
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: v => fmtMeasure(v, measure) },
     xAxis: { ...valueAxis(measure, xMax), min: measure === "mean" && first.ordered ? 1 : 0 },
-    yAxis: { type: "category", data: aggs.map(a => a.item?.label || a.key), inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: 170, overflow: "truncate", interval: 0 } },
+    yAxis: { type: "category", data: aggs.map(a => a.item?.label || a.key), inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: LW(170), overflow: "truncate", interval: 0 } },
     series,
   });
 }
@@ -284,7 +286,7 @@ export function optionDumbbell(rows, { aName = "학생", bName = "교원", measu
     grid: { left: 8, right: 30, top: 36, bottom: 8, containLabel: true },
     tooltip: { trigger: "axis", valueFormatter: v => fmtMeasure(v, measure) },
     xAxis: { ...valueAxis(measure, max), min: measure === "mean" && ordered ? 1 : 0 },
-    yAxis: { type: "category", data: cats, inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: 170, overflow: "truncate", interval: 0 } },
+    yAxis: { type: "category", data: cats, inverse: true, ...axisBase, splitLine: { show: false }, axisLabel: { ...axisBase.axisLabel, width: LW(170), overflow: "truncate", interval: 0 } },
     series: [
       { name: "차이", type: "custom", silent: true, renderItem: (params, api) => {
           const a = api.value(0), b = api.value(1);

@@ -164,6 +164,14 @@ export const app = {
     reset.textContent = "필터 초기화";
     reset.onclick = () => { filterState.clear(pop); this.renderFilterBar(host, surveyId, pop, onChange); onChange?.(); };
     wrap.appendChild(reset);
+    // 휴대폰: 필터를 접어 두고 버튼으로 펼친다
+    const toggle = document.createElement("button");
+    toggle.className = "btn small filter-toggle";
+    const active = Object.values(filterState.get(pop)).filter(v => v && v.length).length;
+    toggle.textContent = `필터${active ? ` (${active})` : ""} ▾`;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.onclick = () => { const open = wrap.classList.toggle("open"); toggle.setAttribute("aria-expanded", String(open)); toggle.textContent = `필터${active ? ` (${active})` : ""} ${open ? "▴" : "▾"}`; };
+    host.appendChild(toggle);
     host.appendChild(wrap);
   },
 };

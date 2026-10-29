@@ -132,6 +132,16 @@ export class Panel {
     if (q?.base) parts.push("조건부 문항");
     if (groups.some(g => g.suppressed)) parts.push("일부 집단 n<30 표시 안 함");
     sub.textContent = parts.join(" · ");
+    // 비공표 축 안내: 보고서에 없는 분해이면 합성 데이터에서는 상위 집단과 같은 분포(차이 없음)
+    const pubAxes = new Set(q?.publishedBy || []);
+    const parentOf = { grade: "level", sido: "region5s", region5s: "level", region5: "metro", metro: "region5", urban: "level", gender: "level", tenure: "level", role: "level", coord: "level" };
+    const unpub = (this.cfg.by || []).filter(a => !pubAxes.has(a) && !(a === "sido" && (pubAxes.has("sido"))) && !(a === "level" && pubAxes.has("grade")) && !(a === "region5" && pubAxes.has("sido")) && !(a === "metro" && (pubAxes.has("sido") || pubAxes.has("region5"))));
+    let warn = this.el.querySelector(".unpub");
+    if (unpub.length && this.ctx.synthetic) {
+      if (!warn) { warn = document.createElement("div"); warn.className = "unpub"; this.el.querySelector("header").after(warn); }
+      const labels = unpub.map(a => this.cb.dims[a]?.label || a).join("·");
+      warn.textContent = `${labels}별 값은 보고서에 공표되지 않았습니다. 합성 데이터에서는 상위 집단과 같은 분포로 채워 차이가 없습니다. 실데이터에서는 실제 차이가 표시됩니다.`;
+    } else warn?.remove();
     const src = (q?.source || []).map(s => `${s.ref} (PDF p.${s.pdf})`).join(", ");
     this.el.querySelector(".src").textContent = src ? `출처: ${this.cb.shortTitle} ${src}` : "";
     const badges = this.el.querySelector(".badges");
@@ -183,12 +193,16 @@ export class Panel {
     const ch = chartOn(chartEl, this.option);
     chartEl.setAttribute("aria-label", `${this.titleText()} 차트. 표 보기 버튼으로 수치를 확인할 수 있습니다.`);
     this.dirty = false;
-    // 그리드 행 높이에 맞춰 차트를 늘린다(옆 패널이 더 길 때 빈 공간 방지)
-    setTimeout(() => {
+    // 그리드 행 높이에 맞춰 차트를 늘린다(옆 패널이 더 길어지면 빈 공간이 생기지 않도록 본문 크기를 감시)
+    this.baseHeight = Math.min(h, 600);
+    const fit = () => {
       const bh = body.clientHeight;
-      if (!this.ctx.tableFirst && bh > chartEl.clientHeight + 8) chartEl.style.height = `${bh}px`;
-      ch.resize();
-    }, 0);
+      const target = (!this.ctx.tableFirst && bh > this.baseHeight + 8) ? bh : this.baseHeight;
+      if (Math.abs(chartEl.clientHeight - target) > 4) { chartEl.style.height = `${target}px`; }
+      try { ch.resize(); } catch { /* disposed */ }
+    };
+    setTimeout(fit, 0);
+    if (!this.ro) { this.ro = new ResizeObserver(() => { if (this.visible) fit(); }); this.ro.observe(body); }
   }
 
   tableData() {
@@ -340,7 +354,7 @@ export class Panel {
   }
   qidOfKey(key) { return key ? (this.cube?.keyMeta(key)?.q?.qid || key) : null; }
 
-  destroy() { observer.unobserve(this.el); this.unsub?.(); disposeChart(this.el.querySelector(".chart")); this.el.remove(); }
+  destroy() { observer.unobserve(this.el); this.ro?.disconnect(); this.unsub?.(); disposeChart(this.el.querySelector(".chart")); this.el.remove(); }
 }
 
 export function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
