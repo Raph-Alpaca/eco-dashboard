@@ -5,70 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>환경교육 조사 결과 대시보드</title>
   <meta name="description" content="2025년 학교환경교육 현황조사·환경교육 실태조사 결과를 학교급·학년·지역별로 살펴보는 대시보드(프로토타입, 합성 데이터)">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%2315875f'/%3E%3Cpath d='M12 27v-8M18 27V13M24 27v-5M30 27H10' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M25 9c4-1 8 1 9 5-4 1-8-1-9-5z' fill='%23a6e8c9'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b3d38'/%3E%3Cpath d='M8 22V12M14 22V8M20 22v-6M26 22H6' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/print.css">
 </head>
 <body>
-  <a class="skip" href="#main">본문 바로가기</a>
-  <header class="site-header masthead">
-    <div class="header-top">
-      <div class="wrap">
-        <a class="logo" href="#overview" aria-label="환경교육 조사 결과 대시보드 처음으로">
-          <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#15875f"/><path d="M12 27v-8M18 27V13M24 27v-5M30 27H10" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M25 9c4-1 8 1 9 5-4 1-8-1-9-5z" fill="#a6e8c9"/></svg>
-          <span class="logo-text"><strong>환경교육 조사 결과 대시보드</strong><small>국가기후에너지환경교육플랫폼 연계 프로토타입 · 2025년 학교환경교육 현황조사 · 환경교육 실태조사</small></span>
-        </a>
-        <div class="header-util">
-          <span class="badge synthetic" id="dataLabel"></span>
-          <a href="https://github.com/Raph-Alpaca/eco-dashboard/blob/main/docs/manual.md" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg>설명서</a>
-          <a href="https://github.com/Raph-Alpaca/eco-dashboard" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3zM8 12l3 3 5-6"/></svg>저장소</a>
-          <a href="https://keep.go.kr/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/></svg>KEEP 홈</a>
-        </div>
-      </div>
-    </div>
-    <div class="header-nav"><div class="wrap"><nav class="tabs" aria-label="주요 메뉴"></nav></div></div>
-  </header>
-
-  <div class="sub-visual" aria-hidden="false">
-    <span class="sv-sun" aria-hidden="true"></span>
-    <svg class="sv-leaf l" viewBox="0 0 110 90" aria-hidden="true"><path d="M14 86C8 52 30 18 98 10c6 44-24 76-84 76z" fill="#8fd0b0"/><path d="M16 84C34 58 58 36 94 14" stroke="#fff" stroke-width="2" fill="none" opacity=".75"/><path d="M4 88c-6-20 2-44 38-52 2 28-12 46-38 52z" fill="#b9e3cd"/><path d="M6 86c8-18 20-32 34-46" stroke="#fff" stroke-width="1.5" fill="none" opacity=".6"/></svg>
-    <svg class="sv-leaf r" viewBox="0 0 110 90" aria-hidden="true"><path d="M14 86C8 52 30 18 98 10c6 44-24 76-84 76z" fill="#8fd0b0"/><path d="M16 84C34 58 58 36 94 14" stroke="#fff" stroke-width="2" fill="none" opacity=".75"/><path d="M4 88c-6-20 2-44 38-52 2 28-12 46-38 52z" fill="#b9e3cd"/><path d="M6 86c8-18 20-32 34-46" stroke="#fff" stroke-width="1.5" fill="none" opacity=".6"/></svg>
+  <header class="masthead">
     <div class="wrap">
-      <h1 class="page-title" id="pageTitle">개요</h1>
-      <p class="page-sub" id="pageSub">2025년 학교환경교육 현황조사 · 2025년 환경교육 실태조사 — 공유·간단 분석용 프로토타입</p>
+      <div class="title">환경교육 조사 결과 대시보드<small>2025년 학교환경교육 현황조사 · 2025년 환경교육 실태조사 — 공유·간단 분석용 프로토타입</small></div>
+      <div class="meta">교육부 · 기후에너지환경부 · 한국환경보전원 보고서 공표값 기반<br><span class="badge synthetic"></span></div>
+      <nav class="tabs" aria-label="주요 메뉴"></nav>
     </div>
-    <svg class="sv-art" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C180 10 380 60 600 36S1000 8 1200 38V70H0z" fill="#bfe3d0"/><path d="M0 56C250 28 450 70 700 48S1050 30 1200 58V70H0z" fill="#8fcfae"/></svg>
-  </div>
-  <div class="crumb-bar"><div class="wrap">
-    <ol class="breadcrumb" id="breadcrumb"><li><a href="#overview">홈</a></li></ol>
-    <span class="source-note">교육부 · 기후에너지환경부 · 한국환경보전원 보고서 공표값 기반</span>
-  </div></div>
-
+  </header>
   <div class="subbar" id="subbar"></div>
   <main id="main"><p class="loading">불러오는 중…</p></main>
   <noscript><p class="error" style="margin:20px">이 대시보드는 자바스크립트가 필요합니다.</p></noscript>
-
-  <footer class="site-footer">
-    <div class="footer-links"><div class="wrap">
-      <a class="hl" href="#about">데이터 안내</a>
-      <a href="https://github.com/Raph-Alpaca/eco-dashboard/blob/main/docs/manual.md" target="_blank" rel="noopener">그림 설명서</a>
-      <a href="https://github.com/Raph-Alpaca/eco-dashboard/blob/main/docs/integration-roadmap.md" target="_blank" rel="noopener">홈페이지 연계 안내</a>
-      <a href="https://github.com/Raph-Alpaca/eco-dashboard/blob/main/docs/data-spec.md" target="_blank" rel="noopener">데이터 규격</a>
-      <a href="https://github.com/Raph-Alpaca/eco-dashboard" target="_blank" rel="noopener">저장소</a>
-    </div></div>
-    <div class="footer-body"><div class="wrap">
-      <div class="footer-brand"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#15875f"/><path d="M12 27v-8M18 27V13M24 27v-5M30 27H10" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M25 9c4-1 8 1 9 5-4 1-8-1-9-5z" fill="#a6e8c9"/></svg>환경교육 조사 결과 대시보드<small>프로토타입</small></div>
-      <div class="footer-info">
-        <b>출처</b> 2025년 학교환경교육 현황조사 결과보고서(교육부·17개 시·도교육청·한국환경보전원, 2025.12) · 2025년 환경교육 실태조사 기술통계보고서(기후에너지환경부·한국환경보전원, 2025.12, 국가승인통계 제106037호)<br>
-        이 화면의 모든 수치는 보고서 공표값에 맞춘 <b>합성 데이터</b>이며 실제 응답 자료가 아닙니다. 실데이터로 교체하면 같은 화면이 그대로 동작합니다. 코드 MIT · 보고서 원문의 저작권은 발간 기관에 있습니다.
-      </div>
-    </div></div>
-  </footer>
-  <button class="to-top" id="toTop" type="button" aria-label="맨 위로"><svg viewBox="0 0 24 24"><path d="M6 14l6-6 6 6"/></svg>TOP</button>
-
   <script src="vendor/echarts.min.js"></script>
   <script src="config.js"></script>
   <script type="module" src="js/app.js"></script>

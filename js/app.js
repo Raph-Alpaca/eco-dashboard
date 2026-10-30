@@ -15,12 +15,12 @@ import * as report from "./tabs/report.js";
 import * as about from "./tabs/about.js";
 
 const TABS = [
-  { id: "overview", label: "개요", mod: overview, desc: "2025년 학교환경교육 현황조사 · 2025년 환경교육 실태조사 — 공유·간단 분석용 프로토타입" },
-  { id: "school", label: "학교환경교육 현황조사", mod: survey1, desc: "학생·교원 인식조사 — 교육부 · 17개 시·도교육청 · 한국환경보전원" },
-  { id: "status", label: "환경교육 실태조사", mod: survey2, desc: "9종 기관 실태조사 — 기후에너지환경부 · 한국환경보전원 (국가승인통계 제106037호)" },
-  { id: "analysis", label: "분석", mod: analysis, desc: "문항 하나를 골라 두 축까지 교차해 보는 간단 분석" },
-  { id: "report", label: "보고서", mod: report, desc: "담은 패널에 메모를 붙여 A4 PDF로 저장" },
-  { id: "about", label: "데이터 안내", mod: about, desc: "이 화면의 숫자가 어디서 왔고, 어디까지 믿을 수 있는지" },
+  { id: "overview", label: "개요", mod: overview },
+  { id: "school", label: "학교환경교육 현황조사", mod: survey1 },
+  { id: "status", label: "환경교육 실태조사", mod: survey2 },
+  { id: "analysis", label: "분석", mod: analysis },
+  { id: "report", label: "보고서", mod: report },
+  { id: "about", label: "데이터 안내", mod: about },
 ];
 
 export const app = {
@@ -197,11 +197,9 @@ async function route() {
   sub.innerHTML = "";
   const def = TABS.find(t => t.id === tab);
   app.current = { tab, params, mod: def.mod };
-  setPageChrome(def, sub);
   try {
     await def.mod.render({ main, sub, app, params, tab });
     document.title = `${def.label} · 환경교육 조사 결과 대시보드`;
-    setPageChrome(def, sub);
   } catch (err) {
     console.error(err);
     main.innerHTML = `<div class="error"><b>화면을 그리지 못했습니다.</b><br>${escapeHtml(err.message || String(err))}<br><span style="font-size:.8rem">index.html 을 더블클릭해 연 경우 동작하지 않습니다. 서버실행.bat 으로 실행하거나 배포 주소로 접속해 주세요.</span></div>`;
@@ -210,33 +208,6 @@ async function route() {
 }
 
 function escapeHtml(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
-
-/** 서브 비주얼 제목·설명과 경로(홈 › 탭 › 하위 탭)를 현재 화면에 맞춘다 */
-function setPageChrome(def, sub) {
-  const t = document.getElementById("pageTitle");
-  if (t) t.textContent = def.label;
-  const d = document.getElementById("pageSub");
-  if (d) d.textContent = def.desc || "";
-  const bc = document.getElementById("breadcrumb");
-  if (!bc) return;
-  const home = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>';
-  const items = [`<li><a href="#overview">${home}홈</a></li>`];
-  if (def.id !== "overview") items.push(`<li><a href="#${def.id}">${escapeHtml(def.label)}</a></li>`);
-  else items.push(`<li>${escapeHtml(def.label)}</li>`);
-  const active = sub?.querySelector(".subtabs button.active");
-  if (active) items.push(`<li>${escapeHtml(active.textContent.trim())}</li>`);
-  bc.innerHTML = items.join("");
-}
-
-/** 맨 위로 버튼 */
-(function setupToTop() {
-  const btn = document.getElementById("toTop");
-  if (!btn) return;
-  const sync = () => btn.classList.toggle("show", window.scrollY > 320);
-  window.addEventListener("scroll", sync, { passive: true });
-  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-  sync();
-})();
 
 function buildMasthead() {
   const tabs = document.querySelector(".tabs");

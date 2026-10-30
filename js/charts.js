@@ -5,18 +5,18 @@
 import { KOREA_TILES, TILE_COLS, TILE_ROWS } from "./tilemap-korea.js";
 import { fmt, fmtInt } from "./aggregate.js";
 
-export const PALETTE = ["#15875f", "#eb6834", "#237db1", "#eda100", "#e87ba4", "#6250d6", "#9e5317", "#e34948"];
+export const PALETTE = ["#0e9c89", "#eb6834", "#2a78d6", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"];
 /** 순서 척도(5점 등) 누적막대용 단일 색상 램프(밝음→짙음) */
 export const ORDERED_RAMP = {
-  2: ["#c3e6d6", "#15875f"],
-  3: ["#c3e6d6", "#5db38f", "#0b5f42"],
-  4: ["#dcf1e7", "#9fd3b7", "#4fae8b", "#0b5f42"],
-  5: ["#e6f4ee", "#b9e0cf", "#78c2a3", "#2d9e76", "#0b5f42"],
-  6: ["#e6f4ee", "#c3e6d6", "#9fd3b7", "#78c2a3", "#2d9e76", "#0b5f42"],
+  2: ["#c6e4de", "#17685c"],
+  3: ["#c6e4de", "#4a9d90", "#0c4c43"],
+  4: ["#dceeea", "#9fd1c7", "#4a9d90", "#0c4c43"],
+  5: ["#e6f3f0", "#b6ddd5", "#73b9ad", "#2b8275", "#0c4c43"],
+  6: ["#e6f3f0", "#c6e4de", "#9fd1c7", "#73b9ad", "#2b8275", "#0c4c43"],
 };
-export const SEQ = ["#eefdf8", "#d6efe3", "#b3dfca", "#8ccdae", "#62b892", "#3ea27a", "#1f8a62", "#0b5f42"];
-const INK = "#222222", INK2 = "#555555", INK3 = "#777777", GRID = "#e8e8e8";
-const FONT = '"Noto Sans KR", Roboto, -apple-system, "Segoe UI", "Malgun Gothic", system-ui, sans-serif';
+export const SEQ = ["#eef6f4", "#d4e9e4", "#b0d6ce", "#86bfb4", "#5aa497", "#368a7c", "#1f6c60", "#0c4c43"];
+const INK = "#16211f", INK2 = "#4b5956", INK3 = "#7b8784", GRID = "#e4e8e5";
+const FONT = '"Pretendard Variable", Pretendard, -apple-system, "Segoe UI", "Malgun Gothic", system-ui, sans-serif';
 const narrow = () => window.innerWidth < 640;
 const LW = (w) => (narrow() ? Math.round(w * 0.6) : w);
 
@@ -51,7 +51,7 @@ export function baseOption(extra = {}) {
 }
 
 const axisBase = {
-  axisLine: { lineStyle: { color: "#cccccc" } },
+  axisLine: { lineStyle: { color: "#c8d1cc" } },
   axisTick: { show: false },
   axisLabel: { color: INK2, fontSize: 12, hideOverlap: true },
   splitLine: { lineStyle: { color: GRID } },
@@ -240,7 +240,7 @@ export function optionTile(agg, cfg) {
   const min = vals.length ? Math.min(...vals) : 0, max = vals.length ? Math.max(...vals) : 1;
   return baseOption({
     grid: { left: 10, right: 10, top: 10, bottom: 46 },
-    tooltip: { trigger: "item", formatter: p => `<b>${p.data.name}</b> <span style="color:${INK3}">n=${fmtInt(p.data.n)}</span><br>${measureLabel(measure, agg)}: <b>${p.data.value[2] == null ? "표시 안 함(n 부족)" : fmtMeasure(p.data.value[2], measure)}</b>${p.data.unstable ? "<br><span style=color:#aa652d>불안정 추정(n<10)</span>" : ""}` },
+    tooltip: { trigger: "item", formatter: p => `<b>${p.data.name}</b> <span style="color:${INK3}">n=${fmtInt(p.data.n)}</span><br>${measureLabel(measure, agg)}: <b>${p.data.value[2] == null ? "표시 안 함(n 부족)" : fmtMeasure(p.data.value[2], measure)}</b>${p.data.unstable ? "<br><span style=color:#b86b1d>불안정 추정(n<10)</span>" : ""}` },
     xAxis: { type: "category", data: Array.from({ length: TILE_COLS }, (_, i) => i), show: false },
     yAxis: { type: "category", data: Array.from({ length: TILE_ROWS }, (_, i) => i), show: false },
     visualMap: {
@@ -292,7 +292,7 @@ export function optionDumbbell(rows, { aName = "학생", bName = "교원", measu
           const a = api.value(0), b = api.value(1);
           if (a == null || b == null) return null;
           const pa = api.coord([a, params.dataIndex]), pb = api.coord([b, params.dataIndex]);
-          return { type: "line", shape: { x1: pa[0], y1: pa[1], x2: pb[0], y2: pb[1] }, style: { stroke: "#cfd6d2", lineWidth: 2 } };
+          return { type: "line", shape: { x1: pa[0], y1: pa[1], x2: pb[0], y2: pb[1] }, style: { stroke: "#c8d1cc", lineWidth: 2 } };
         }, data: rows.map(r => [r.a, r.b]), tooltip: { show: false }, z: 1 },
       { name: aName, type: "scatter", symbolSize: 12, itemStyle: { color: PALETTE[0] }, data: rows.map(r => num(r.a)), z: 3,
         label: { show: true, position: "left", fontSize: 10, color: INK2, formatter: p => fmtMeasure(p.value, measure, true) } },
